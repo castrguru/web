@@ -1,3 +1,3 @@
-# Layer2Guru
+# Castr Guru
 
-### https://layer2.guru
+### https://castr.guru
