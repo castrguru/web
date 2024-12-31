@@ -1,3 +1,3 @@
-# Castr Guru Web
+# Castr GÜRŲ Web
 
 https://castr.guru

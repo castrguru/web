@@ -1,4 +1,4 @@
-# Castr Guru Library + SDK
+# Castr GÜRŲ Library + SDK
 
 https://castr.guru/lib
 
