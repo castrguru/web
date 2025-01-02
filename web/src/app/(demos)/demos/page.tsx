@@ -1,6 +1,7 @@
 import Image from 'next/image'
+import Link from 'next/link'
 
-export default function Manager() {
+export default function Demos() {
     return (
         <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
             <Image
@@ -13,16 +14,20 @@ export default function Manager() {
             />
 
             <h1 className="-mt-5 text-5xl font-light text-rose-400 tracking-widest italic">
-                Kitchen Sink Demo
+                Castr GÜRŲ Demos
             </h1>
 
             <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-                <li className="mb-2">
-                    Item # 1
+                <li>
+                    <Link href="/demos/kitchen-sink" className="mb-2">
+                        Kitchen Sink
+                    </Link>
                 </li>
 
                 <li>
-                    Item # 2
+                    <Link href="/demos/dashboard-01">
+                        Dashboard #1
+                    </Link>
                 </li>
             </ol>
 

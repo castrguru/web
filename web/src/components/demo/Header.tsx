@@ -129,12 +129,12 @@ export default function Header() {
                         </PopoverPanel>
                     </Popover>
 
-                    <Link href="/demo" className="text-xl/6 font-semibold text-stone-300">
-                        Demo
+                    <Link href="/demos" className="text-xl/6 font-semibold text-stone-300">
+                        Demos
                     </Link>
 
-                    <Link href="/examples" className="text-xl/6 font-semibold text-stone-300">
-                        Examples
+                    <Link href="/studio" className="text-xl/6 font-semibold text-stone-300">
+                        Studio
                     </Link>
 
                     <Popover className="relative">
@@ -208,12 +208,12 @@ export default function Header() {
                                 </div>
 
                                 <div className="space-y-2 py-6">
-                                    <a href="/demo" className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">
-                                        Demo
+                                    <a href="/demos" className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">
+                                        Demos
                                     </a>
 
-                                    <a href="/examples" className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">
-                                        Examples
+                                    <a href="/studio" className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">
+                                        Studio
                                     </a>
 
                                     {gurus.map((item) => (
