@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 // import Image from 'next/image'
 // import { Geist, Geist_Mono } from 'next/font/google'
 
-import '@/app/globals.css'
+import '../../app/globals.css'
 // import Header from '@/components/demo/Header'
 
 export const metadata: Metadata = {
