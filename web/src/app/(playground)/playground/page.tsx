@@ -5,6 +5,8 @@ import { Dialog, DialogBackdrop, DialogPanel, Menu, MenuButton, MenuItem, MenuIt
 import { Bars3Icon, BellIcon, CalendarIcon, ChartPieIcon, DocumentDuplicateIcon, FolderIcon, HomeIcon, UsersIcon, XMarkIcon } from "@heroicons/react/24/outline";
 import { ChevronDownIcon, MagnifyingGlassIcon } from "@heroicons/react/20/solid";
 
+import Link from 'next/link'
+
 const navigation = [
     { name: "Dashboard", href: "#", icon: HomeIcon, current: true },
     { name: "Team", href: "#", icon: UsersIcon, current: false },
@@ -27,14 +29,6 @@ export default function Example() {
 
     return (
         <>
-            {/*
-        This example requires updating your template:
-
-        ```
-        <html class="h-full bg-white">
-        <body class="h-full">
-        ```
-      */}
             <div>
                 <Dialog open={sidebarOpen} onClose={setSidebarOpen} className="relative z-50 lg:hidden">
                     <DialogBackdrop transition className="fixed inset-0 bg-gray-900/80 transition-opacity duration-300 ease-linear data-[closed]:opacity-0" />
@@ -51,9 +45,10 @@ export default function Example() {
                             </TransitionChild>
 
                             <div className="flex grow flex-col gap-y-5 overflow-y-auto bg-gray-900 px-6 pb-2 ring-1 ring-white/10">
-                                <div className="flex h-16 shrink-0 items-center">
-                                    <img alt="Your Company" src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=500" className="h-8 w-auto" />
-                                </div>
+                                <Link href="/" className="flex h-16 shrink-0 items-center">
+                                    <img alt="Castr Guru" src="/icon.svg" className="size-10" />
+                                </Link>
+
                                 <nav className="flex flex-1 flex-col">
                                     <ul role="list" className="-mx-2 flex-1 space-y-1">
                                         {navigation.map((item) => (
@@ -76,9 +71,10 @@ export default function Example() {
 
                 {/* Static sidebar for desktop */}
                 <div className="hidden lg:fixed lg:inset-y-0 lg:left-0 lg:z-50 lg:block lg:w-20 lg:overflow-y-auto lg:bg-gray-900 lg:pb-4">
-                    <div className="flex h-16 shrink-0 items-center justify-center">
-                        <img alt="Your Company" src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=500" className="h-8 w-auto" />
-                    </div>
+                    <Link href="/" className="flex h-16 shrink-0 items-center justify-center">
+                        <img alt="Castr Guru" src="/icon.svg" className="size-10" />
+                    </Link>
+
                     <nav className="mt-8">
                         <ul role="list" className="flex flex-col items-center space-y-1">
                             {navigation.map((item) => (
