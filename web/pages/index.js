@@ -27,7 +27,7 @@ export default function Home() {
                 className={`${styles.page} ${geistSans.variable} ${geistMono.variable}`}
             >
                 <main className={styles.main}>
-                    <h1 className="text-5xl font-bold text-slate-200 tracking-widest">
+                    <h1 className="text-5xl font-bold text-rose-500 tracking-widest">
                         Castr GÜRŲ
                     </h1>
 

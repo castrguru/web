@@ -10,7 +10,7 @@ import {
   useRef,
   useState,
 } from 'react'
-import Highlighter from 'react-highlight-words'
+// import Highlighter from 'react-highlight-words'
 import { usePathname, useRouter, useSearchParams } from 'next/navigation'
 import {
   type AutocompleteApi,
@@ -149,16 +149,16 @@ function LoadingIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   )
 }
 
-function HighlightQuery({ text, query }: { text: string; query: string }) {
-  return (
-    <Highlighter
-      highlightClassName="underline bg-transparent text-emerald-500"
-      searchWords={[query]}
-      autoEscape={true}
-      textToHighlight={text}
-    />
-  )
-}
+// function HighlightQuery({ text, query }: { text: string; query: string }) {
+//   return (
+//     <Highlighter
+//       highlightClassName="underline bg-transparent text-emerald-500"
+//       searchWords={[query]}
+//       autoEscape={true}
+//       textToHighlight={text}
+//     />
+//   )
+// }
 
 function SearchResult({
   result,
@@ -199,7 +199,8 @@ function SearchResult({
         aria-hidden="true"
         className="text-sm font-medium text-zinc-900 group-aria-selected:text-emerald-500 dark:text-white"
       >
-        <HighlightQuery text={result.title} query={query} />
+        {/* <HighlightQuery text={result.title} query={query} /> */}
+        <div>HighlightQuery</div>
       </div>
       {hierarchy.length > 0 && (
         <div
@@ -209,7 +210,8 @@ function SearchResult({
         >
           {hierarchy.map((item, itemIndex, items) => (
             <Fragment key={itemIndex}>
-              <HighlightQuery text={item} query={query} />
+              {/* <HighlightQuery text={item} query={query} /> */}
+              <div>HighlightQuery</div>
               <span
                 className={
                   itemIndex === items.length - 1
