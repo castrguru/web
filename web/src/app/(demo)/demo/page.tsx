@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-export default function Examples() {
+export default function Demo() {
     return (
         <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
             <Image
@@ -13,7 +13,7 @@ export default function Examples() {
             />
 
             <h1 className="-mt-5 text-5xl font-light text-rose-400 tracking-widest italic">
-                Examples
+                Kitchen Sink Demo
             </h1>
 
             <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">

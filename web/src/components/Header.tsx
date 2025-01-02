@@ -1,11 +1,6 @@
-import React from 'react'
 
-const Header = () => {
+export default function Header() {
     return (
-        <div>
-            <h1>My App Header</h1>
-        </div>
+        <div className="font-6xl text-slate-400">SIMPLE HEADER</div>
     )
 }
-
-export default Header
