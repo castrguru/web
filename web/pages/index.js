@@ -27,20 +27,20 @@ export default function Home() {
                 className={`${styles.page} ${geistSans.variable} ${geistMono.variable}`}
             >
                 <main className={styles.main}>
-                    <h1 className="text-5xl font-bold text-rose-500 tracking-widest">
-                        Castr GÜRŲ
-                    </h1>
-
                     <Image
-                        className={styles.logo}
-                        src="/next.svg"
-                        alt="Next.js logo"
-                        width={180}
-                        height={38}
+                        className="size-32"
+                        src="/icon.svg"
+                        alt="Castr Guru logo"
+                        width={0}
+                        height={0}
                         priority
                     />
 
-                    <ol>
+                    <h1 className="-mt-5 text-5xl font-light text-rose-400 tracking-widest italic">
+                        Castr GÜRŲ
+                    </h1>
+
+                    <ol className="pl-10 list-decimal">
                         <li>
                             Get started by editing <code>pages/index.js</code>.
                         </li>
@@ -50,7 +50,7 @@ export default function Home() {
                     <div className={styles.ctas}>
                         <a
                             className={styles.primary}
-                            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+                            href="/"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
@@ -61,11 +61,11 @@ export default function Home() {
                                 width={20}
                                 height={20}
                             />
-                            Deploy now
+                            Get started
                         </a>
 
                         <a
-                            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+                            href="https://docs.castr.guru"
                             target="_blank"
                             rel="noopener noreferrer"
                             className={styles.secondary}
@@ -77,7 +77,7 @@ export default function Home() {
 
                 <footer className={styles.footer}>
                     <a
-                        href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+                        href="/"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
@@ -92,7 +92,7 @@ export default function Home() {
                     </a>
 
                     <a
-                        href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+                        href="/"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
@@ -107,7 +107,7 @@ export default function Home() {
                     </a>
 
                     <a
-                        href="https://nextjs.org?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+                        href="https://docs.castr.guru"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
@@ -118,7 +118,7 @@ export default function Home() {
                             width={16}
                             height={16}
                         />
-                        Go to nextjs.org →
+                        Go to docs.castr.guru →
                     </a>
                 </footer>
             </div>
