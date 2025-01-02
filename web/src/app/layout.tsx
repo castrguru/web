@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 // import Image from 'next/image'
 
 import './globals.css'
+import PlausibleProvider from 'next-plausible'
 // import Header from '@/components/Header'
 
 export const metadata: Metadata = {
@@ -18,10 +19,12 @@ export default function RootLayout({
         <html lang="en">
             <body>
                 {/* <Header /> */}
-
-                <main className="">
+                <PlausibleProvider
+                    domain="castr.guru"
+                    customDomain="https://plausible.castr.guru"
+                >
                     {children}
-                </main>
+                </PlausibleProvider>
 
                 {/* FOOTER HERE */}
             </body>
