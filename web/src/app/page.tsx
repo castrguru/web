@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react'
-import { MinusSmallIcon, PlusSmallIcon, WrenchScrewdriverIcon } from '@heroicons/react/24/outline'
+import { MinusSmallIcon, PlusSmallIcon, HeartIcon } from '@heroicons/react/24/outline'
 import { ArrowPathIcon, CheckIcon, CloudArrowUpIcon, Cog6ToothIcon, FingerPrintIcon, LockClosedIcon, ServerIcon } from '@heroicons/react/20/solid'
 
 import Header from '../components/Header'
@@ -105,11 +105,14 @@ export default function Homepage() {
             <main>
                 {/* Hero section */}
                 <div className="relative isolate overflow-hidden bg-gray-900 pb-16 pt-14 sm:pb-20">
-                    <img
+                    <Image
                         alt=""
+                        width={0}
+                        height={0}
                         src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2830&q=80&blend=111827&sat=-100&exp=15&blend-mode=multiply"
                         className="absolute inset-0 -z-10 size-full object-cover"
                     />
+
                     <div aria-hidden="true" className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80">
                         <div
                             style={{
@@ -119,32 +122,52 @@ export default function Homepage() {
                             className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-20 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
                         />
                     </div>
+
                     <div className="mx-auto max-w-7xl px-6 lg:px-8">
-                        <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+                        <div className="mx-auto max-w-4xl py-12 sm:py-16 lg:py-24">
+
                             <div className="hidden sm:mb-8 sm:flex sm:justify-center">
                                 <div className="relative rounded-full px-3 py-1 text-sm/6 text-gray-400 ring-1 ring-white/10 hover:ring-white/20">
-                                    Announcing our next round of funding.{" "}
-                                    <a href="#" className="font-semibold text-white">
+                                    Announcing our 1st GÜRŲ NFT airdrop.{" "}
+                                    <Link href="/" className="font-semibold text-white">
                                         <span aria-hidden="true" className="absolute inset-0" />
                                         Read more <span aria-hidden="true">&rarr;</span>
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
-                            <div className="text-center">
-                                <h1 className="text-balance text-5xl font-semibold tracking-tight text-white sm:text-7xl">Data to enrich your online business</h1>
-                                <p className="mt-8 text-pretty text-lg font-medium text-gray-400 sm:text-xl/8">
-                                    Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat.
+
+                            <div className="flex flex-col items-center">
+                                <h1 className="flex flex-col gap-2 text-center font-light tracking-tight text-stone-200">
+                                    <span className="text-5xl sm:text-6xl tracking-wide">
+                                        24x7 #BUIDL Concierge
+                                    </span>
+
+                                    <span className="block text-5xl tracking-wide">
+                                        Dedicated To Farcaster
+                                    </span>
+
+                                    <span className="-mt-3 text-6xl sm:text-8xl tracking-widest text-fuchsia-300">
+                                        <span className="text-7xl sm:text-9xl italic">v2</span>
+                                        <span className="uppercase"> Frames</span>
+                                    </span>
+                                </h1>
+
+                                <p className="mt-8 w-full sm:max-w-3xl text-pretty text-center text-lg font-medium text-fuchsia-200/80 sm:text-xl/8 tracking-wide">
+                                    <span className="font-bold uppercase">Frames</span> are the NEW killer app for Creators, Founders and Teams driven to disrupt markets
+                                    — their spirits awakened by the power &amp; freedom of DeFi to reward and monetize one of the FASTEST growing communities of today!
                                 </p>
+
                                 <div className="mt-10 flex items-center justify-center gap-x-6">
-                                    <a
-                                        href="#"
-                                        className="rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
+                                    <Link
+                                        href="/"
+                                        className="rounded-md bg-indigo-500 px-5 py-3 text-2xl font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
                                     >
-                                        Get started
-                                    </a>
-                                    <a href="#" className="text-sm/6 font-semibold text-white">
+                                        Get started now
+                                    </Link>
+
+                                    <Link href="/" className="text-xl/6 font-semibold text-white">
                                         Learn more <span aria-hidden="true">→</span>
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
@@ -244,21 +267,23 @@ export default function Homepage() {
                                     <use x={86} href="#b56e9dab-6ccb-4d32-ad02-6b4bb5d9bbeb" />
                                 </svg>
 
-                                <blockquote className="text-xl/8 font-semibold text-white sm:text-2xl/9 tracking-wider">
-                                    <p>
-                                        I believe the BEST method to learning <Link href="https://farcaster.xyz" target="_blank" className="text-amber-200 font-bold underline hover:text-amber-100">Farcaster</Link> is by teaching others;
-                                        so my plan is to do just that —
-                                        create a platform so beloved by #BUIDLers that I’m forced to master EVERYTHING!
+                                <blockquote className="text-xl font-semibold text-white sm:text-2xl tracking-wider">
+                                    <p className="leading-[45px]">
+                                        I already know the BEST way for me to learn <Link href="https://docs.farcaster.xyz/developers/frames/" target="_blank" className="text-amber-200 font-bold underline hover:text-amber-100">Farcaster Frames</Link> is by teaching others;
+                                        so I plan to do just that —
+                                        create a platform so
+                                        <HeartIcon className="mx-2 inline size-9 text-rose-500" />
+                                        by #BUIDLers that I’m forced to master EVERYTHING!
                                     </p>
                                 </blockquote>
 
-                                <figcaption className="mt-8 text-base">
-                                    <Link href="https://x.com/0xShomari" target="_blank" className="group flex flex-row gap-0.5 items-center">
+                                <Link href="https://x.com/0xShomari" target="_blank" className="group mt-8 flex flex-col text-base">
+                                    <div className="flex flex-row gap-0.5 items-center">
                                         <span className="text-3xl font-medium text-amber-200 tracking-widest group-hover:text-amber-100">
                                             0
                                         </span>
 
-                                        <svg className="size-5 text-amber-200 group-hover:text-amber-100" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 512 512">
+                                        <svg className="size-5 text-amber-200 group-hover:text-amber-500" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 512 512">
                                             <path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" />
                                         </svg>
 
@@ -266,15 +291,14 @@ export default function Homepage() {
                                             Shomari
                                         </span>
 
-                                    </Link>
+                                    </div>
 
-                                    <div className="mt-1 flex flex-row items-center">
-                                        <span className="text-sm text-amber-500 tracking-widest uppercase">
-                                            Master Builder
-                                            <WrenchScrewdriverIcon className="p-1 inline size-6 text-amber-400" />
+                                    <div className="mt-0 pl-1 flex flex-row items-center">
+                                        <span className="text-xs text-amber-500 tracking-widest uppercase group-hover:text-amber-300">
+                                            Master Builder 🚧
                                         </span>
                                     </div>
-                                </figcaption>
+                                </Link>
                             </figure>
                         </div>
                     </div>
