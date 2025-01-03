@@ -1,6 +1,9 @@
 /* Import modules. */
+import Image from 'next/image'
+import Link from 'next/link'
+
 import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react'
-import { MinusSmallIcon, PlusSmallIcon } from '@heroicons/react/24/outline'
+import { MinusSmallIcon, PlusSmallIcon, WrenchScrewdriverIcon } from '@heroicons/react/24/outline'
 import { ArrowPathIcon, CheckIcon, CloudArrowUpIcon, Cog6ToothIcon, FingerPrintIcon, LockClosedIcon, ServerIcon } from '@heroicons/react/20/solid'
 
 const features = [
@@ -215,16 +218,20 @@ export default function Example() {
                             />
                         </div>
                     </div>
+
                     <div className="mx-auto flex max-w-7xl flex-col items-center gap-x-8 gap-y-10 px-6 sm:gap-y-8 lg:px-8 xl:flex-row xl:items-stretch">
                         <div className="-mt-8 w-full max-w-2xl xl:-mb-8 xl:w-96 xl:flex-none">
                             <div className="relative aspect-[2/1] h-full md:-mx-8 xl:mx-0 xl:aspect-auto">
-                                <img
+                                <Image
                                     alt=""
-                                    src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2102&q=80"
+                                    width={0}
+                                    height={0}
+                                    src="/img/portrait.jpg"
                                     className="absolute inset-0 size-full rounded-2xl bg-gray-800 object-cover shadow-2xl"
                                 />
                             </div>
                         </div>
+
                         <div className="w-full max-w-2xl xl:max-w-none xl:flex-auto xl:px-16 xl:py-24">
                             <figure className="relative isolate pt-6 sm:pt-12">
                                 <svg fill="none" viewBox="0 0 162 128" aria-hidden="true" className="absolute left-0 top-0 -z-10 h-32 stroke-white/20">
@@ -234,15 +241,37 @@ export default function Example() {
                                     />
                                     <use x={86} href="#b56e9dab-6ccb-4d32-ad02-6b4bb5d9bbeb" />
                                 </svg>
-                                <blockquote className="text-xl/8 font-semibold text-white sm:text-2xl/9">
+
+                                <blockquote className="text-xl/8 font-semibold text-white sm:text-2xl/9 tracking-wider">
                                     <p>
-                                        Gravida quam mi erat tortor neque molestie. Auctor aliquet at porttitor a enim nunc suscipit tincidunt nunc. Et non lorem tortor posuere. Nunc eu scelerisque interdum eget tellus non nibh scelerisque
-                                        bibendum.
+                                        I believe the BEST method to learning <Link href="https://farcaster.xyz" target="_blank" className="text-amber-200 font-bold underline hover:text-amber-100">Farcaster</Link> is by teaching others;
+                                        so my plan is to do just that —
+                                        create a platform so beloved by #BUIDLers that I’m forced to master EVERYTHING!
                                     </p>
                                 </blockquote>
+
                                 <figcaption className="mt-8 text-base">
-                                    <div className="font-semibold text-white">Judith Black</div>
-                                    <div className="mt-1 text-gray-400">CEO of Tuple</div>
+                                    <Link href="https://x.com/0xShomari" target="_blank" className="group flex flex-row gap-0.5 items-center">
+                                        <span className="text-3xl font-medium text-amber-200 tracking-widest group-hover:text-amber-100">
+                                            0
+                                        </span>
+
+                                        <svg className="size-5 text-amber-200 group-hover:text-amber-100" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 512 512">
+                                            <path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" />
+                                        </svg>
+
+                                        <span className="pl-1 text-3xl font-medium text-amber-200 tracking-widest group-hover:text-amber-100">
+                                            Shomari
+                                        </span>
+
+                                    </Link>
+
+                                    <div className="mt-1 flex flex-row items-center">
+                                        <span className="text-sm text-amber-500 tracking-widest uppercase">
+                                            Master Builder
+                                            <WrenchScrewdriverIcon className="p-1 inline size-6 text-amber-400" />
+                                        </span>
+                                    </div>
                                 </figcaption>
                             </figure>
                         </div>
