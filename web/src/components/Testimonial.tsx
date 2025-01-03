@@ -49,7 +49,7 @@ export default function Testimonial() {
 
                         <blockquote className="text-xl font-semibold text-white sm:text-2xl tracking-wider">
                             <p className="leading-[45px]">
-                                I already know the BEST way for me to learn <Link href="https://docs.farcaster.xyz/developers/frames/" target="_blank" className="text-amber-200 font-bold underline hover:text-amber-100">Farcaster Frames</Link> is gonna be by teaching others;
+                                I already know the BEST way for me to learn <Link href="https://docs.farcaster.xyz/developers/frames/" target="_blank" className="text-amber-200 font-bold underline hover:text-amber-100">Farcaster Frames</Link> is gonna be thru teaching others;
                                 so I plan to do just that —
                                 create a platform so
                                 <HeartIcon className="ml-2 mr-3 inline size-10 text-fuchsia-300" />
