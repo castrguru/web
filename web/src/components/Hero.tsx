@@ -60,7 +60,7 @@ export default function Blank() {
                             </span>
                         </h1>
 
-                        <p className="mt-8 w-full sm:max-w-3xl text-pretty text-center text-lg font-medium text-fuchsia-200/80 sm:text-xl/8 tracking-wide">
+                        <p className="mt-8 w-full sm:max-w-3xl text-pretty text-center text-lg font-medium text-fuchsia-100 sm:text-xl/8 tracking-wide">
                             <span className="font-bold uppercase">Frames</span> are the NEW killer app for Creators, Founders and Teams driven to disrupt markets
                             — their spirits awakened by the power &amp; freedom of DeFi to reward and monetize one of the FASTEST growing communities of today!
                         </p>
@@ -68,7 +68,7 @@ export default function Blank() {
                         <div className="mt-10 flex items-center justify-center gap-x-6">
                             <Link
                                 href="/"
-                                className="rounded-md bg-indigo-500 px-5 py-3 text-2xl font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
+                                className="rounded-md bg-purple-500 px-5 py-3 text-2xl font-semibold text-white shadow-sm hover:bg-purple-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-400"
                             >
                                 Get started now
                             </Link>

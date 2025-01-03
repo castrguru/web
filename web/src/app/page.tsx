@@ -6,41 +6,11 @@ import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react
 import { MinusSmallIcon, PlusSmallIcon, HeartIcon } from '@heroicons/react/24/outline'
 import { ArrowPathIcon, CheckIcon, CloudArrowUpIcon, Cog6ToothIcon, FingerPrintIcon, LockClosedIcon, ServerIcon } from '@heroicons/react/20/solid'
 
+import Benefits from '../components/Benefits'
 import Header from '../components/Header'
 import Hero from '../components/Hero'
 
-const features = [
-    {
-        name: "Push to deploy.",
-        description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit aute id magna.",
-        icon: CloudArrowUpIcon,
-    },
-    {
-        name: "SSL certificates.",
-        description: "Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.",
-        icon: LockClosedIcon,
-    },
-    {
-        name: "Simple queues.",
-        description: "Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus.",
-        icon: ArrowPathIcon,
-    },
-    {
-        name: "Advanced security.",
-        description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit aute id magna.",
-        icon: FingerPrintIcon,
-    },
-    {
-        name: "Powerful API.",
-        description: "Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.",
-        icon: Cog6ToothIcon,
-    },
-    {
-        name: "Database backups.",
-        description: "Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. ",
-        icon: ServerIcon,
-    },
-];
+
 const tiers = [
     {
         name: "Hobby",
@@ -105,38 +75,7 @@ export default function Homepage() {
 
             <main>
                 <Hero />
-
-                {/* Feature section */}
-                <div className="mt-32 sm:mt-56">
-                    <div className="mx-auto max-w-7xl px-6 lg:px-8">
-                        <div className="mx-auto max-w-2xl sm:text-center">
-                            <h2 className="text-base/7 font-semibold text-indigo-600">Everything you need</h2>
-                            <p className="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-balance sm:text-5xl">No server? No problem.</p>
-                            <p className="mt-6 text-lg/8 text-gray-600">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis.</p>
-                        </div>
-                    </div>
-                    <div className="relative overflow-hidden pt-16">
-                        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-                            <img alt="App screenshot" src="https://tailwindui.com/plus/img/component-images/project-app-screenshot.png" width={2432} height={1442} className="mb-[-12%] rounded-xl shadow-2xl ring-1 ring-gray-900/10" />
-                            <div aria-hidden="true" className="relative">
-                                <div className="absolute -inset-x-20 bottom-0 bg-gradient-to-t from-white pt-[7%]" />
-                            </div>
-                        </div>
-                    </div>
-                    <div className="mx-auto mt-16 max-w-7xl px-6 sm:mt-20 md:mt-24 lg:px-8">
-                        <dl className="mx-auto grid max-w-2xl grid-cols-1 gap-x-6 gap-y-10 text-base/7 text-gray-600 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-x-8 lg:gap-y-16">
-                            {features.map((feature) => (
-                                <div key={feature.name} className="relative pl-9">
-                                    <dt className="inline font-semibold text-gray-900">
-                                        <feature.icon aria-hidden="true" className="absolute left-1 top-1 size-5 text-indigo-600" />
-                                        {feature.name}
-                                    </dt>{" "}
-                                    <dd className="inline">{feature.description}</dd>
-                                </div>
-                            ))}
-                        </dl>
-                    </div>
-                </div>
+                <Benefits />
 
                 {/* Testimonial section */}
                 <div className="relative z-10 mt-32 bg-gray-900 pb-20 sm:mt-56 sm:pb-24 xl:pb-0">
@@ -177,11 +116,11 @@ export default function Homepage() {
 
                                 <blockquote className="text-xl font-semibold text-white sm:text-2xl tracking-wider">
                                     <p className="leading-[45px]">
-                                        I already know the BEST way for me to learn <Link href="https://docs.farcaster.xyz/developers/frames/" target="_blank" className="text-amber-200 font-bold underline hover:text-amber-100">Farcaster Frames</Link> is by teaching others;
+                                        I already know the BEST way for me to learn <Link href="https://docs.farcaster.xyz/developers/frames/" target="_blank" className="text-amber-200 font-bold underline hover:text-amber-100">Farcaster Frames</Link> is gonna be by teaching others;
                                         so I plan to do just that —
                                         create a platform so
-                                        <HeartIcon className="mx-2 inline size-9 text-rose-500" />
-                                        by #BUIDLers that I’m forced to master EVERYTHING!
+                                        <HeartIcon className="ml-2 mr-3 inline size-10 text-fuchsia-300" />
+                                        by #BUIDLers that I’m driven to MASTER IT ALL!
                                     </p>
                                 </blockquote>
 
