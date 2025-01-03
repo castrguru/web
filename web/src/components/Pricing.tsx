@@ -48,7 +48,7 @@ function classNames(...classes: string[]) {
     return classes.filter(Boolean).join(' ')
 }
 
-export default function Blank() {
+export default function Pricing() {
     // const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
     return (

@@ -8,7 +8,7 @@ import Link from 'next/link'
 // import { Dialog, DialogPanel } from '@headlessui/react'
 // import { Bars3Icon, BoltIcon, XMarkIcon } from '@heroicons/react/24/outline'
 
-export default function Blank() {
+export default function Hero() {
     // const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
     return (

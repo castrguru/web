@@ -16,7 +16,7 @@ const faqs = [
     // More questions...
 ]
 
-export default function Blank() {
+export default function Faq() {
     // const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
     return (
