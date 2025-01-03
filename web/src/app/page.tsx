@@ -6,6 +6,8 @@ import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react
 import { MinusSmallIcon, PlusSmallIcon, WrenchScrewdriverIcon } from '@heroicons/react/24/outline'
 import { ArrowPathIcon, CheckIcon, CloudArrowUpIcon, Cog6ToothIcon, FingerPrintIcon, LockClosedIcon, ServerIcon } from '@heroicons/react/20/solid'
 
+import Header from '../components/Header'
+
 const features = [
     {
         name: "Push to deploy.",
@@ -95,10 +97,10 @@ function classNames(...classes: string[]) {
     return classes.filter(Boolean).join(" ");
 }
 
-export default function Example() {
+export default function Homepage() {
     return (
         <div className="bg-white">
-
+            <Header />
 
             <main>
                 {/* Hero section */}
@@ -289,11 +291,21 @@ export default function Example() {
                             className="mx-auto aspect-[1155/678] w-[72.1875rem] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30"
                         />
                     </div>
+
                     <div className="mx-auto max-w-2xl sm:text-center">
-                        <h2 className="text-base/7 font-semibold text-indigo-600">Pricing</h2>
-                        <p className="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-balance sm:text-5xl">Choose the right plan for you</p>
-                        <p className="mt-6 text-lg/8 text-gray-600">Choose an affordable plan that’s packed with the best features for engaging your audience, creating customer loyalty, and driving sales.</p>
+                        <h2 className="text-base/7 font-semibold text-indigo-600">
+                            Ready to #BUIDL like a PRO?!
+                        </h2>
+
+                        <p className="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-balance sm:text-5xl">
+                            Choose the right plan for you
+                        </p>
+
+                        <p className="mt-6 text-lg/8 text-gray-600">
+                            Choose an affordable plan that’s packed with the best features for engaging your audience, creating customer loyalty, and driving sales.
+                        </p>
                     </div>
+
                     <div className="mx-auto mt-16 grid max-w-lg grid-cols-1 items-center gap-y-6 sm:mt-20 sm:gap-y-0 lg:max-w-4xl lg:grid-cols-2">
                         {tiers.map((tier, tierIdx) => (
                             <div
@@ -307,11 +319,21 @@ export default function Example() {
                                 <h3 id={tier.id} className={classNames(tier.featured ? "text-indigo-400" : "text-indigo-600", "text-base/7 font-semibold")}>
                                     {tier.name}
                                 </h3>
+
                                 <p className="mt-4 flex items-baseline gap-x-2">
-                                    <span className={classNames(tier.featured ? "text-white" : "text-gray-900", "text-5xl font-semibold tracking-tight")}>{tier.priceMonthly}</span>
-                                    <span className={classNames(tier.featured ? "text-gray-400" : "text-gray-500", "text-base")}>/month</span>
+                                    <span className={classNames(tier.featured ? "text-white" : "text-gray-900", "text-5xl font-semibold tracking-tight")}>
+                                        {tier.priceMonthly}
+                                    </span>
+
+                                    <span className={classNames(tier.featured ? "text-gray-400" : "text-gray-500", "text-base")}>
+                                        /month
+                                    </span>
                                 </p>
-                                <p className={classNames(tier.featured ? "text-gray-300" : "text-gray-600", "mt-6 text-base/7")}>{tier.description}</p>
+
+                                <p className={classNames(tier.featured ? "text-gray-300" : "text-gray-600", "mt-6 text-base/7")}>
+                                    {tier.description}
+                                </p>
+
                                 <ul role="list" className={classNames(tier.featured ? "text-gray-300" : "text-gray-600", "mt-8 space-y-3 text-sm/6 sm:mt-10")}>
                                     {tier.features.map((feature) => (
                                         <li key={feature} className="flex gap-x-3">
@@ -320,6 +342,7 @@ export default function Example() {
                                         </li>
                                     ))}
                                 </ul>
+
                                 <a
                                     href={tier.href}
                                     aria-describedby={tier.id}
@@ -340,21 +363,30 @@ export default function Example() {
                 {/* FAQ section */}
                 <div className="mx-auto mt-32 max-w-7xl px-6 sm:mt-56 lg:px-8">
                     <div className="mx-auto max-w-4xl divide-y divide-gray-900/10">
-                        <h2 className="text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">Frequently asked questions</h2>
+                        <h2 className="text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
+                            Frequently asked questions
+                        </h2>
+
                         <dl className="mt-10 space-y-6 divide-y divide-gray-900/10">
                             {faqs.map((faq) => (
                                 <Disclosure key={faq.question} as="div" className="pt-6">
                                     <dt>
                                         <DisclosureButton className="group flex w-full items-start justify-between text-left text-gray-900">
-                                            <span className="text-base/7 font-semibold">{faq.question}</span>
+                                            <span className="text-base/7 font-semibold">
+                                                {faq.question}
+                                            </span>
+
                                             <span className="ml-6 flex h-7 items-center">
                                                 <PlusSmallIcon aria-hidden="true" className="size-6 group-data-[open]:hidden" />
                                                 <MinusSmallIcon aria-hidden="true" className="size-6 group-[&:not([data-open])]:hidden" />
                                             </span>
                                         </DisclosureButton>
                                     </dt>
+
                                     <DisclosurePanel as="dd" className="mt-2 pr-12">
-                                        <p className="text-base/7 text-gray-600">{faq.answer}</p>
+                                        <p className="text-base/7 text-gray-600">
+                                            {faq.answer}
+                                        </p>
                                     </DisclosurePanel>
                                 </Disclosure>
                             ))}
@@ -367,7 +399,13 @@ export default function Example() {
             <footer className="mt-32 bg-gray-900 sm:mt-56">
                 <div className="mx-auto max-w-7xl px-6 py-16 sm:py-24 lg:px-8 lg:py-32">
                     <div className="xl:grid xl:grid-cols-3 xl:gap-8">
-                        <img alt="Company name" src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=500" className="h-9" />
+                        <Image
+                            alt="Castr Guru logo"
+                            width={0}
+                            height={0}
+                            src="/icon.svg" className="size-16"
+                        />
+
                         <div className="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
                             <div className="md:grid md:grid-cols-2 md:gap-8">
                                 <div>
@@ -426,5 +464,5 @@ export default function Example() {
                 </div>
             </footer>
         </div>
-    );
+    )
 }

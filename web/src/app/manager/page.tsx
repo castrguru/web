@@ -1,33 +1,19 @@
 import Image from 'next/image'
-import Link from 'next/link'
 
-export default function Demos() {
+export default function Manager() {
     return (
-        <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-            <Image
-                className="size-32"
-                src="/icon.svg"
-                alt="Castr Guru logo"
-                width={0}
-                height={0}
-                priority
-            />
-
-            <h1 className="-mt-5 text-5xl font-light text-rose-400 tracking-widest italic">
-                Castr GÜRŲ Demos
+        <main className="p-10 flex flex-col gap-8 row-start-2 items-center sm:items-start">
+            <h1 className="text-5xl font-light text-rose-400 tracking-widest italic">
+                Castr Guru Manager
             </h1>
 
             <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-                <li>
-                    <Link href="/demos/kitchen-sink" className="mb-2">
-                        Kitchen Sink
-                    </Link>
+                <li className="mb-2">
+                    Item # 1
                 </li>
 
                 <li>
-                    <Link href="/demos/dashboard-01">
-                        Dashboard #1
-                    </Link>
+                    Item # 2
                 </li>
             </ol>
 

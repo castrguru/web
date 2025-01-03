@@ -2,8 +2,6 @@ import type { Metadata } from 'next'
 import Image from 'next/image'
 import { Geist, Geist_Mono } from 'next/font/google'
 
-import '../../app/globals.css'
-import PlausibleProvider from 'next-plausible'
 import Header from '../../components/demo/Header'
 
 const geistSans = Geist({
@@ -31,12 +29,7 @@ export default function RootLayout({
             <body className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen font-[family-name:var(--font-geist-sans)] bg-gradient-to-b from-stone-900 to-stone-700`}>
                 <Header />
 
-                <PlausibleProvider
-                    domain="castr.guru"
-                    customDomain="https://plausible.castr.guru"
-                >
-                    {children}
-                </PlausibleProvider>
+                {children}
 
                 <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
                     <a
