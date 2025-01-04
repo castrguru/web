@@ -49,8 +49,8 @@ export default function Testimonial() {
 
                         <blockquote className="text-xl font-semibold text-white sm:text-2xl tracking-wider">
                             <p className="leading-[45px]">
-                                I already know the BEST way for me to learn <Link href="https://docs.farcaster.xyz/developers/frames/" target="_blank" className="text-amber-200 font-bold underline hover:text-amber-100">Farcaster Frames</Link> is gonna be thru teaching others;
-                                so I plan to do just that —
+                                I expect the BEST way to study <Link href="https://docs.farcaster.xyz/developers/frames/" target="_blank" className="text-amber-200 font-bold underline hover:text-amber-100">Farcaster Frames</Link> will be thru teaching others;
+                                so I plan to start with that —
                                 create a platform so
                                 <HeartIcon className="ml-2 mr-3 inline size-10 text-fuchsia-300" />
                                 by #BUIDLers that I’m driven to MASTER IT ALL!
@@ -73,9 +73,9 @@ export default function Testimonial() {
 
                             </div>
 
-                            <div className="mt-0 pl-1 flex flex-row items-center">
+                            <div className="mt-0 pl-0.5 flex flex-row items-center">
                                 <span className="text-xs text-amber-500 tracking-widest uppercase group-hover:text-amber-300">
-                                    Master Builder 🚧
+                                    Farcaster Master Builder 🚧
                                 </span>
                             </div>
                         </Link>

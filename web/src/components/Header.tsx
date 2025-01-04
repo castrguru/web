@@ -12,7 +12,7 @@ const navigation = [
     { name: 'Demos', href: 'demos' },
     { name: 'Studio', href: 'studio' },
     { name: 'Manager', href: 'manager' },
-    { name: 'Learn', href: '/' },
+    { name: 'Guides', href: 'guides' },
 ]
 
 export default function Header() {

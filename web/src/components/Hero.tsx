@@ -67,14 +67,14 @@ export default function Hero() {
 
                         <div className="mt-10 flex items-center justify-center gap-x-6">
                             <Link
-                                href="/"
+                                href="/guides/welcome"
                                 className="rounded-md bg-purple-500 px-5 py-3 text-2xl font-semibold text-white shadow-sm hover:bg-purple-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-400"
                             >
                                 Get started now
                             </Link>
 
-                            <Link href="/" className="text-xl/6 font-semibold text-white">
-                                Learn more <span aria-hidden="true">→</span>
+                            <Link href="https://castrgurudocs.on-fleek.app/" target="_blank" className="text-xl/6 font-semibold text-white">
+                                ReadTheDocs <span aria-hidden="true">→</span>
                             </Link>
                         </div>
                     </div>
