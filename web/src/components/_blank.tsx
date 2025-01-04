@@ -13,7 +13,7 @@ export default function Blank() {
 
     return (
         <main>
-            <h1>Blank Component</h1>
+            <h1>Castr GÜRŲ Blank Component</h1>
         </main>
     )
 }

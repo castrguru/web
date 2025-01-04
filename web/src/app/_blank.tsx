@@ -14,7 +14,7 @@ export default function Blank() {
                 />
 
                 <h1 className="-mt-5 text-5xl font-light text-rose-400 tracking-widest italic">
-                    Blank Page
+                    Castr GÜRŲ Blank Page
                 </h1>
 
                 <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
