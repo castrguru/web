@@ -49,8 +49,8 @@ export default function Testimonial() {
 
                         <blockquote className="text-xl font-semibold text-white sm:text-2xl tracking-wider">
                             <p className="leading-[45px]">
-                                I expect the BEST way to study <Link href="https://docs.farcaster.xyz/developers/frames/" target="_blank" className="text-amber-200 font-bold underline hover:text-amber-100">Farcaster Frames</Link> will be thru teaching others;
-                                so I plan to start with that —
+                                I expected the BEST way to study <Link href="https://docs.farcaster.xyz/developers/frames/" target="_blank" className="text-amber-200 font-bold underline hover:text-amber-100">Frames</Link> would be thru teaching others;
+                                so that was my plan from the start —
                                 create a platform so
                                 <HeartIcon className="ml-2 mr-3 inline size-10 text-fuchsia-300" />
                                 by #BUIDLers that I’m driven to MASTER IT ALL!

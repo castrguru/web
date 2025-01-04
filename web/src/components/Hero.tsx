@@ -5,8 +5,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
-// import { Dialog, DialogPanel } from '@headlessui/react'
-// import { Bars3Icon, BoltIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import { ArrowTopRightOnSquareIcon } from '@heroicons/react/24/outline'
 
 export default function Hero() {
     // const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -45,7 +44,7 @@ export default function Hero() {
                     </div>
 
                     <div className="flex flex-col items-center">
-                        <h1 className="flex flex-col gap-2 text-center font-light tracking-tight text-stone-200">
+                        <h1 className="flex flex-col gap-2 text-center font-light tracking-tight text-fuchsia-100/90">
                             <span className="text-5xl sm:text-6xl tracking-wide">
                                 24x7 #BUIDL Concierge
                             </span>
@@ -68,13 +67,14 @@ export default function Hero() {
                         <div className="mt-10 flex items-center justify-center gap-x-6">
                             <Link
                                 href="/guides/welcome"
-                                className="rounded-md bg-purple-500 px-5 py-3 text-2xl font-semibold text-white shadow-sm hover:bg-purple-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-400"
+                                className="rounded-md bg-purple-500 px-5 py-3 text-2xl font-semibold text-white shadow-sm hover:bg-purple-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-400 tracking-wider"
                             >
                                 Get started now
                             </Link>
 
-                            <Link href="https://castrgurudocs.on-fleek.app/" target="_blank" className="text-xl/6 font-semibold text-white">
-                                ReadTheDocs <span aria-hidden="true">→</span>
+                            <Link href="https://castrgurudocs.on-fleek.app/" target="_blank" className="flex items-center text-xl/6 font-semibold text-slate-100 tracking-wider">
+                                ReadTheDocs
+                                <ArrowTopRightOnSquareIcon className="pl-2 size-8" />
                             </Link>
                         </div>
                     </div>
@@ -82,15 +82,23 @@ export default function Hero() {
 
                 {/* Logo cloud */}
                 <div className="mx-auto grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
-                    <img alt="Transistor" src="https://tailwindui.com/plus/img/logos/158x48/transistor-logo-white.svg" width={158} height={48} className="col-span-2 max-h-12 w-full object-contain lg:col-span-1" />
+                    <Image
+                        alt="Transistor"
+                        src="https://tailwindui.com/plus/img/logos/158x48/transistor-logo-white.svg" width={158} height={48} className="col-span-2 max-h-12 w-full object-contain lg:col-span-1" />
 
-                    <img alt="Reform" src="https://tailwindui.com/plus/img/logos/158x48/reform-logo-white.svg" width={158} height={48} className="col-span-2 max-h-12 w-full object-contain lg:col-span-1" />
+                    <Image
+                        alt="Reform"
+                        src="https://tailwindui.com/plus/img/logos/158x48/reform-logo-white.svg" width={158} height={48} className="col-span-2 max-h-12 w-full object-contain lg:col-span-1" />
 
-                    <img alt="Tuple" src="https://tailwindui.com/plus/img/logos/158x48/tuple-logo-white.svg" width={158} height={48} className="col-span-2 max-h-12 w-full object-contain lg:col-span-1" />
+                    <Image
+                        alt="Tuple"
+                        src="https://tailwindui.com/plus/img/logos/158x48/tuple-logo-white.svg" width={158} height={48} className="col-span-2 max-h-12 w-full object-contain lg:col-span-1" />
 
-                    <img alt="SavvyCal" src="https://tailwindui.com/plus/img/logos/158x48/savvycal-logo-white.svg" width={158} height={48} className="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1" />
+                    <Image
+                        alt="SavvyCal"
+                        src="https://tailwindui.com/plus/img/logos/158x48/savvycal-logo-white.svg" width={158} height={48} className="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1" />
 
-                    <img
+                    <Image
                         alt="Statamic"
                         src="https://tailwindui.com/plus/img/logos/158x48/statamic-logo-white.svg"
                         width={158}

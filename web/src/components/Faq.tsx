@@ -10,10 +10,13 @@ import { MinusSmallIcon, PlusSmallIcon } from '@heroicons/react/24/outline'
 
 const faqs = [
     {
-        question: "What's the difference between development and production plans?",
-        answer: "Development plans are billed per-user whereas Production plan bills you for how much you use on a monthly basis.",
+        question: `What's the difference between development and production plans?`,
+        answer: `Development plans are billed per-user whereas Production plan bills you for how much you use on a monthly basis.`,
     },
-    // More questions...
+    {
+        question: `What's the difference between Farcaster Frames and Telegram Mini Apps?`,
+        answer: `Frames are permissionless. Mini apps are NOT!`,
+    },
 ]
 
 export default function Faq() {

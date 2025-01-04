@@ -1,6 +1,7 @@
 'use client'
 
 import Image from 'next/image'
+import Link from 'next/link'
 
 import { useState } from "react";
 import { Dialog, DialogBackdrop, DialogPanel, Menu, MenuButton, MenuItem, MenuItems, TransitionChild } from "@headlessui/react";
@@ -52,7 +53,7 @@ export default function Example() {
                             </TransitionChild>
                             {/* Sidebar component, swap this element with another sidebar if you like */}
                             <div className="flex grow flex-col gap-y-5 overflow-y-auto bg-gray-900 px-6 pb-4 ring-1 ring-white/10">
-                                <div className="flex h-16 shrink-0 items-center">
+                                <Link href="/" className="flex h-16 shrink-0 items-center">
                                     <Image
                                         alt="Castr Guru logo"
                                         width={0}
@@ -60,7 +61,7 @@ export default function Example() {
                                         src="icon.svg"
                                         className="size-8"
                                     />
-                                </div>
+                                </Link>
 
                                 <nav className="flex flex-1 flex-col">
                                     <ul role="list" className="flex flex-1 flex-col gap-y-7">
@@ -113,7 +114,7 @@ export default function Example() {
                 {/* Static sidebar for desktop */}
                 <div className="hidden lg:fixed lg:inset-y-0 lg:z-50 lg:flex lg:w-72 lg:flex-col">
                     <div className="flex grow flex-col gap-y-5 overflow-y-auto bg-gray-900 px-6 pb-4">
-                        <div className="flex h-16 shrink-0 items-center">
+                        <Link href="/" className="flex h-16 shrink-0 items-center">
                             <Image
                                 alt="Castr Guru logo"
                                 width={0}
@@ -121,7 +122,7 @@ export default function Example() {
                                 src="icon.svg"
                                 className="size-10"
                             />
-                        </div>
+                        </Link>
 
                         <nav className="flex flex-1 flex-col">
                             <ul role="list" className="flex flex-1 flex-col gap-y-7">
