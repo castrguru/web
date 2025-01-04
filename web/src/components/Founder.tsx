@@ -29,7 +29,7 @@ export default function Founder() {
                             src="/img/portrait.jpg"
                             className="absolute inset-0 size-full rounded-2xl bg-gray-800 object-cover shadow-2xl"
                         />
-                        <div className="absolute inset-0 size-full rounded-2xl bg-black bg-opacity-50"></div>
+                        <div className="absolute inset-0 size-full rounded-2xl bg-black bg-opacity-40"></div>
                     </div>
                 </div>
 
@@ -45,9 +45,9 @@ export default function Founder() {
 
                         <blockquote className="text-xl font-semibold text-white sm:text-2xl tracking-wider">
                             <p className="leading-[45px]">
-                                I expected the BEST way to study <Link href="https://docs.farcaster.xyz/developers/frames/" target="_blank" className="text-amber-200 font-bold underline hover:text-amber-100">Frames</Link> would be thru teaching others;
+                                I figured the FASTEST route to <Link href="https://docs.farcaster.xyz/developers/frames/" target="_blank" className="text-amber-200 font-bold underline hover:text-amber-100">Frames</Link> mastery would be thru teaching others;
                                 so that was my plan from the start —
-                                create a platform so
+                                create an open platform so
                                 <HeartIcon className="ml-2 mr-3 inline size-10 text-fuchsia-300" />
                                 by #BUIDLers that I’m driven to MASTER IT ALL!
                             </p>
