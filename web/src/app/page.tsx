@@ -15,9 +15,9 @@ export default function Homepage() {
             <div>
                 <Hero />
                 <Features />
-                <Testimonial />
                 <Benefits />
                 <Pricing />
+                <Testimonial />
                 <Faq />
             </div>
             <Footer />
