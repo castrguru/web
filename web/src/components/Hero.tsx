@@ -31,7 +31,7 @@ export default function Hero() {
                     <div className="hidden sm:mb-8 sm:flex sm:justify-center">
                         <div className="relative rounded-full px-3 py-1 text-sm/6 text-gray-400 ring-1 ring-white/10 hover:ring-white/20">
                             Announcing our 1st GÜRŲ NFT airdrop.{" "}
-                            <Link href="/" className="font-semibold text-white">
+                            <Link href="/" className="pl-1 font-semibold text-white">
                                 <span aria-hidden="true" className="absolute inset-0" />
                                 Read more <span aria-hidden="true">&rarr;</span>
                             </Link>
@@ -41,11 +41,11 @@ export default function Hero() {
                     <div className="flex flex-col items-center">
                         <h1 className="flex flex-col gap-2 text-center font-light tracking-tight text-fuchsia-100/90">
                             <span className="text-5xl sm:text-6xl tracking-wide">
-                                24x7 #BUIDL Concierge
+                                24x7 Developer Concierge
                             </span>
 
                             <span className="block text-5xl tracking-wide">
-                                Dedicated To Farcaster
+                                Dedicated to Farcaster
                             </span>
 
                             <span className="-mt-3 text-6xl sm:text-8xl tracking-widest text-fuchsia-300">
@@ -64,7 +64,7 @@ export default function Hero() {
                                 href="/guides/welcome"
                                 className="rounded-md bg-purple-500 px-5 py-3 text-2xl font-semibold text-white shadow-sm hover:bg-purple-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-400 tracking-wider"
                             >
-                                Get started now
+                                #BUIDL with GÜRŲ
                             </Link>
 
                             <Link href="https://castrgurudocs.on-fleek.app/" target="_blank" className="flex items-center text-xl/6 font-semibold text-slate-100 tracking-wider">

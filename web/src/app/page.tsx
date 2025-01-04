@@ -1,11 +1,11 @@
 /* Import components. */
 import Benefits from '../components/Benefits'
 import Faq from '../components/Faq'
-import Features from '../components/Features'
 import Footer from '../components/Footer'
 import Founder from '../components/Founder'
 import Header from '../components/Header'
 import Hero from '../components/Hero'
+import Highlights from '../components/Highlights'
 import Pricing from '../components/Pricing'
 
 export default function Homepage() {
@@ -14,7 +14,7 @@ export default function Homepage() {
             <Header />
             <div>
                 <Hero />
-                <Features />
+                <Highlights />
                 <Benefits />
                 <Pricing />
                 <Founder />
