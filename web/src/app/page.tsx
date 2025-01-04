@@ -3,10 +3,10 @@ import Benefits from '../components/Benefits'
 import Faq from '../components/Faq'
 import Features from '../components/Features'
 import Footer from '../components/Footer'
+import Founder from '../components/Founder'
 import Header from '../components/Header'
 import Hero from '../components/Hero'
 import Pricing from '../components/Pricing'
-import Testimonial from '../components/Testimonial'
 
 export default function Homepage() {
     return (
@@ -17,7 +17,7 @@ export default function Homepage() {
                 <Features />
                 <Benefits />
                 <Pricing />
-                <Testimonial />
+                <Founder />
                 <Faq />
             </div>
             <Footer />

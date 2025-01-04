@@ -1,15 +1,10 @@
-'use client'
-
-// import { useState } from 'react'
-
+/* Import modules. */
 import Image from 'next/image'
 import Link from 'next/link'
 
 import { ArrowTopRightOnSquareIcon } from '@heroicons/react/24/outline'
 
 export default function Hero() {
-    // const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-
     return (
         <main className="relative isolate overflow-hidden bg-gray-900 pb-16 pt-14 sm:pb-20">
             <Image

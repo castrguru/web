@@ -1,15 +1,10 @@
-'use client'
-
-// import { useState } from 'react'
-
+/* Import modules. */
 import Image from 'next/image'
 import Link from 'next/link'
 
 import { HeartIcon } from '@heroicons/react/24/outline'
 
-export default function Testimonial() {
-    // const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-
+export default function Founder() {
     return (
         <main className="relative z-10 mt-32 bg-gray-900 pb-20 sm:mt-56 sm:pb-24 xl:pb-0">
             <div aria-hidden="true" className="absolute inset-0 overflow-hidden">
@@ -70,7 +65,6 @@ export default function Testimonial() {
                                 <span className="pl-1 text-3xl font-medium text-amber-200 tracking-widest group-hover:text-amber-100">
                                     Shomari
                                 </span>
-
                             </div>
 
                             <div className="mt-0 pl-0.5 flex flex-row items-center">
