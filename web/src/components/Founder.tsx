@@ -29,6 +29,7 @@ export default function Founder() {
                             src="/img/portrait.jpg"
                             className="absolute inset-0 size-full rounded-2xl bg-gray-800 object-cover shadow-2xl"
                         />
+                        <div className="absolute inset-0 size-full rounded-2xl bg-black bg-opacity-50"></div>
                     </div>
                 </div>
 
