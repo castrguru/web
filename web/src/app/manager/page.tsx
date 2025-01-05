@@ -58,7 +58,7 @@ export default function Example() {
                                         alt="Castr Guru logo"
                                         width={0}
                                         height={0}
-                                        src="icon.svg"
+                                        src="/icon.svg"
                                         className="size-8"
                                     />
                                 </Link>
@@ -119,7 +119,7 @@ export default function Example() {
                                 alt="Castr Guru logo"
                                 width={0}
                                 height={0}
-                                src="icon.svg"
+                                src="/icon.svg"
                                 className="size-10"
                             />
                         </Link>

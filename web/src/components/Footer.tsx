@@ -56,7 +56,7 @@ export default function Footer() {
     // const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
     return (
-        <footer className="mt-32 bg-gradient-to-b from-slate-700 to-slate-900 sm:mt-56">
+        <footer className="bg-gradient-to-b from-slate-700 to-slate-900">
             <div className="mx-auto max-w-7xl px-6 py-16 sm:py-24 lg:px-8 lg:py-32">
                 <div className="xl:grid xl:grid-cols-3 xl:gap-8">
                     <div>

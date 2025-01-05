@@ -23,7 +23,7 @@ export default function Faq() {
     // const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
     return (
-        <main className="mx-auto mt-32 max-w-7xl px-6 sm:mt-56 lg:px-8">
+        <main className="mx-auto my-32 max-w-7xl px-6 sm:my-56 lg:px-8">
             <div className="mx-auto max-w-4xl divide-y divide-gray-900/10">
                 <h2 className="text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
                     Frequently asked questions
