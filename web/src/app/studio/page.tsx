@@ -1,12 +1,14 @@
 'use client'
 
+import Image from 'next/image'
+import Link from 'next/link'
+
 import { useState } from 'react'
 import { Dialog, DialogBackdrop, DialogPanel, Menu, MenuButton, MenuItem, MenuItems, TransitionChild } from '@headlessui/react'
 import { Bars3Icon, BellIcon, CalendarIcon, ChartPieIcon, DocumentDuplicateIcon, FolderIcon, HomeIcon, UsersIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import { ChevronDownIcon, MagnifyingGlassIcon } from '@heroicons/react/20/solid'
 
-import Image from 'next/image'
-import Link from 'next/link'
+import FooterMin from '../../components/FooterMin'
 
 const navigation = [
     { name: 'Dashboard', href: '#', icon: HomeIcon, current: true },
@@ -156,7 +158,7 @@ export default function Studio() {
                         </div>
                     </div>
 
-                    <main className="xl:pl-96 min-h-screen -mt-16 pt-16 bg-gradient-to-b from-slate-900 to-slate-700">
+                    <main className="xl:pl-96 -mt-16 pt-16 min-h-screen flex flex-col justify-between bg-gradient-to-b from-slate-900 to-slate-700">
                         <div className="px-4 py-10 sm:px-6 lg:px-8 lg:py-6">
                             {/* Main area */}
                             <h1 className="text-5xl font-light text-fuchsia-400 tracking-wider italic">
@@ -168,6 +170,8 @@ export default function Studio() {
                                 Perferendis voluptatem numquam eum ea sequi quod temporibus reprehenderit eligendi, neque nam accusantium atque quis omnis architecto laudantium! Mollitia porro asperiores temporibus?
                             </p>
                         </div>
+
+                        <FooterMin />
                     </main>
                 </div>
 

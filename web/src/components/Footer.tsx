@@ -3,17 +3,17 @@ import Image from 'next/image'
 
 const footerNavigation = {
     builders: [
-        { name: "Assets", href: "assets" },
-        { name: "Downloads", href: "downloads" },
-        { name: "Libraries", href: "libs" },
-        { name: "Frame Kits", href: "kits" },
-        { name: "Frame Studio", href: "studio" },
-        { name: "Castr Manager", href: "manager" },
+        { name: "Assets", href: "/assets" },
+        { name: "Downloads", href: "/downloads" },
+        { name: "Libraries", href: "/libs" },
+        { name: "Frame Kits", href: "/kits" },
+        { name: "Frame Studio", href: "/studio" },
+        { name: "Castr Manager", href: "/manager" },
     ],
     links: [
         { name: "ReadTheDocs", href: "https://castrgurudocs.on-fleek.app/" },
-        { name: "User Guides", href: "guides" },
-        { name: "Our Team", href: "team" },
+        { name: "User Guides", href: "/guides" },
+        { name: "Our Team", href: "/team" },
     ],
     farcaster: [
         { name: "Homepage", href: "https://www.farcaster.xyz/" },
