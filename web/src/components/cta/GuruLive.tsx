@@ -6,7 +6,7 @@ import Link from 'next/link'
 
 export default function GuruLive() {
     return (
-        <div className="my-12 relative bg-gray-900 rounded-3xl overflow-hidden">
+        <div className="my-20 relative bg-gray-900 rounded-3xl overflow-hidden">
             <div className="relative h-80 overflow-hidden bg-fuchsia-600 md:absolute md:left-0 md:h-full md:w-1/3 lg:w-1/2">
                 <div className="size-full">
                     <Image

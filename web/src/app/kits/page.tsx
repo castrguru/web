@@ -1,5 +1,5 @@
 import Image from 'next/image'
-// import Link from 'next/link'
+import Link from 'next/link'
 
 import GuruLive from '../../components/cta/GuruLive'
 
@@ -10,10 +10,10 @@ const free = [
         href: "/kit/my-first-frame",
         description: "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
         imageUrl: "https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80",
-        date: "Mar 16, 2020",
+        date: "x4 screens",
         datetime: "2020-03-16",
         author: {
-            name: "Next.js TS",
+            name: "Next.js + TS + Tailwind",
             imageUrl: "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
         },
     },
@@ -23,10 +23,10 @@ const free = [
         href: "/kit/bare-naked",
         description: "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
         imageUrl: "https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80",
-        date: "Mar 16, 2020",
+        date: "x2 screens",
         datetime: "2020-03-16",
         author: {
-            name: "Vanilla JS",
+            name: "HTML + JS + CSS",
             imageUrl: "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
         },
     },
@@ -36,52 +36,78 @@ const free = [
         href: "/kit/the-kitchen-sink",
         description: "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
         imageUrl: "https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80",
-        date: "Mar 16, 2020",
+        date: "x12 screens",
         datetime: "2020-03-16",
         author: {
-            name: "Next.js TS",
+            name: "Next.js + TS + Tailwind",
             imageUrl: "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
         },
     },
 ]
 
-const premium = [
-    {
-        id: 'avicii',
-        title: "Avicii",
-        href: "#",
-        description: "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
-        imageUrl: "https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80",
-        date: "Mar 16, 2020",
-        datetime: "2020-03-16",
-        author: {
-            name: "Next.js TS",
-            imageUrl: "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-        },
-    },
+const concierge = [
     {
         id: 'britney',
         title: "Britney",
         href: "#",
         description: "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
         imageUrl: "https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80",
-        date: "Mar 16, 2020",
+        date: "x8 screens",
         datetime: "2020-03-16",
         author: {
-            name: "Astro TS",
+            name: "Next.js + TS + Tailwind",
             imageUrl: "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
         },
     },
     {
-        id: 'christina',
-        title: "Christina",
+        id: 'rose',
+        title: "Rose",
         href: "#",
         description: "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
         imageUrl: "https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80",
-        date: "Mar 16, 2020",
+        date: "x6 screens",
         datetime: "2020-03-16",
         author: {
-            name: "Nuxt.js TS",
+            name: "Astro + TS + Tailwind",
+            imageUrl: "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+        },
+    },
+    {
+        id: 'lauren',
+        title: "Lauren",
+        href: "#",
+        description: "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
+        imageUrl: "https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80",
+        date: "x6 screens",
+        datetime: "2020-03-16",
+        author: {
+            name: "Nuxt.js + TS + Tailwind",
+            imageUrl: "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+        },
+    },
+    {
+        id: 'rihannad',
+        title: "Rihanna",
+        href: "#",
+        description: "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
+        imageUrl: "https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80",
+        date: "x6 screens",
+        datetime: "2020-03-16",
+        author: {
+            name: "Svelte + TS + Tailwind",
+            imageUrl: "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+        },
+    },
+    {
+        id: 'charlie',
+        title: "Charlie",
+        href: "#",
+        description: "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
+        imageUrl: "https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80",
+        date: "x6 screens",
+        datetime: "2020-03-16",
+        author: {
+            name: "Vue.js + TS + Tailwind",
             imageUrl: "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
         },
     },
@@ -101,7 +127,7 @@ export default function Example() {
                     </p>
                 </div>
 
-                <h2 className="mt-16 text-2xl font-bold text-slate-600 tracking-widest uppercase">
+                <h2 className="pl-3 mt-16 text-2xl font-bold text-slate-600 tracking-widest uppercase">
                     FREE Kits
                 </h2>
 
@@ -141,22 +167,22 @@ export default function Example() {
                                 </div>
                             </div>
 
-                            <h3 className="mt-3 text-lg/6 font-semibold text-white">
-                                <a href={post.href}>
+                            <h3 className="mt-3 text-3xl/6 font-semibold text-amber-200 tracking-widest">
+                                <Link href={post.href}>
                                     <span className="absolute inset-0" />
                                     {post.title}
-                                </a>
+                                </Link>
                             </h3>
                         </article>
                     ))}
                 </div>
 
-                <h2 className="mt-16 text-2xl font-bold text-slate-600 tracking-widest uppercase">
+                <h2 className="pl-3 mt-16 text-2xl font-bold text-slate-600 tracking-widest uppercase">
                     Premium Kits
                 </h2>
 
                 <div className="mx-auto mt-5 grid max-w-2xl auto-rows-fr grid-cols-1 gap-8 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-                    {premium.map((post) => (
+                    {concierge.map((post) => (
                         <article key={post.id} className="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl bg-gray-900 px-8 pb-8 pt-80 sm:pt-48 lg:pt-80">
                             <Image
                                 alt=""
@@ -191,7 +217,7 @@ export default function Example() {
                                 </div>
                             </div>
 
-                            <h3 className="mt-3 text-lg/6 font-semibold text-white">
+                            <h3 className="mt-3 text-4xl/6 font-semibold text-amber-200 tracking-widest">
                                 <a href={post.href}>
                                     <span className="absolute inset-0" />
                                     {post.title}
