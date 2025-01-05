@@ -57,14 +57,16 @@ const guides = [
 
 export default function Example() {
     return (
-        <div className="bg-white py-24 sm:py-32">
+        <div className="bg-gradient-to-b from-slate-50 to-slate-200 py-12 sm:py-16">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
                 <div className="mx-auto max-w-2xl lg:max-w-4xl">
                     <h2 className="text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
                         Castr GÜRŲ Guides
                     </h2>
 
-                    <p className="mt-2 text-lg/8 text-gray-600">Learn how to grow your business with our expert advice.</p>
+                    <p className="mt-2 text-lg/8 text-gray-600">
+                        Learn how to grow your REACH within the Farcaster ecosystem.
+                    </p>
 
                     <div className="mt-16 space-y-20 lg:mt-20 lg:space-y-20">
                         {guides.map((post) => (
