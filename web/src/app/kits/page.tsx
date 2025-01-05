@@ -146,7 +146,20 @@ const concierge = [
         date: "x4 screens",
         datetime: "2020-03-16",
         author: {
-            name: "Flask on Python",
+            name: "Django on Python",
+            imageUrl: "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+        },
+    },
+    {
+        id: 'sia',
+        title: "Sia",
+        href: "#",
+        description: "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
+        imageUrl: "https://i.ibb.co/JK9kZTW/image.png",
+        date: "x4 screens",
+        datetime: "2020-03-16",
+        author: {
+            name: "Express on Node.js",
             imageUrl: "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
         },
     },
@@ -164,11 +177,11 @@ const concierge = [
         },
     },
     {
-        id: 'x',
-        title: "X",
+        id: 'billy',
+        title: "Billy",
         href: "#",
         description: "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
-        imageUrl: "https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80",
+        imageUrl: "https://i.ibb.co/CbYgrHC/image.png",
         date: "x4 screens",
         datetime: "2020-03-16",
         author: {
@@ -177,28 +190,15 @@ const concierge = [
         },
     },
     {
-        id: 'z',
-        title: "Z",
+        id: 'gwen',
+        title: "Gwen",
         href: "#",
         description: "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
-        imageUrl: "https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80",
+        imageUrl: "https://i.ibb.co/fHnzwJM/image.png",
         date: "x4 screens",
         datetime: "2020-03-16",
         author: {
-            name: "Express on Node.js",
-            imageUrl: "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-        },
-    },
-    {
-        id: 'y',
-        title: "Y",
-        href: "#",
-        description: "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
-        imageUrl: "https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80",
-        date: "x4 screens",
-        datetime: "2020-03-16",
-        author: {
-            name: "ASP on .NET",
+            name: "Rspack on Rust",
             imageUrl: "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
         },
     },
@@ -216,15 +216,15 @@ const concierge = [
         },
     },
     {
-        id: 'w',
-        title: "W",
+        id: 'cher',
+        title: "Cher",
         href: "#",
         description: "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
-        imageUrl: "https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80",
+        imageUrl: "https://i.ibb.co/QdHcGwg/image.png",
         date: "x4 screens",
         datetime: "2020-03-16",
         author: {
-            name: "Rspack on Rust",
+            name: "ASP on .NET",
             imageUrl: "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
         },
     },
@@ -246,6 +246,9 @@ export default function Example() {
 
                 <h2 className="pl-3 mt-16 text-2xl font-bold text-slate-600 tracking-widest uppercase">
                     Royalty FREE Kits
+                    <small className="pl-2 text-sky-400 font-bold normal-case">
+                        (x3)
+                    </small>
                 </h2>
 
                 <div className="mx-auto mt-5 grid max-w-2xl auto-rows-fr grid-cols-1 gap-8 lg:mx-0 lg:max-w-none lg:grid-cols-3">
@@ -296,6 +299,9 @@ export default function Example() {
 
                 <h2 className="pl-3 mt-16 text-2xl font-bold text-slate-600 tracking-widest uppercase">
                     Premium Kits
+                    <small className="pl-2 text-sky-400 font-bold normal-case">
+                        (x14)
+                    </small>
                 </h2>
 
                 <div className="mx-auto mt-5 grid max-w-2xl auto-rows-fr grid-cols-1 gap-8 lg:mx-0 lg:max-w-none lg:grid-cols-3">
