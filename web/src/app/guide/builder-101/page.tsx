@@ -7,14 +7,15 @@ export default function Welcome() {
         <div className="bg-white px-6 py-32 lg:px-8">
             <div className="mx-auto max-w-3xl text-base/7 text-gray-700">
                 <p className="text-base/7 font-semibold text-indigo-600">
-                    Newbie
+                    For Newbies
                 </p>
 
                 <h1 className="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
-                    Getting Started for Absolute Beginners
+                    Builder 101
                 </h1>
 
                 <p className="mt-6 text-xl/8">
+                    It’s time to get you off the sidelines and into the BIG game!
                     Aliquet nec orci mattis amet quisque ullamcorper neque, nibh sem. At arcu, sit dui mi, nibh dui, diam eget aliquam. Quisque id at vitae feugiat egestas ac. Diam nulla orci at in viverra scelerisque eget. Eleifend egestas
                     fringilla sapien.
                 </p>
@@ -29,7 +30,8 @@ export default function Welcome() {
                         <li className="flex gap-x-3">
                             <CheckCircleIcon aria-hidden="true" className="mt-1 size-5 flex-none text-indigo-600" />
                             <span>
-                                <strong className="font-semibold text-gray-900">Data types.</strong> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis
+                                <strong className="block font-semibold text-gray-900">Next.js / React</strong>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis
                                 ratione.
                             </span>
                         </li>
@@ -37,14 +39,16 @@ export default function Welcome() {
                         <li className="flex gap-x-3">
                             <CheckCircleIcon aria-hidden="true" className="mt-1 size-5 flex-none text-indigo-600" />
                             <span>
-                                <strong className="font-semibold text-gray-900">Loops.</strong> Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.
+                                <strong className="block font-semibold text-gray-900">Tailwind CSS</strong>
+                                Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.
                             </span>
                         </li>
 
                         <li className="flex gap-x-3">
                             <CheckCircleIcon aria-hidden="true" className="mt-1 size-5 flex-none text-indigo-600" />
                             <span>
-                                <strong className="font-semibold text-gray-900">Events.</strong> Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.
+                                <strong className="block font-semibold text-gray-900">Fleek</strong>
+                                Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.
                             </span>
                         </li>
                     </ul>
