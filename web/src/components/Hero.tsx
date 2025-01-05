@@ -48,7 +48,7 @@ export default function Hero() {
                                 Dedicated to Farcaster
                             </span>
 
-                            <span className="-mt-3 text-6xl sm:text-8xl tracking-widest text-fuchsia-300">
+                            <span className="-mt-3 text-6xl sm:text-8xl tracking-widest bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">
                                 <span className="text-7xl sm:text-9xl italic">v2</span>
                                 <span className="uppercase"> Frames</span>
                             </span>

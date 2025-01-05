@@ -63,8 +63,8 @@ export default function Header() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
     return (
-        <header className="bg-stone-700">
-            <nav aria-label="Global" className="mx-auto flex w-full items-center justify-between p-6 lg:px-8">
+        <header className="bg-gradient-to-b from-fuchsia-900 to-fuchsia-700 border-b-4 border-fuchsia-500">
+            <nav aria-label="Global" className="mx-auto flex w-full items-center justify-between py-3 lg:px-8">
                 <div className="flex lg:flex-1">
                     <Link href="/" className="-m-1.5 p-1.5">
                         <span className="sr-only">Castr Guru</span>
@@ -88,19 +88,19 @@ export default function Header() {
 
                 <PopoverGroup className="hidden lg:flex lg:gap-x-12">
 
-                    <Link href="/kits" className="text-xl/6 font-semibold text-stone-300">
+                    <Link href="/kits" className="text-2xl/6 font-semibold text-slate-200 tracking-wide hover:text-amber-200">
                         Kits
                     </Link>
 
-                    <Link href="/studio" className="text-xl/6 font-semibold text-stone-300">
+                    <Link href="/studio" className="text-2xl/6 font-semibold text-slate-200 tracking-wide hover:text-amber-200">
                         Studio
                     </Link>
 
-                    <Link href="/manager" className="text-xl/6 font-semibold text-stone-300">
+                    <Link href="/manager" className="text-2xl/6 font-semibold text-slate-200 tracking-wide hover:text-amber-200">
                         Manager
                     </Link>
 
-                    <Link href="/guides" className="text-xl/6 font-semibold text-stone-300">
+                    <Link href="/guides" className="text-2xl/6 font-semibold text-slate-200 tracking-wide hover:text-amber-200">
                         Guides
                     </Link>
 
@@ -109,7 +109,7 @@ export default function Header() {
                 <div className="hidden lg:flex lg:flex-1 lg:justify-end">
                     <Link
                         href="/"
-                        className="group flex flex-row gap-1 text-xl/6 font-semibold text-stone-300 hover:text-stone-200"
+                        className="group flex flex-row gap-1 text-2xl/6 font-semibold text-slate-200 hover:text-amber-200"
                     >
                         Connect
                         <BoltIcon className="size-6 text-amber-500 group-hover:text-amber-300" />
