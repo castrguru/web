@@ -156,20 +156,49 @@ export default function Studio() {
                         </div>
                     </div>
 
-                    <main className="xl:pl-96">
+                    <main className="xl:pl-96 min-h-screen -mt-16 pt-16 bg-gradient-to-b from-slate-900 to-slate-700">
                         <div className="px-4 py-10 sm:px-6 lg:px-8 lg:py-6">
                             {/* Main area */}
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis voluptatem numquam eum ea sequi quod temporibus reprehenderit eligendi, neque nam accusantium atque quis omnis architecto laudantium! Mollitia porro asperiores temporibus?
+                            <h1 className="text-5xl font-light text-fuchsia-400 tracking-wider italic">
+                                Castr GÜRŲ Studio
+                            </h1>
+
+                            <p className="py-5 text-lg tracking-widest text-justify leading-9">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Perferendis voluptatem numquam eum ea sequi quod temporibus reprehenderit eligendi, neque nam accusantium atque quis omnis architecto laudantium! Mollitia porro asperiores temporibus?
+                            </p>
                         </div>
                     </main>
                 </div>
 
-                <aside className="fixed bottom-0 left-20 top-16 hidden w-96 overflow-y-auto border-r border-gray-200 px-4 py-6 sm:px-6 lg:px-8 xl:block">
-                    ASIDE
-                    <br />
-                    <br />
-                    {/* Secondary column (hidden on smaller screens) */}
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam doloremque quaerat, debitis officia totam, quis illum quam maxime aperiam ullam repellat velit nobis, porro labore iste consequatur magni nostrum quos.
+                <aside className="fixed bottom-0 left-20 top-16 hidden w-96 overflow-y-auto bg-gradient-to-b from-stone-900 to-stone-700 border-r border-gray-200 px-4 py-6 sm:px-6 lg:px-8 xl:block">
+                    <section className="my-2 border-b border-amber-400">
+                        <h2 className="text-amber-400/80 font-bold text-xs uppercase tracking-widest">
+                            Choose a Device
+                        </h2>
+
+                        <div className="flex flex-row justify-between">
+                            <button className="font-bold tracking-wider">
+                                iPhone
+                            </button>
+
+                            <button className="font-bold tracking-wider">
+                                Android
+                            </button>
+
+                            <button className="font-bold tracking-wider">
+                                Tablet
+                            </button>
+
+                            <button className="font-bold tracking-wider">
+                                Desktop
+                            </button>
+                        </div>
+                    </section>
+
+                    <section className="py-5">
+                        <div className="w-full h-[400px] bg-amber-50 border-4 border-amber-300 rounded-3xl shadow-md" />
+                    </section>
                 </aside>
             </div>
         </>

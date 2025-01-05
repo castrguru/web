@@ -87,47 +87,6 @@ export default function Header() {
                 </div>
 
                 <PopoverGroup className="hidden lg:flex lg:gap-x-12">
-                    <Popover className="relative">
-                        <PopoverButton className="flex items-center gap-x-1 text-xl/6 font-semibold text-stone-300">
-                            Services
-                            <ChevronDownIcon aria-hidden="true" className="size-5 flex-none text-stone-200" />
-                        </PopoverButton>
-
-                        <PopoverPanel
-                            transition
-                            className="absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5 transition data-[closed]:translate-y-1 data-[closed]:opacity-0 data-[enter]:duration-200 data-[leave]:duration-150 data-[enter]:ease-out data-[leave]:ease-in"
-                        >
-                            <div className="p-4">
-                                {services.map((item) => (
-                                    <div key={item.name} className="group relative flex gap-x-6 rounded-lg p-4 text-sm/6 hover:bg-gray-50">
-                                        <div className="mt-1 flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
-                                            <item.icon aria-hidden="true" className="size-6 text-gray-600 group-hover:text-indigo-600" />
-                                        </div>
-
-                                        <div className="flex-auto">
-                                            <a href={item.href} className="block font-semibold text-gray-900">
-                                                {item.name}
-                                                <span className="absolute inset-0" />
-                                            </a>
-
-                                            <p className="mt-1 text-gray-600">
-                                                {item.description}
-                                                </p>
-                                        </div>
-                                    </div>
-                                ))}
-                            </div>
-
-                            <div className="grid grid-cols-2 divide-x divide-gray-900/5 bg-gray-50">
-                                {callsToAction.map((item) => (
-                                    <a key={item.name} href={item.href} className="flex items-center justify-center gap-x-2.5 p-3 text-sm/6 font-semibold text-gray-900 hover:bg-gray-100">
-                                        <item.icon aria-hidden="true" className="size-5 flex-none text-gray-400" />
-                                        {item.name}
-                                    </a>
-                                ))}
-                            </div>
-                        </PopoverPanel>
-                    </Popover>
 
                     <Link href="/demos" className="text-xl/6 font-semibold text-stone-300">
                         Demos
@@ -137,37 +96,24 @@ export default function Header() {
                         Studio
                     </Link>
 
-                    <Popover className="relative">
-                        <PopoverButton className="flex items-center gap-x-1 text-xl/6 font-semibold text-stone-300">
-                            Concierge
-                            <ChevronDownIcon aria-hidden="true" className="size-5 flex-none text-stone-200" />
-                        </PopoverButton>
+                    <Link href="/manager" className="text-xl/6 font-semibold text-stone-300">
+                        Manager
+                    </Link>
 
-                        <PopoverPanel
-                            transition
-                            className="absolute -left-8 top-full z-10 mt-3 w-96 rounded-3xl bg-white p-4 shadow-lg ring-1 ring-gray-900/5 transition data-[closed]:translate-y-1 data-[closed]:opacity-0 data-[enter]:duration-200 data-[leave]:duration-150 data-[enter]:ease-out data-[leave]:ease-in"
-                        >
-                            {gurus.map((item) => (
-                                <div key={item.name} className="relative rounded-lg p-4 hover:bg-gray-50">
-                                    <a href={item.href} className="block text-sm/6 font-semibold text-gray-900">
-                                        {item.name}
-                                        <span className="absolute inset-0" />
-                                    </a>
+                    <Link href="/guides" className="text-xl/6 font-semibold text-stone-300">
+                        Guides
+                    </Link>
 
-                                    <p className="mt-1 text-sm/6 text-gray-600">
-                                        {item.description}
-                                    </p>
-                                </div>
-                            ))}
-                        </PopoverPanel>
-                    </Popover>
                 </PopoverGroup>
 
                 <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-                    <a href="#" className="group flex flex-row gap-1 text-xl/6 font-semibold text-stone-300 hover:text-stone-200">
+                    <Link
+                        href="/"
+                        className="group flex flex-row gap-1 text-xl/6 font-semibold text-stone-300 hover:text-stone-200"
+                    >
                         Connect
                         <BoltIcon className="size-6 text-amber-500 group-hover:text-amber-300" />
-                    </a>
+                    </Link>
                 </div>
             </nav>
 
