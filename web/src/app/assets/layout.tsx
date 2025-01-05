@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-    title: 'Libraries & Modules — Castr GÜRŲ',
+    title: 'Assets — Castr GÜRŲ',
     description: 'Castr GÜRŲ for Farcaster builders.',
 }
 
@@ -28,7 +28,6 @@ export default function RootLayout({
         <html lang="en">
             <body className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen font-[family-name:var(--font-geist-sans)] bg-gradient-to-b from-stone-900 to-stone-700`}>
                 <Header />
-
                 {children}
             </body>
         </html>

@@ -1,17 +1,17 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
-export default function Demos() {
+export default function Kits() {
     return (
         <main className="p-5 flex flex-col gap-8 row-start-2 items-center sm:items-start">
             <h1 className="text-5xl font-light text-rose-400 tracking-widest italic">
-                Castr GÜRŲ Demos
+                Castr GÜRŲ Kits
             </h1>
 
             <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
                 <li>
                     <Link href="/demos/kitchen-sink" className="mb-2">
-                        Kitchen Sink
+                        Kitchen Sink Demos
                     </Link>
                 </li>
 

@@ -46,10 +46,10 @@ export default function Founder() {
                         <blockquote className="text-xl font-semibold text-white sm:text-2xl tracking-wider">
                             <p className="leading-[45px]">
                                 I knew the FASTEST path to <Link href="https://docs.farcaster.xyz/developers/frames/" target="_blank" className="text-amber-200 font-bold underline hover:text-amber-100">Frames</Link> mastery would be thru teaching others;
-                                so that was my plan from the very start —
+                                so that was my plan from the beginning —
                                 create an open platform so
                                 <HeartIcon className="ml-2 mr-3 inline size-10 text-fuchsia-300" />
-                                by #BUIDLers that I’m driven to MASTER IT ALL!
+                                by #BUIDLers that I’d be driven to MASTER IT ALL!
                             </p>
                         </blockquote>
 

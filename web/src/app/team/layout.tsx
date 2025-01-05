@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-    title: 'Demos — Castr GÜRŲ',
+    title: 'Our Team — Castr GÜRŲ',
     description: 'Castr GÜRŲ for Farcaster builders.',
 }
 

@@ -7,11 +7,11 @@ export default function About() {
         <div className="bg-white px-6 py-32 lg:px-8">
             <div className="mx-auto max-w-3xl text-base/7 text-gray-700">
                 <p className="text-base/7 font-semibold text-indigo-600">
-                    Introducing
+                    Our Team
                 </p>
 
                 <h1 className="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
-                    About Gurus
+                    Meet The GÜRŲs
                 </h1>
 
                 <p className="mt-6 text-xl/8">

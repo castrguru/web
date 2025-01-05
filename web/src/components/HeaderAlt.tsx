@@ -88,8 +88,8 @@ export default function Header() {
 
                 <PopoverGroup className="hidden lg:flex lg:gap-x-12">
 
-                    <Link href="/demos" className="text-xl/6 font-semibold text-stone-300">
-                        Demos
+                    <Link href="/kits" className="text-xl/6 font-semibold text-stone-300">
+                        Kits
                     </Link>
 
                     <Link href="/studio" className="text-xl/6 font-semibold text-stone-300">
@@ -154,12 +154,12 @@ export default function Header() {
                                 </div>
 
                                 <div className="space-y-2 py-6">
-                                    <a href="/demos" className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">
-                                        Demos
+                                    <a href="/kits" className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">
+                                        Frame Kits
                                     </a>
 
                                     <a href="/studio" className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">
-                                        Studio
+                                        Frame Studio
                                     </a>
 
                                     {gurus.map((item) => (
