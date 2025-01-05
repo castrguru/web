@@ -41,7 +41,7 @@ export default function GuruLive() {
                         World-class Support Team
                     </h2>
 
-                    <p className="mt-2 text-4xl font-semibold tracking-tight text-white sm:text-5xl">
+                    <p className="mt-2 text-4xl font-semibold tracking-wide text-white sm:text-5xl">
                         24x7 Developer Concierge
                     </p>
 
