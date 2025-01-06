@@ -51,7 +51,7 @@ const concierge = [
         title: "Taylor",
         href: "#",
         description: "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
-        imageUrl: "https://i.ibb.co/2sB8mB2/image.png",
+        imageUrl: "https://i.ibb.co/THhmJdT/taylor.jpg",
         date: "x10 screens",
         datetime: "2020-03-16",
         author: {
@@ -64,7 +64,7 @@ const concierge = [
         title: "Rosé",
         href: "#",
         description: "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
-        imageUrl: "https://i.ibb.co/b3bk3VR/image.png",
+        imageUrl: "https://i.ibb.co/wB8xNTL/rose.jpg",
         date: "x8 screens",
         datetime: "2020-03-16",
         author: {
@@ -77,7 +77,7 @@ const concierge = [
         title: "Britney",
         href: "#",
         description: "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
-        imageUrl: "https://i.ibb.co/GkbVZY0/image.png",
+        imageUrl: "https://i.ibb.co/GkDBNsL/britney.jpg",
         date: "x10 screens",
         datetime: "2020-03-16",
         author: {
