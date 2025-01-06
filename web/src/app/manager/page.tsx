@@ -5,17 +5,16 @@
 // import Image from 'next/image'
 // import Link from 'next/link'
 
-import { Fragment, useState } from "react";
-import { Dialog, DialogPanel, Menu, MenuButton, MenuItem, MenuItems } from "@headlessui/react";
-import { ArrowDownCircleIcon, ArrowPathIcon, ArrowUpCircleIcon, Bars3Icon, EllipsisHorizontalIcon, PlusSmallIcon } from "@heroicons/react/20/solid";
-import { BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
+import { Fragment } from 'react'
+import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
+import { ArrowDownCircleIcon, ArrowPathIcon, ArrowUpCircleIcon, EllipsisHorizontalIcon, PlusSmallIcon } from '@heroicons/react/20/solid'
 
-const navigation = [
-    { name: "Home", href: "#" },
-    { name: "Invoices", href: "#" },
-    { name: "Clients", href: "#" },
-    { name: "Expenses", href: "#" },
-]
+// const navigation = [
+//     { name: "Home", href: "#" },
+//     { name: "Invoices", href: "#" },
+//     { name: "Clients", href: "#" },
+//     { name: "Expenses", href: "#" },
+// ]
 
 const secondaryNavigation = [
     { name: "Last 7 days", href: "#", current: true },
@@ -114,6 +113,12 @@ const clients = [
         lastInvoice: { date: "January 23, 2023", dateTime: "2023-01-23", amount: "$7,600.00", status: "Paid" },
     },
 ]
+
+interface Status {
+    Paid: string;
+    Withdraw: string;
+    Overdue: string;
+}
 
 function classNames(...classes: string[]) {
     return classes.filter(Boolean).join(' ')
@@ -216,7 +221,7 @@ export default function Example() {
                                                                     <div className="flex-auto">
                                                                         <div className="flex items-start gap-x-3">
                                                                             <div className="text-sm/6 font-medium text-gray-900">{transaction.amount}</div>
-                                                                            <div className={classNames(statuses[transaction.status], "rounded-md px-2 py-1 text-xs font-medium ring-1 ring-inset")}>{transaction.status}</div>
+                                                                            <div className={classNames(statuses[transaction.status as keyof Status], "rounded-md px-2 py-1 text-xs font-medium ring-1 ring-inset")}>{transaction.status}</div>
                                                                         </div>
                                                                         {transaction.tax ? <div className="mt-1 text-xs/5 text-gray-500">{transaction.tax} tax</div> : null}
                                                                     </div>
@@ -300,7 +305,7 @@ export default function Example() {
                                                 <dt className="text-gray-500">Amount</dt>
                                                 <dd className="flex items-start gap-x-2">
                                                     <div className="font-medium text-gray-900">{client.lastInvoice.amount}</div>
-                                                    <div className={classNames(statuses[client.lastInvoice.status], "rounded-md px-2 py-1 text-xs font-medium ring-1 ring-inset")}>{client.lastInvoice.status}</div>
+                                                    <div className={classNames(statuses[client.lastInvoice.status as keyof Status], "rounded-md px-2 py-1 text-xs font-medium ring-1 ring-inset")}>{client.lastInvoice.status}</div>
                                                 </dd>
                                             </div>
                                         </dl>
