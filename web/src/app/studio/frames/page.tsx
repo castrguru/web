@@ -6,14 +6,15 @@ import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
 import { BellIcon } from '@heroicons/react/24/outline'
 import { ChevronDownIcon, MagnifyingGlassIcon } from '@heroicons/react/20/solid'
 
-import FooterMin from '../../components/FooterMin'
+// import Brands from '../../../components/Brands'
+import FooterMin from '../../../components/FooterMin'
 
 const userNavigation = [
     { name: 'Your profile', href: '#' },
     { name: 'Sign out', href: '#' },
 ]
 
-export default function Studio() {
+export default function Frames() {
     return (
         <>
             <div className="lg:pl-20">
@@ -84,13 +85,14 @@ export default function Studio() {
                 <main className="xl:pl-96 -mt-16 pt-16 min-h-screen flex flex-col justify-between bg-gradient-to-b from-slate-900 to-slate-700">
                     <div className="px-4 py-10 sm:px-6 lg:px-8 lg:py-6">
                         <h1 className="text-5xl font-light text-fuchsia-400 tracking-wider">
-                            Castr GÜRŲ Studio
+                            Frames
                         </h1>
 
                         <p className="py-5 text-lg tracking-widest text-justify leading-9">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                            Perferendis voluptatem numquam eum ea sequi quod temporibus reprehenderit eligendi, neque nam accusantium atque quis omnis architecto laudantium! Mollitia porro asperiores temporibus?
+                            A collection of the TOP icons to integrate into your UIs.
                         </p>
+
+                        {/* <Brands /> */}
                     </div>
 
                     <FooterMin />

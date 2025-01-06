@@ -7,7 +7,7 @@ import { useState } from 'react'
 import Link from 'next/link'
 
 import { Dialog, DialogBackdrop, DialogPanel, TransitionChild } from '@headlessui/react'
-import { CalendarIcon, ChartPieIcon, DocumentDuplicateIcon, FolderIcon, HomeIcon, UsersIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import { CodeBracketIcon, RocketLaunchIcon, BuildingStorefrontIcon, PaintBrushIcon, RectangleGroupIcon, PhotoIcon, XMarkIcon } from '@heroicons/react/24/outline'
 
 // export const metadata: Metadata = {
 //     title: 'Studio — Castr GÜRŲ',
@@ -15,12 +15,13 @@ import { CalendarIcon, ChartPieIcon, DocumentDuplicateIcon, FolderIcon, HomeIcon
 // }
 
 const navigation = [
-    { name: 'Dashboard', href: '/studio', icon: HomeIcon, current: false },
-    { name: 'Brands', href: '/studio/brands', icon: UsersIcon, current: true },
-    { name: 'Projects', href: '/studio', icon: FolderIcon, current: false },
-    { name: 'Calendar', href: '/studio', icon: CalendarIcon, current: false },
-    { name: 'Documents', href: '/studio', icon: DocumentDuplicateIcon, current: false },
-    { name: 'Reports', href: '/studio', icon: ChartPieIcon, current: false },
+    { name: 'Concierge', href: '/studio', icon: BuildingStorefrontIcon, current: false },
+    { name: 'Frames', href: '/studio/frames', icon: RectangleGroupIcon, current: false },
+    { name: 'Launcher', href: '/studio/launcher', icon: RocketLaunchIcon, current: false },
+    { name: 'Icon Studio', href: '/studio/icon', icon: PhotoIcon, current: true },
+    { name: 'Theme Studio', href: '/studio/theme', icon: PaintBrushIcon, current: false },
+    // { name: 'Media Center', href: '/studio', icon: MusicalNoteIcon, current: false },
+    { name: 'Code Snippets', href: '/studio/code', icon: CodeBracketIcon, current: false },
 ]
 
 function classNames(...classes: string[]) {
