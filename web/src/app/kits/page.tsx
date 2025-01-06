@@ -90,7 +90,7 @@ const concierge = [
         title: "Kelsea",
         href: "#",
         description: "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
-        imageUrl: "https://i.ibb.co/znt1QbQ/image.png",
+        imageUrl: "https://i.ibb.co/mT1ZLpv/020c54a4-1566-45d5-aeaf-d7037c9a3d34.jpg",
         date: "x6 screens",
         datetime: "2020-03-16",
         author: {
@@ -146,7 +146,7 @@ const concierge = [
         date: "x4 screens",
         datetime: "2020-03-16",
         author: {
-            name: "C++ on Unity",
+            name: "C++ on Unreal",
             imageUrl: "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
         },
     },
@@ -266,7 +266,7 @@ export default function Example() {
 
                 <div className="mx-auto mt-5 grid max-w-2xl auto-rows-fr grid-cols-1 gap-8 lg:mx-0 lg:max-w-none lg:grid-cols-3">
                     {free.map((post) => (
-                        <article key={post.id} className="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl bg-gray-900 px-8 pb-8 pt-80 sm:pt-48 lg:pt-80">
+                        <article key={post.id} className="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl bg-gray-900 px-8 pb-8 pt-48 sm:pt-48 lg:pt-80">
                             <Image
                                 alt=""
                                 width={0}
@@ -319,7 +319,7 @@ export default function Example() {
 
                 <div className="mx-auto mt-5 grid max-w-2xl auto-rows-fr grid-cols-1 gap-8 lg:mx-0 lg:max-w-none lg:grid-cols-3">
                     {concierge.map((post) => (
-                        <article key={post.id} className="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl bg-gray-900 px-8 pb-8 pt-80 sm:pt-48 lg:pt-80">
+                        <article key={post.id} className="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl bg-gray-900 px-8 pb-8 pt-48 sm:pt-48 lg:pt-80">
                             <Image
                                 alt=""
                                 width={0}
