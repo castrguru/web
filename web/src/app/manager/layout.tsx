@@ -8,29 +8,29 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 import { Dialog, DialogBackdrop, DialogPanel, Menu, MenuButton, MenuItem, MenuItems, TransitionChild } from "@headlessui/react";
-import { Bars3Icon, BellIcon, CalendarIcon, ChartPieIcon, Cog6ToothIcon, DocumentDuplicateIcon, FolderIcon, HomeIcon, UsersIcon, XMarkIcon } from "@heroicons/react/24/outline";
+import { Bars3Icon, BellIcon, PresentationChartLineIcon, ChartPieIcon, Cog6ToothIcon, ShieldCheckIcon, RectangleGroupIcon, TableCellsIcon, UsersIcon, XMarkIcon } from "@heroicons/react/24/outline";
 import { ChevronDownIcon, MagnifyingGlassIcon } from "@heroicons/react/20/solid";
 
 import FooterMin from '../../components/FooterMin'
 
 const navigation = [
-    { name: 'Dashboard', href: 'manager', icon: HomeIcon, current: true },
-    { name: 'Team', href: 'manager', icon: UsersIcon, current: false },
-    { name: 'Projects', href: 'manager', icon: FolderIcon, current: false },
-    { name: 'Calendar', href: 'manager', icon: CalendarIcon, current: false },
-    { name: 'Documents', href: 'manager', icon: DocumentDuplicateIcon, current: false },
-    { name: 'Reports', href: 'manager', icon: ChartPieIcon, current: false },
+    { name: 'Dashboard', href: '/manager', icon: TableCellsIcon, current: true },
+    { name: 'Community', href: '/manager/community', icon: UsersIcon, current: false },
+    { name: 'Frames', href: '/manager', icon: RectangleGroupIcon, current: false },
+    { name: 'Analytics', href: '/manager', icon: PresentationChartLineIcon, current: false },
+    { name: 'Security', href: '/manager', icon: ShieldCheckIcon, current: false },
+    { name: 'Reports', href: '/manager', icon: ChartPieIcon, current: false },
 ]
 
 const frames = [
-    { id: 1, name: 'Awesome Frame', href: 'manager', initial: 'AF', current: false },
-    { id: 2, name: 'Uber Frame', href: 'manager', initial: 'UF', current: false },
-    { id: 3, name: 'Birthday Frame', href: 'manager', initial: 'BF', current: false },
+    { id: 1, name: 'Awesome Frame', href: '/manager', initial: 'AF', current: false },
+    { id: 2, name: 'Uber Frame', href: '/manager', initial: 'UF', current: false },
+    { id: 3, name: 'Birthday Frame', href: '/manager', initial: 'BF', current: false },
 ]
 
 const userNavigation = [
-    { name: 'Your profile', href: 'manager' },
-    { name: 'Sign out', href: 'manager' },
+    { name: 'Your profile', href: '/manager' },
+    { name: 'Sign out', href: '/manager' },
 ]
 
 function classNames(...classes: string[]) {
@@ -94,8 +94,12 @@ export default function RootLayout({
                                                 ))}
                                             </ul>
                                         </li>
+
                                         <li>
-                                            <div className="text-xs/6 font-semibold text-gray-400">Your frames</div>
+                                            <div className="text-xs/6 font-semibold text-gray-400 tracking-wide uppercase">
+                                                Recent Frames
+                                            </div>
+
                                             <ul role="list" className="-mx-2 mt-2 space-y-1">
                                                 {frames.map((team) => (
                                                     <li key={team.name}>
@@ -157,8 +161,8 @@ export default function RootLayout({
                                 </li>
 
                                 <li>
-                                    <div className="text-xs/6 font-semibold text-gray-400">
-                                        Your frames
+                                    <div className="text-xs/6 font-semibold text-gray-400 tracking-wide uppercase">
+                                        Recent Frames
                                     </div>
 
                                     <ul role="list" className="-mx-2 mt-2 space-y-1">

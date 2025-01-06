@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 // import type { Metadata } from 'next'
+import { usePathname } from 'next/navigation'
 
 // import Image from 'next/image'
 import Link from 'next/link'
@@ -14,16 +15,6 @@ import { CodeBracketIcon, RocketLaunchIcon, BuildingStorefrontIcon, PaintBrushIc
 //     description: 'Castr GÜRŲ for Farcaster builders.',
 // }
 
-const navigation = [
-    { name: 'Concierge', href: '/studio', icon: BuildingStorefrontIcon, current: false },
-    { name: 'Frames', href: '/studio/frames', icon: RectangleGroupIcon, current: false },
-    { name: 'Launcher', href: '/studio/launcher', icon: RocketLaunchIcon, current: false },
-    { name: 'Icon Studio', href: '/studio/icon', icon: PhotoIcon, current: true },
-    { name: 'Theme Studio', href: '/studio/theme', icon: PaintBrushIcon, current: false },
-    // { name: 'Media Center', href: '/studio', icon: MusicalNoteIcon, current: false },
-    { name: 'Code Snippets', href: '/studio/code', icon: CodeBracketIcon, current: false },
-]
-
 function classNames(...classes: string[]) {
     return classes.filter(Boolean).join(' ')
 }
@@ -34,6 +25,18 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     const [sidebarOpen, setSidebarOpen] = useState(false)
+
+    const pathname = usePathname()
+
+    const navigation = [
+        { name: 'Concierge', href: '/studio', icon: BuildingStorefrontIcon, current: (pathname === '/studio/') ? true : false },
+        { name: 'Frames', href: '/studio/frames', icon: RectangleGroupIcon, current: (pathname === '/studio/frames/') ? true : false },
+        { name: 'Launcher', href: '/studio/launcher', icon: RocketLaunchIcon, current: (pathname === '/studio/launcher/') ? true : false },
+        { name: 'Icon Studio', href: '/studio/icon', icon: PhotoIcon, current: (pathname === '/studio/icon/') ? true : false },
+        { name: 'Theme Studio', href: '/studio/theme', icon: PaintBrushIcon, current: (pathname === '/studio/theme/') ? true : false },
+        // { name: 'Media Center', href: '/studio/media', icon: MusicalNoteIcon, current: (pathname === '/studio/media/') ? true : false },
+        { name: 'Code Snippets', href: '/studio/code', icon: CodeBracketIcon, current: (pathname === '/studio/code/') ? true : false },
+    ]
 
     return (
         <main>

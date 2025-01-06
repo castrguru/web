@@ -6,7 +6,8 @@ import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
 import { BellIcon } from '@heroicons/react/24/outline'
 import { ChevronDownIcon, MagnifyingGlassIcon } from '@heroicons/react/20/solid'
 
-import Brands from '../../../components/Brands'
+import Brands from '../../../components/icon/Brands'
+import Icons from '../../../components/icon/General'
 import FooterMin from '../../../components/FooterMin'
 
 const userNavigation = [
@@ -83,16 +84,30 @@ export default function Studio() {
                 </div>
 
                 <main className="xl:pl-96 -mt-16 pt-16 min-h-screen flex flex-col justify-between bg-gradient-to-b from-slate-900 to-slate-700">
-                    <div className="px-4 py-10 sm:px-6 lg:px-8 lg:py-6">
+                    <div className="px-4 py-10 sm:px-6 lg:px-8 lg:py-6 flex flex-col gap-6">
                         <h1 className="text-5xl font-light text-fuchsia-400 tracking-wider">
-                            Brand Icons
+                            Icons
                         </h1>
 
                         <p className="py-5 text-lg tracking-widest text-justify leading-9">
                             A collection of the TOP brands to integrate into your UIs.
                         </p>
 
-                        <Brands />
+                        <section className="flex flex-col gap-6">
+                            <h2 className="text-3xl font-light text-fuchsia-400 tracking-wider">
+                                General
+                            </h2>
+
+                            <Icons />
+                        </section>
+
+                        <section className="flex flex-col gap-6">
+                            <h2 className="text-3xl font-light text-fuchsia-400 tracking-wider">
+                                Brand
+                            </h2>
+
+                            <Brands />
+                        </section>
                     </div>
 
                     <FooterMin />

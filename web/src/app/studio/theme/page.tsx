@@ -85,11 +85,11 @@ export default function Theme() {
                 <main className="xl:pl-96 -mt-16 pt-16 min-h-screen flex flex-col justify-between bg-gradient-to-b from-slate-900 to-slate-700">
                     <div className="px-4 py-10 sm:px-6 lg:px-8 lg:py-6">
                         <h1 className="text-5xl font-light text-fuchsia-400 tracking-wider">
-                            Theme Studio
+                            Theme Wizard
                         </h1>
 
                         <p className="py-5 text-lg tracking-widest text-justify leading-9">
-                            A collection of the TOP icons to integrate into your UIs.
+                            Create dazzling presentations for your content.
                         </p>
 
                         {/* <Brands /> */}
