@@ -31,7 +31,7 @@ export default function Hero() {
                     <div className="hidden sm:mb-8 sm:flex sm:justify-center">
                         <div className="relative rounded-full px-3 py-1 text-sm/6 text-gray-400 ring-1 ring-white/10 hover:ring-white/20">
                             Announcing our 1st GÜRŲ NFT airdrop.{" "}
-                            <Link href="/" className="pl-1 font-semibold text-white">
+                            <Link href="/workers" className="pl-1 font-semibold text-white">
                                 <span aria-hidden="true" className="absolute inset-0" />
                                 Read more <span aria-hidden="true">&rarr;</span>
                             </Link>
@@ -39,7 +39,7 @@ export default function Hero() {
                     </div>
 
                     <div className="flex flex-col items-center">
-                        <h1 className="flex flex-col gap-2 text-center font-light tracking-tight text-fuchsia-100/90">
+                        <h1 className="flex flex-col gap-2 text-center font-light tracking-tight text-white">
                             <span className="text-5xl sm:text-6xl tracking-wide">
                                 24x7 Developer Concierge
                             </span>
@@ -54,7 +54,7 @@ export default function Hero() {
                             </span>
                         </h1>
 
-                        <p className="mt-8 w-full sm:max-w-3xl text-pretty text-center text-lg font-medium text-fuchsia-100 sm:text-xl/8 tracking-wide">
+                        <p className="mt-8 w-full sm:max-w-3xl text-pretty text-center text-lg font-medium text-white sm:text-xl/8 tracking-wide">
                             <span className="font-bold uppercase">Frames</span> are the NEW killer app for Creators, Founders and Teams driven to disrupt markets
                             — their spirits awakened by the power &amp; freedom of DeFi to reward and monetize one of the FASTEST growing communities of today!
                         </p>

@@ -7,7 +7,7 @@ const free = [
     {
         id: 'first',
         title: "My First Frame",
-        href: "/kit/my-first-frame",
+        href: "/kit/starter",
         description: "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
         imageUrl: "https://images.unsplash.com/photo-1527689368864-3a821dbccc34",
         date: "x5 screens",
@@ -20,7 +20,7 @@ const free = [
     {
         id: 'naked',
         title: "Bare Naked",
-        href: "/kit/bare-naked",
+        href: "/kit/naked",
         description: "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
         imageUrl: "https://images.unsplash.com/photo-1526758097130-bab247274f58",
         date: "x2 screens",
@@ -33,7 +33,7 @@ const free = [
     {
         id: 'kitchen',
         title: "The Kitchen Sink",
-        href: "/kit/the-kitchen-sink",
+        href: "/kit/kitchen-sink",
         description: "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
         imageUrl: "https://images.unsplash.com/photo-1542013936693-884638332954",
         date: "x17 screens",
@@ -120,7 +120,7 @@ const concierge = [
         date: "x6 screens",
         datetime: "2020-03-16",
         author: {
-            name: "Angular",
+            name: "Angular + TS + Tailwind",
             imageUrl: "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
         },
     },
@@ -133,16 +133,42 @@ const concierge = [
         date: "x6 screens",
         datetime: "2020-03-16",
         author: {
-            name: "Gatsby",
+            name: "Gatsby + TS + Tailwind",
             imageUrl: "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
         },
     },
     {
-        id: 'amy',
-        title: "Amy",
+        id: 'rosalia',
+        title: "Rosalia",
         href: "#",
         description: "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
-        imageUrl: "https://i.ibb.co/KjZqGPZ/image.png",
+        imageUrl: "https://i.ibb.co/yqd8WVy/image.png",
+        date: "x4 screens",
+        datetime: "2020-03-16",
+        author: {
+            name: "C++ on Unity",
+            imageUrl: "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+        },
+    },
+    {
+        id: 'gwen',
+        title: "Gwen",
+        href: "#",
+        description: "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
+        imageUrl: "https://i.ibb.co/fHnzwJM/image.png",
+        date: "x4 screens",
+        datetime: "2020-03-16",
+        author: {
+            name: "Express on Node.js",
+            imageUrl: "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+        },
+    },
+    {
+        id: 'billy',
+        title: "Billy",
+        href: "#",
+        description: "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
+        imageUrl: "https://i.ibb.co/CbYgrHC/image.png",
         date: "x4 screens",
         datetime: "2020-03-16",
         author: {
@@ -159,45 +185,6 @@ const concierge = [
         date: "x4 screens",
         datetime: "2020-03-16",
         author: {
-            name: "Express on Node.js",
-            imageUrl: "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-        },
-    },
-    {
-        id: 'madonna',
-        title: "Madonna",
-        href: "#",
-        description: "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
-        imageUrl: "https://i.ibb.co/y5RXdH6/image.png",
-        date: "x4 screens",
-        datetime: "2020-03-16",
-        author: {
-            name: "Laravel on PHP",
-            imageUrl: "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-        },
-    },
-    {
-        id: 'billy',
-        title: "Billy",
-        href: "#",
-        description: "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
-        imageUrl: "https://i.ibb.co/CbYgrHC/image.png",
-        date: "x4 screens",
-        datetime: "2020-03-16",
-        author: {
-            name: "Ruby on Rails",
-            imageUrl: "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-        },
-    },
-    {
-        id: 'gwen',
-        title: "Gwen",
-        href: "#",
-        description: "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
-        imageUrl: "https://i.ibb.co/fHnzwJM/image.png",
-        date: "x4 screens",
-        datetime: "2020-03-16",
-        author: {
             name: "Rspack on Rust",
             imageUrl: "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
         },
@@ -211,16 +198,42 @@ const concierge = [
         date: "x4 screens",
         datetime: "2020-03-16",
         author: {
+            name: "Laravel on PHP",
+            imageUrl: "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+        },
+    },
+    {
+        id: 'amy',
+        title: "Amy",
+        href: "#",
+        description: "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
+        imageUrl: "https://i.ibb.co/KjZqGPZ/image.png",
+        date: "x4 screens",
+        datetime: "2020-03-16",
+        author: {
+            name: "Ruby on Rails",
+            imageUrl: "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+        },
+    },
+    {
+        id: 'madonna',
+        title: "Madonna",
+        href: "#",
+        description: "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
+        imageUrl: "https://i.ibb.co/y5RXdH6/image.png",
+        date: "x4 screens",
+        datetime: "2020-03-16",
+        author: {
             name: "Spring on Java",
             imageUrl: "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
         },
     },
     {
-        id: 'cher',
-        title: "Cher",
+        id: 'celine',
+        title: "Celine",
         href: "#",
         description: "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
-        imageUrl: "https://i.ibb.co/QdHcGwg/image.png",
+        imageUrl: "https://i.ibb.co/mydTZ6B/image.png",
         date: "x4 screens",
         datetime: "2020-03-16",
         author: {
@@ -300,7 +313,7 @@ export default function Example() {
                 <h2 className="pl-3 mt-16 text-2xl font-bold text-slate-600 tracking-widest uppercase">
                     Premium Kits
                     <small className="pl-2 text-sky-400 font-bold normal-case">
-                        (x14)
+                        (x15)
                     </small>
                 </h2>
 

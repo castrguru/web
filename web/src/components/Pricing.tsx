@@ -3,7 +3,7 @@
 // import { useState } from 'react'
 
 // import Image from 'next/image'
-// import Link from 'next/link'
+import Link from 'next/link'
 
 import { CheckIcon } from '@heroicons/react/20/solid'
 
@@ -15,8 +15,10 @@ const tiers = [
         priceDaily: `$0.00`,
         description: `Dare to bring your WILDEST DREAMS and we'll handle the rest. You're 100% covered from concept to shipped!`,
         features: [
-            `10 error reports/hr`,
-            `3 bug analysis/hr`,
+            `3 Guest Frame Kits`,
+            `1 Supported Framework`,
+            `10 Error Reports /per hour`,
+            `3 Bug Analysis /per hour`,
             `72-hour support response time`,
             `Basic uptime monitoring`,
             `Advanced analytics`,
@@ -30,8 +32,10 @@ const tiers = [
         priceDaily: `$0.15`,
         description: `Dedicated support and infrastructure for your company.`,
         features: [
-            `1K error reports/hr`,
-            `50 bug analysis/hr`,
+            `20+ Premium Frame Kits`,
+            `16 Supported Frameworks`,
+            `1K Error Reports /per hour`,
+            `50 Bug Analysis /per hour`,
             `24-hour support response time`,
             `Advanced uptime monitoring`,
             `Unlimited subscribers`,
@@ -105,7 +109,7 @@ export default function Pricing() {
                             {tier.description}
                         </p>
 
-                        <ul role="list" className={classNames(tier.featured ? "text-gray-300" : "text-gray-600", "mt-8 space-y-3 text-sm/6 sm:mt-10")}>
+                        <ul role="list" className={classNames(tier.featured ? "text-gray-300" : "text-gray-600", "mt-8 space-y-3 text-base/6 sm:mt-10")}>
                             {tier.features.map((feature) => (
                                 <li key={feature} className="flex gap-x-3">
                                     <CheckIcon aria-hidden="true" className={classNames(tier.featured ? "text-fuchsia-400" : "text-fuchsia-600", "h-6 w-5 flex-none")} />
@@ -121,7 +125,7 @@ export default function Pricing() {
                                 tier.featured
                                     ? "bg-fuchsia-500 text-white shadow-sm hover:bg-fuchsia-400 focus-visible:outline-fuchsia-500"
                                     : "text-fuchsia-600 ring-1 ring-inset ring-fuchsia-200 hover:ring-fuchsia-300 focus-visible:outline-fuchsia-600",
-                                "mt-8 block rounded-md px-3.5 py-2.5 text-center text-sm font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 sm:mt-10"
+                                "mt-8 block rounded-md px-3.5 py-2.5 text-center text-2xl font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 sm:mt-10"
                             )}
                         >
                             Get started today
@@ -130,19 +134,19 @@ export default function Pricing() {
                 ))}
             </div>
 
-            <section className="mx-auto mt-16 max-w-lg flex flex-col sm:mt-20 sm:gap-y-0 lg:max-w-4xl">
-                <h2 className="text-slate-400 font-bold text-2xl">
+            <Link href="/live" className="group mx-auto mt-16 max-w-lg px-10 py-5 flex flex-col sm:mt-20 sm:gap-y-0 lg:max-w-4xl bg-fuchsia-50 border-2 border-fuchsia-200 rounded-xl shadow hover:bg-fuchsia-600 hover:border-fuchsia-300">
+                <h2 className="text-fuchsia-700 font-bold text-2xl tracking-wider group-hover:text-fuchsia-50">
                     LIVE! GÜRŲ Case Support
                 </h2>
 
-                <h3 className="text-slate-300 font-bold text-xl">
+                <h3 className="text-fuchsia-600 font-bold text-xl tracking-wide group-hover:text-fuchsia-50">
                     Billed to your account @ $0.35 /min per case
                 </h3>
 
-                <small className="text-slate-400 italic">
+                <small className="text-fuchsia-500 italic tracking-wider group-hover:text-fuchsia-50">
                     ( a minimum of $5.00 in escrow MUST be available to open a new case )
                 </small>
-            </section>
+            </Link>
         </main>
     )
 }

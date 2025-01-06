@@ -2,17 +2,17 @@
 import Image from 'next/image'
 
 const footerNavigation = {
-    builders: [
+    building: [
         { name: "Downloads", href: "/downloads" },
         { name: "Libraries", href: "/libs" },
         { name: "Frame Kits", href: "/kits" },
         { name: "Frame Studio", href: "/studio" },
         { name: "Castr Manager", href: "/manager" },
     ],
-    links: [
+    learning: [
         { name: "ReadTheDocs", href: "https://castrgurudocs.on-fleek.app/" },
         { name: "User Guides", href: "/guides" },
-        { name: "Our Team", href: "/team" },
+        { name: "Glossary", href: "/glossary" },
     ],
     farcaster: [
         { name: "Homepage", href: "https://www.farcaster.xyz/" },
@@ -21,6 +21,7 @@ const footerNavigation = {
         { name: "GitHub Sources", href: "https://github.com/farcasterxyz/protocol" },
     ],
     dao: [
+        { name: "Our Team", href: "/team" },
         { name: "Terms of Service", href: "" },
         { name: "Privacy Policy", href: "" },
         { name: "Licenses", href: "" },
@@ -86,11 +87,11 @@ export default function Footer() {
                         <div className="md:grid md:grid-cols-2 md:gap-8">
                             <div>
                                 <h3 className="text-xl/6 font-semibold text-white tracking-wider">
-                                    #BUIDLers
+                                    For Building
                                 </h3>
 
                                 <ul role="list" className="mt-6 space-y-4">
-                                    {footerNavigation.builders.map((item) => (
+                                    {footerNavigation.building.map((item) => (
                                         <li key={item.name}>
                                             <a href={item.href} className="text-lg/6 text-gray-400 hover:text-white tracking-wide">
                                                 {item.name}
@@ -102,11 +103,11 @@ export default function Footer() {
 
                             <div className="mt-10 md:mt-0">
                                 <h3 className="text-xl/6 font-semibold text-white tracking-wider">
-                                    GÜRŲS Links
+                                    For Learning
                                 </h3>
 
                                 <ul role="list" className="mt-6 space-y-4">
-                                    {footerNavigation.links.map((item) => (
+                                    {footerNavigation.learning.map((item) => (
                                         <li key={item.name}>
                                             <a href={item.href} className="text-lg/6 text-gray-400 hover:text-white tracking-wide">
                                                 {item.name}
