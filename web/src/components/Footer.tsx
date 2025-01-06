@@ -53,8 +53,6 @@ const navigation = [
 ]
 
 export default function Footer() {
-    // const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-
     return (
         <footer className="bg-gradient-to-b from-slate-700 to-slate-900">
             <div className="mx-auto max-w-7xl px-6 py-16 sm:py-16 lg:px-8 lg:py-24">
@@ -64,10 +62,10 @@ export default function Footer() {
                             alt="Castr Guru logo"
                             width={0}
                             height={0}
-                            src="/icon.svg" className="size-24"
+                            src="/icon.svg" className="size-16 sm:size-24"
                         />
 
-                        <p className="py-10 text-sm/7 font-light text-fuchsia-200/80 tracking-widest">
+                        <p className="py-5 sm:py-10 text-xs/6 sm:text-sm/7 font-light text-fuchsia-200/80 tracking-widest">
                             Pinnacle Center of Buckhead
                             <br />3455 Peachtree Rd NE, Suite #500
                             <br />Atlanta, GA 30326

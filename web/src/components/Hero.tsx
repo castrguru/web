@@ -26,7 +26,7 @@ export default function Hero() {
             </div>
 
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
-                <div className="mx-auto max-w-4xl py-12 sm:py-16 lg:py-24">
+                <div className="mx-auto max-w-4xl py-16 lg:py-24">
 
                     <div className="hidden sm:mb-8 sm:flex sm:justify-center">
                         <div className="relative rounded-full px-3 py-1 text-sm/6 text-gray-400 ring-1 ring-white/10 hover:ring-white/20">
@@ -40,21 +40,21 @@ export default function Hero() {
 
                     <div className="flex flex-col items-center">
                         <h1 className="flex flex-col gap-2 text-center font-light tracking-tight text-white">
-                            <span className="text-5xl sm:text-6xl tracking-wide">
+                            <span className="text-4xl sm:text-6xl tracking-wide">
                                 24x7 Developer Concierge
                             </span>
 
-                            <span className="block text-5xl tracking-wide">
+                            <span className="block text-2xl sm:text-5xl tracking-wide">
                                 Dedicated to Farcaster
                             </span>
 
-                            <span className="-mt-3 text-6xl sm:text-8xl tracking-widest bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">
-                                <span className="text-7xl sm:text-9xl italic">v2</span>
+                            <span className="-mt-1 sm:-mt-3 text-5xl sm:text-8xl tracking-widest bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">
+                                <span className="text-6xl sm:text-9xl italic">v2</span>
                                 <span className="uppercase"> Frames</span>
                             </span>
                         </h1>
 
-                        <p className="mt-8 w-full sm:max-w-3xl text-pretty text-center text-lg font-medium text-white sm:text-xl/8 tracking-wide">
+                        <p className="mt-8 w-full sm:max-w-3xl text-pretty text-justify sm:text-center text-lg font-medium text-white sm:text-xl/8 tracking-wide">
                             <span className="font-bold uppercase">Frames</span> are the NEW killer app for Creators, Founders and Teams driven to disrupt markets
                             — their spirits awakened by the power &amp; freedom of DeFi to reward and monetize one of the FASTEST growing communities of today!
                         </p>
@@ -64,7 +64,7 @@ export default function Hero() {
                                 href="/guides/welcome"
                                 className="rounded-md bg-purple-500 px-5 py-3 text-2xl font-semibold text-white shadow-sm hover:bg-purple-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-400 tracking-wider"
                             >
-                                #BUIDL with GÜRŲ
+                                #BUIDL<span className="hidden sm:inline"> with GÜRŲ</span>
                             </Link>
 
                             <Link href="https://castrgurudocs.on-fleek.app/" target="_blank" className="flex items-center text-xl/6 font-semibold text-slate-100 tracking-wider">
@@ -76,29 +76,45 @@ export default function Hero() {
                 </div>
 
                 {/* Logo cloud */}
-                <div className="mx-auto grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
+                <div className="mx-auto grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-5 sm:gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
                     <Image
                         alt="Transistor"
-                        src="https://tailwindui.com/plus/img/logos/158x48/transistor-logo-white.svg" width={158} height={48} className="col-span-2 max-h-12 w-full object-contain lg:col-span-1" />
+                        src="https://tailwindui.com/plus/img/logos/158x48/transistor-logo-white.svg"
+                        width={0}
+                        height={0}
+                        className="col-span-2 max-h-8 sm:max-h-12 w-full object-contain lg:col-span-1"
+                    />
 
                     <Image
                         alt="Reform"
-                        src="https://tailwindui.com/plus/img/logos/158x48/reform-logo-white.svg" width={158} height={48} className="col-span-2 max-h-12 w-full object-contain lg:col-span-1" />
+                        src="https://tailwindui.com/plus/img/logos/158x48/reform-logo-white.svg"
+                        width={0}
+                        height={0}
+                        className="col-span-2 max-h-8 sm:max-h-12 w-full object-contain lg:col-span-1"
+                    />
 
                     <Image
                         alt="Tuple"
-                        src="https://tailwindui.com/plus/img/logos/158x48/tuple-logo-white.svg" width={158} height={48} className="col-span-2 max-h-12 w-full object-contain lg:col-span-1" />
+                        src="https://tailwindui.com/plus/img/logos/158x48/tuple-logo-white.svg"
+                        width={0}
+                        height={0}
+                        className="col-span-2 max-h-8 sm:max-h-12 w-full object-contain lg:col-span-1"
+                    />
 
                     <Image
                         alt="SavvyCal"
-                        src="https://tailwindui.com/plus/img/logos/158x48/savvycal-logo-white.svg" width={158} height={48} className="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1" />
+                        src="https://tailwindui.com/plus/img/logos/158x48/savvycal-logo-white.svg"
+                        width={0}
+                        height={0}
+                        className="col-span-2 max-h-8 sm:max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1"
+                    />
 
                     <Image
                         alt="Statamic"
                         src="https://tailwindui.com/plus/img/logos/158x48/statamic-logo-white.svg"
-                        width={158}
-                        height={48}
-                        className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1"
+                        width={0}
+                        height={0}
+                        className="col-span-2 col-start-2 max-h-8 sm:max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1"
                     />
                 </div>
             </div>

@@ -44,16 +44,16 @@ export default function Founder() {
                         </svg>
 
                         <blockquote className="text-xl font-semibold text-white sm:text-2xl tracking-wider">
-                            <p className="leading-[45px]">
+                            <p className="leading-8 sm:leading-[45px]">
                                 I knew the FASTEST path to <Link href="https://docs.farcaster.xyz/developers/frames/" target="_blank" className="text-amber-200 font-bold underline hover:text-amber-100">Frames</Link> mastery would be thru teaching others;
                                 so that was my plan from the beginning —
                                 create an open platform so
-                                <HeartIcon className="ml-2 mr-3 inline size-10 text-fuchsia-300" />
+                                <HeartIcon className="ml-2 mr-3 inline size-8 sm:size-10 text-fuchsia-300" />
                                 by #BUIDLers that I’d be driven to MASTER IT ALL!
                             </p>
                         </blockquote>
 
-                        <Link href="https://x.com/0xShomari" target="_blank" className="group mt-8 flex flex-col text-base">
+                        <Link href="https://x.com/0xShomari" target="_blank" className="group mt-5 sm:mt-8 flex flex-col text-base">
                             <div className="flex flex-row gap-0.5 items-center">
                                 <span className="text-3xl font-medium text-amber-200 tracking-widest group-hover:text-amber-100">
                                     0
