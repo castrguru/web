@@ -1,9 +1,9 @@
 // import Image from 'next/image'
 // import Link from 'next/link'
 
-import { Fragment } from "react";
-import { StarIcon } from "@heroicons/react/20/solid";
-import { Tab, TabGroup, TabList, TabPanel, TabPanels } from "@headlessui/react";
+import { Fragment } from 'react'
+import { StarIcon } from '@heroicons/react/20/solid'
+import { Tab, TabGroup, TabList, TabPanel, TabPanels } from '@headlessui/react'
 
 const product = {
     name: "Application UI Icon Pack",
@@ -13,7 +13,8 @@ const product = {
     highlights: ["200+ SVG icons in 3 unique styles", "Compatible with Figma, Sketch, and Adobe XD", "Drawn on 24 x 24 pixel grid"],
     imageSrc: "https://tailwindui.com/plus/img/ecommerce-images/product-page-05-product-01.jpg",
     imageAlt: "Sample of 30 icons with friendly and fun details in outline, filled, and brand color styles.",
-};
+}
+
 const reviews = {
     average: 4,
     featured: [
@@ -41,7 +42,8 @@ const reviews = {
         },
         // More reviews...
     ],
-};
+}
+
 const faqs = [
     {
         question: "What format are these icons?",
@@ -52,7 +54,8 @@ const faqs = [
         answer: "Yes. The icons are drawn on a 24 x 24 pixel grid, but the icons can be scaled to different sizes as needed. We don't recommend going smaller than 20 x 20 or larger than 64 x 64 to retain legibility and visual balance.",
     },
     // More FAQs...
-];
+]
+
 const license = {
     href: "#",
     summary: "For personal and professional use. You cannot resell or redistribute these icons in their original or modified state.",
@@ -80,9 +83,9 @@ const license = {
     <li>Don\'t be evil. These icons cannot be used on websites or applications that promote illegal or immoral beliefs or activities.</li>
     </ul>
   `,
-};
+}
 
-function classNames(...classes) {
+function classNames(...classes: string[]) {
     return classes.filter(Boolean).join(" ");
 }
 
