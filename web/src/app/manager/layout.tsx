@@ -29,8 +29,8 @@ const frames = [
 ]
 
 const userNavigation = [
-    { name: 'Your profile', href: '/manager' },
-    { name: 'Sign out', href: '/manager' },
+    { name: 'Your profile', href: '/profile' },
+    { name: 'Sign out', href: '/profile' },
 ]
 
 function classNames(...classes: string[]) {

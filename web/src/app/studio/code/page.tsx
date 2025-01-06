@@ -10,8 +10,8 @@ import { ChevronDownIcon, MagnifyingGlassIcon } from '@heroicons/react/20/solid'
 import FooterMin from '../../../components/FooterMin'
 
 const userNavigation = [
-    { name: 'Your profile', href: '#' },
-    { name: 'Sign out', href: '#' },
+    { name: 'Your profile', href: '/profile' },
+    { name: 'Sign out', href: '/profile' },
 ]
 
 export default function Snippets() {
