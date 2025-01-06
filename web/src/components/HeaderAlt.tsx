@@ -108,7 +108,7 @@ export default function Header() {
 
                 <div className="hidden lg:flex lg:flex-1 lg:justify-end">
                     <Link
-                        href="/"
+                        href="/profile"
                         className="group flex flex-row gap-1 text-2xl/6 font-semibold text-slate-200 hover:text-amber-200"
                     >
                         Connect

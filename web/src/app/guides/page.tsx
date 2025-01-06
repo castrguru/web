@@ -61,11 +61,11 @@ export default function Example() {
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
                 <div className="mx-auto max-w-2xl lg:max-w-4xl">
                     <h2 className="text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
-                        Castr GÜRŲ Guides
+                        User Guides
                     </h2>
 
-                    <p className="mt-2 text-lg/8 text-gray-600">
-                        Learn how to grow your REACH within the Farcaster ecosystem.
+                    <p className="w-full sm:w-2/3 mt-2 text-lg/8 text-gray-600">
+                        Learn how to grow your REACH within the Farcaster ecosystem from the infinite wisdom of the Castr GÜRŲs.
                     </p>
 
                     <div className="mt-16 space-y-20 lg:mt-20 lg:space-y-20">
