@@ -52,7 +52,7 @@ const concierge = [
         href: "#",
         description: "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
         imageUrl: "https://i.ibb.co/THhmJdT/taylor.jpg",
-        date: "x10 screens",
+        date: "x12 screens",
         datetime: "2020-03-16",
         author: {
             name: "Next.js + TS + Tailwind",
@@ -65,7 +65,7 @@ const concierge = [
         href: "#",
         description: "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
         imageUrl: "https://i.ibb.co/wB8xNTL/rose.jpg",
-        date: "x8 screens",
+        date: "x10 screens",
         datetime: "2020-03-16",
         author: {
             name: "Astro + TS + Tailwind",
@@ -78,7 +78,7 @@ const concierge = [
         href: "#",
         description: "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
         imageUrl: "https://i.ibb.co/GkDBNsL/britney.jpg",
-        date: "x10 screens",
+        date: "x12 screens",
         datetime: "2020-03-16",
         author: {
             name: "Nuxt.js + TS + Tailwind",
@@ -91,7 +91,7 @@ const concierge = [
         href: "#",
         description: "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
         imageUrl: "https://i.ibb.co/yqd8WVy/image.png",
-        date: "x7 screens",
+        date: "x8 screens",
         datetime: "2020-03-16",
         author: {
             name: "GDScript on Godot",
@@ -104,7 +104,7 @@ const concierge = [
         href: "#",
         description: "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
         imageUrl: "https://i.ibb.co/mT1ZLpv/020c54a4-1566-45d5-aeaf-d7037c9a3d34.jpg",
-        date: "x6 screens",
+        date: "x8 screens",
         datetime: "2020-03-16",
         author: {
             name: "Vite + TS + Tailwind",
@@ -164,19 +164,6 @@ const concierge = [
         },
     },
     {
-        id: 'dua',
-        title: "Dua",
-        href: "#",
-        description: "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
-        imageUrl: "https://i.ibb.co/NKLgGPm/dua.jpg",
-        date: "x4 screens",
-        datetime: "2020-03-16",
-        author: {
-            name: "C# on Unity",
-            imageUrl: "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-        },
-    },
-    {
         id: 'gwen',
         title: "Gwen",
         href: "#",
@@ -199,6 +186,19 @@ const concierge = [
         datetime: "2020-03-16",
         author: {
             name: "Django on Python",
+            imageUrl: "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+        },
+    },
+    {
+        id: 'dua',
+        title: "Dua",
+        href: "#",
+        description: "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
+        imageUrl: "https://i.ibb.co/NKLgGPm/dua.jpg",
+        date: "x4 screens",
+        datetime: "2020-03-16",
+        author: {
+            name: "C# on Unity",
             imageUrl: "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
         },
     },
@@ -229,6 +229,19 @@ const concierge = [
         },
     },
     {
+        id: 'celine',
+        title: "Celine",
+        href: "#",
+        description: "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
+        imageUrl: "https://i.ibb.co/mydTZ6B/image.png",
+        date: "x4 screens",
+        datetime: "2020-03-16",
+        author: {
+            name: "ASP on .NET",
+            imageUrl: "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+        },
+    },
+    {
         id: 'amy',
         title: "Amy",
         href: "#",
@@ -251,19 +264,6 @@ const concierge = [
         datetime: "2020-03-16",
         author: {
             name: "Spring on Java",
-            imageUrl: "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-        },
-    },
-    {
-        id: 'celine',
-        title: "Celine",
-        href: "#",
-        description: "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
-        imageUrl: "https://i.ibb.co/mydTZ6B/image.png",
-        date: "x4 screens",
-        datetime: "2020-03-16",
-        author: {
-            name: "ASP on .NET",
             imageUrl: "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
         },
     },
@@ -339,7 +339,7 @@ export default function Example() {
                 <h2 className="pl-3 mt-16 text-2xl font-bold text-slate-600 tracking-widest uppercase">
                     Premium Kits
                     <small className="pl-2 text-sky-400 font-bold normal-case">
-                        (x15)
+                        (x17)
                     </small>
                 </h2>
 
