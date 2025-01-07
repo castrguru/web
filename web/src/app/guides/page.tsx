@@ -3,14 +3,31 @@ import Image from 'next/image'
 
 const guides = [
     {
-        id: 3,
-        title: "Builder 101",
+        id: 'gamer-101',
+        title: "Gamer 101: My First Game",
+        href: "/guide/gamer-101",
+        description:
+            "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel iusto corrupti dicta laboris incididunt.",
+        imageUrl: "https://i.ibb.co/8YQW75P/gamer-101.png",
+        date: "May 1, 2025",
+        datetime: "2025-05-01",
+        category: { title: "For Gamers", href: "/guides/gamer" },
+        author: {
+            name: "@shomari",
+            role: "Farcaster Master Builder",
+            href: "/team/shomari",
+            imageUrl: "/img/portrait.jpg",
+        },
+    },
+    {
+        id: 'builder-101',
+        title: "Builder 101: My First Frame",
         href: "/guide/builder-101",
         description:
             "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel iusto corrupti dicta laboris incididunt.",
-        imageUrl: "https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80",
-        date: "Jan 4, 2025",
-        datetime: "2025-01-04",
+        imageUrl: "https://i.ibb.co/XxsKGpk/building-101.png",
+        date: "Jan 10, 2025",
+        datetime: "2025-01-10",
         category: { title: "For Newbies", href: "/guides/newbie" },
         author: {
             name: "@shomari",
@@ -20,14 +37,14 @@ const guides = [
         },
     },
     {
-        id: 2,
+        id: 'why-frames',
         title: "Why Frames?",
         href: "/guide/why-frames",
         description:
             "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel iusto corrupti dicta laboris incididunt.",
-        imageUrl: "https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80",
-        date: "Jan 5, 2025",
-        datetime: "2025-01-05",
+        imageUrl: "https://i.ibb.co/hVsG4vt/frames.png",
+        date: "Jan 6, 2025",
+        datetime: "2025-01-06",
         category: { title: "For Newbies", href: "/guides/newbie" },
         author: {
             name: "@shomari",
@@ -37,14 +54,14 @@ const guides = [
         },
     },
     {
-        id: 1,
+        id: 'welcome',
         title: "Welcome",
         href: "/guide/welcome",
         description:
-            "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel iusto corrupti dicta laboris incididunt.",
-        imageUrl: "https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80",
-        date: "Mar 16, 2020",
-        datetime: "2020-03-16",
+            `Introducing a new platform for Founders and Teams to be able to effortlessly leverage the power & reach of Farcaster's v2 Frames.`,
+        imageUrl: "https://i.ibb.co/GFkwWR0/welcome.png",
+        date: "Jan 1, 2025",
+        datetime: "2025-01-01",
         category: { title: "For Newbies", href: "/guides/newbie" },
         author: {
             name: "@shomari",
@@ -115,14 +132,14 @@ export default function Example() {
                                             />
 
                                             <div className="text-sm/6">
-                                                <p className="font-semibold text-gray-900">
+                                                <p className="font-semibold text-gray-900 tracking-wider">
                                                     <a href={post.author.href}>
                                                         <span className="absolute inset-0" />
                                                         {post.author.name}
                                                     </a>
                                                 </p>
 
-                                                <p className="text-gray-600">
+                                                <p className="text-gray-600 text-xs">
                                                     {post.author.role}
                                                 </p>
                                             </div>
