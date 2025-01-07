@@ -3,24 +3,16 @@
 /* Import modules. */
 import { useState } from 'react'
 // import type { Metadata } from 'next'
+import { usePathname } from 'next/navigation'
 
 import Image from 'next/image'
 import Link from 'next/link'
 
-import { Dialog, DialogBackdrop, DialogPanel, Menu, MenuButton, MenuItem, MenuItems, TransitionChild } from "@headlessui/react";
-import { Bars3Icon, BellIcon, PresentationChartLineIcon, ChartPieIcon, Cog6ToothIcon, ShieldCheckIcon, RectangleGroupIcon, TableCellsIcon, UsersIcon, XMarkIcon } from "@heroicons/react/24/outline";
-import { ChevronDownIcon, MagnifyingGlassIcon } from "@heroicons/react/20/solid";
+import { Dialog, DialogBackdrop, DialogPanel, Menu, MenuButton, MenuItem, MenuItems, TransitionChild } from '@headlessui/react'
+import { Bars3Icon, BellIcon, PresentationChartLineIcon, LightBulbIcon, ChartPieIcon, Cog6ToothIcon, ShieldCheckIcon, RectangleGroupIcon, TableCellsIcon, UsersIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import { ChevronDownIcon, MagnifyingGlassIcon } from '@heroicons/react/20/solid'
 
 import FooterMin from '../../components/FooterMin'
-
-const navigation = [
-    { name: 'Dashboard', href: '/manager', icon: TableCellsIcon, current: true },
-    { name: 'Community', href: '/manager/community', icon: UsersIcon, current: false },
-    { name: 'Frames', href: '/manager', icon: RectangleGroupIcon, current: false },
-    { name: 'Analytics', href: '/manager', icon: PresentationChartLineIcon, current: false },
-    { name: 'Security', href: '/manager', icon: ShieldCheckIcon, current: false },
-    { name: 'Reports', href: '/manager', icon: ChartPieIcon, current: false },
-]
 
 const frames = [
     { id: 1, name: 'Awesome Frame', href: '/manager', initial: 'AF', current: false },
@@ -48,6 +40,18 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     const [sidebarOpen, setSidebarOpen] = useState(false)
+
+    const pathname = usePathname()
+
+    const navigation = [
+        { name: 'Dashboard', href: '/manager', icon: TableCellsIcon, current: (pathname === '/manager/') ? true : false },
+        { name: 'Community', href: '/manager/community', icon: UsersIcon, current: (pathname === '/manager/community/') ? true : false },
+        { name: 'Frames', href: '/manager', icon: RectangleGroupIcon, current: (pathname === '/manager/frames/') ? true : false },
+        { name: 'Analytics', href: '/manager', icon: PresentationChartLineIcon, current: (pathname === '/manager/stats/') ? true : false },
+        { name: 'Inspector', href: '/manager/inspector', icon: LightBulbIcon, current: (pathname === '/manager/inspector/') ? true : false },
+        { name: 'Security', href: '/manager', icon: ShieldCheckIcon, current: (pathname === '/manager/security/') ? true : false },
+        { name: 'Reports', href: '/manager', icon: ChartPieIcon, current: (pathname === '/manager/reports/') ? true : false },
+    ]
 
     return (
         <html lang="en">
