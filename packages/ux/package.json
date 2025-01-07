@@ -1,7 +1,0 @@
-{
-  "name": "ux",
-  "version": "25.1.1",
-  "description": "User experience.",
-  "main": "index.js",
-  "license": "MIT"
-}

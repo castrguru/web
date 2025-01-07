@@ -1,1 +1,0 @@
-# Castr GÜRŲ Next.js

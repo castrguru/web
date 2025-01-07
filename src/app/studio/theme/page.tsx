@@ -82,14 +82,27 @@ export default function Theme() {
                     </div>
                 </div>
 
-                <main className="xl:pl-96 -mt-16 pt-16 min-h-screen flex flex-col justify-between bg-gradient-to-b from-slate-900 to-slate-700">
-                    <div className="px-4 py-10 sm:px-6 lg:px-8 lg:py-6">
+                <main className="xl:pl-96 -mt-16 pt-16 min-h-screen flex flex-col justify-between bg-gradient-to-b from-slate-50 to-slate-200">
+                    <div className="px-4 py-10 sm:px-6 lg:px-8 lg:py-6 text-slate-700">
                         <h1 className="text-5xl font-light text-fuchsia-400 tracking-wider">
-                            Theme Wizard
+                            Theme Assistant
                         </h1>
 
+                        <h3 className="pl-1 text-sm font-medium text-fuchsia-600 tracking-widest uppercase">
+                            Theme apps visually without writing (CSS) code
+                        </h3>
+
                         <p className="py-5 text-lg tracking-widest text-justify leading-9">
-                            Create dazzling presentations for your content.
+                            Castr Themer empowers you to style Farcaster frames and make them look great.
+                            You can create custom themes using graphical tools – without writing code.
+                            Themer gives you access to components and inspection tools to set fine-grained styles and generate theme packages with dynamic stylesheets.
+                        </p>
+
+                        <p className="py-5 text-lg tracking-widest text-justify leading-9">
+                            With the innovative color palette in Themer, it’s easy to apply different color combinations to different component states.
+                            The color palette shows base, body background, and font color with progressively lighter and darker colors.
+                            There is also a palette that helps you select colors from Material Design.
+                            The Themer font management option allows you to quickly add web fonts from Google fonts.
                         </p>
 
                         {/* <Brands /> */}
