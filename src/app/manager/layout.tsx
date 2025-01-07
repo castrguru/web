@@ -15,14 +15,13 @@ import { ChevronDownIcon, MagnifyingGlassIcon } from '@heroicons/react/20/solid'
 import FooterMin from '../../components/FooterMin'
 
 const frames = [
-    { id: 1, name: 'Awesome Frame', href: '/manager', initial: 'AF', current: false },
-    { id: 2, name: 'Uber Frame', href: '/manager', initial: 'UF', current: false },
-    { id: 3, name: 'Birthday Frame', href: '/manager', initial: 'BF', current: false },
+    { id: 1, name: 'GitHub', href: 'https://github.com/castrguru', initial: 'GH', current: false },
+    { id: 2, name: 'Twitter/X', href: 'https://x.com/0xShomari', initial: 'X', current: false },
 ]
 
 const userNavigation = [
-    { name: 'Your profile', href: '/profile' },
-    { name: 'Sign out', href: '/profile' },
+    { name: 'My Profile', href: '/profile' },
+    { name: 'Sign Out', href: '/profile' },
 ]
 
 function classNames(...classes: string[]) {
@@ -45,12 +44,12 @@ export default function RootLayout({
 
     const navigation = [
         { name: 'Dashboard', href: '/manager', icon: TableCellsIcon, current: (pathname === '/manager/') ? true : false },
+        { name: 'Frames', href: '/manager/frames', icon: RectangleGroupIcon, current: (pathname === '/manager/frames/') ? true : false },
         { name: 'Community', href: '/manager/community', icon: UsersIcon, current: (pathname === '/manager/community/') ? true : false },
-        { name: 'Frames', href: '/manager', icon: RectangleGroupIcon, current: (pathname === '/manager/frames/') ? true : false },
         { name: 'Analytics', href: '/manager', icon: PresentationChartLineIcon, current: (pathname === '/manager/stats/') ? true : false },
         { name: 'Inspector', href: '/manager/inspector', icon: LightBulbIcon, current: (pathname === '/manager/inspector/') ? true : false },
-        { name: 'Security', href: '/manager', icon: ShieldCheckIcon, current: (pathname === '/manager/security/') ? true : false },
-        { name: 'Reports', href: '/manager', icon: ChartPieIcon, current: (pathname === '/manager/reports/') ? true : false },
+        // { name: 'Security', href: '/manager', icon: ShieldCheckIcon, current: (pathname === '/manager/security/') ? true : false },
+        // { name: 'Reports', href: '/manager', icon: ChartPieIcon, current: (pathname === '/manager/reports/') ? true : false },
     ]
 
     return (
@@ -166,7 +165,7 @@ export default function RootLayout({
 
                                 <li>
                                     <div className="text-xs/6 font-semibold text-gray-400 tracking-wide uppercase">
-                                        Recent Frames
+                                        Recommended Links
                                     </div>
 
                                     <ul role="list" className="-mx-2 mt-2 space-y-1">
@@ -241,7 +240,7 @@ export default function RootLayout({
                                         />
                                         <span className="hidden lg:flex lg:items-center">
                                             <span aria-hidden="true" className="ml-4 text-sm/6 font-semibold text-gray-900">
-                                                Tom Cook
+                                                Guest User
                                             </span>
                                             <ChevronDownIcon aria-hidden="true" className="ml-2 size-5 text-gray-400" />
                                         </span>
