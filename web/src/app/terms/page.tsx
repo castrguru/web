@@ -1,17 +1,17 @@
 // import Image from 'next/image'
 
-import { CheckCircleIcon } from '@heroicons/react/20/solid'
+import { CheckCircleIcon, InformationCircleIcon } from "@heroicons/react/20/solid";
 
-export default function Blank() {
+export default function Terms() {
     return (
         <div className="bg-white px-6 py-16 lg:px-8">
             <div className="mx-auto max-w-3xl text-base/7 text-gray-700">
                 <p className="text-base/7 font-semibold text-fuchsia-600 tracking-wider">
-                    Blank
+                    Legal Notice
                 </p>
 
                 <h1 className="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
-                    Castr GÜRŲ’s Blank Page
+                    Terms of Serivce
                 </h1>
 
                 <p className="mt-6 text-xl/8">

@@ -22,9 +22,9 @@ const footerNavigation = {
     ],
     dao: [
         { name: "Our Team", href: "/team" },
-        { name: "Terms of Service", href: "" },
-        { name: "Privacy Policy", href: "" },
-        { name: "Licenses", href: "" },
+        { name: "Terms of Service", href: "/terms" },
+        { name: "Privacy Policy", href: "/privacy" },
+        { name: "Licenses", href: "/licenses" },
     ],
 }
 

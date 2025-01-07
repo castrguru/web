@@ -1,4 +1,4 @@
-// import Image from 'next/image'
+import Image from 'next/image'
 // import Link from 'next/link'
 
 import { Fragment } from 'react'
@@ -6,13 +6,21 @@ import { StarIcon } from '@heroicons/react/20/solid'
 import { Tab, TabGroup, TabList, TabPanel, TabPanels } from '@headlessui/react'
 
 const product = {
-    name: "Application UI Icon Pack",
-    version: { name: "1.0", date: "June 5, 2021", datetime: "2021-06-05" },
+    name: `Starter: My First Frame`,
+    version: {
+        name: "1.0",
+        date: "June 5, 2021",
+        datetime: "2021-06-05"
+    },
     price: "$220",
     description: "The Application UI Icon Pack comes with over 200 icons in 3 styles: outline, filled, and branded. This playful icon pack is tailored for complex application user interfaces with a friendly and legible look.",
-    highlights: ["200+ SVG icons in 3 unique styles", "Compatible with Figma, Sketch, and Adobe XD", "Drawn on 24 x 24 pixel grid"],
-    imageSrc: "https://tailwindui.com/plus/img/ecommerce-images/product-page-05-product-01.jpg",
-    imageAlt: "Sample of 30 icons with friendly and fun details in outline, filled, and brand color styles.",
+    highlights: [
+        "200+ SVG icons in 3 unique styles",
+        "Compatible with Figma, Sketch, and Adobe XD",
+        "Drawn on 24 x 24 pixel grid"
+    ],
+    imageSrc: "https://i.ibb.co/3kJ1pwV/my-first-frame.jpg",
+    imageAlt: "My First Frame banner image.",
 }
 
 const reviews = {
@@ -93,11 +101,19 @@ export default function Example() {
     return (
         <div className="bg-white">
             <div className="mx-auto px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
+
                 {/* Product */}
                 <div className="lg:grid lg:grid-cols-7 lg:grid-rows-1 lg:gap-x-8 lg:gap-y-10 xl:gap-x-16">
+
                     {/* Product image */}
                     <div className="lg:col-span-4 lg:row-end-1">
-                        <img alt={product.imageAlt} src={product.imageSrc} className="aspect-[4/3] w-full rounded-lg bg-gray-100 object-cover" />
+                        <Image
+                            alt={product.imageAlt}
+                            width={0}
+                            height={0}
+                            src={product.imageSrc}
+                            className="aspect-[3/1] w-full rounded-lg bg-gray-100 object-cover"
+                        />
                     </div>
 
                     {/* Product details */}

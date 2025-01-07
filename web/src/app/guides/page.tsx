@@ -4,7 +4,7 @@ import Image from 'next/image'
 const guides = [
     {
         id: 'gamer-101',
-        title: "Gamer 101: My First Game",
+        title: "Gamer 101: My First Farcaster Game from ZERO w/ Godot",
         href: "/guide/gamer-101",
         description:
             "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel iusto corrupti dicta laboris incididunt.",
@@ -110,7 +110,7 @@ export default function Example() {
                                     </div>
 
                                     <div className="group relative max-w-xl">
-                                        <h3 className="mt-3 text-2xl/6 font-semibold text-gray-900 group-hover:text-gray-600 tracking-wider">
+                                        <h3 className="mt-3 text-2xl/8 font-semibold text-gray-900 group-hover:text-gray-600 tracking-wider">
                                             <a href={post.href}>
                                                 <span className="absolute inset-0" />
                                                 {post.title}

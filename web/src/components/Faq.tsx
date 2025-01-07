@@ -17,6 +17,10 @@ const faqs = [
         question: `What's the difference between Farcaster Frames and Telegram Mini Apps?`,
         answer: `Frames are permissionless. Mini apps are NOT!`,
     },
+    {
+        question: `What does royalty free mean?`,
+        answer: `Royalty free means you just need to pay for rights to use the item once per end product. You don't need to pay additional or ongoing fees for each person who sees or uses it.`,
+    },
 ]
 
 export default function Faq() {
