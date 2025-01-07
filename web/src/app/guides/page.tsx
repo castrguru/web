@@ -61,11 +61,11 @@ export default function Example() {
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
                 <div className="mx-auto max-w-2xl lg:max-w-4xl">
                     <h2 className="text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
-                        User Guides
+                        Castr Guides
                     </h2>
 
                     <p className="w-full sm:w-2/3 mt-2 text-lg/8 text-gray-600">
-                        Learn how to grow your REACH within the Farcaster ecosystem from the infinite wisdom of the Castr GÜRŲs.
+                        Browse our collection of interactive smart guides, built by our in-house GÜRŲs, covering ALL aspects on how to leverage FRAMES to grow your REACH within the Farcaster ecosystem.
                     </p>
 
                     <div className="mt-16 space-y-20 lg:mt-20 lg:space-y-20">
@@ -82,7 +82,7 @@ export default function Example() {
                                 </div>
 
                                 <div>
-                                    <div className="flex items-center gap-x-4 text-xs">
+                                    <div className="flex items-center gap-x-4 text-sm">
                                         <time dateTime={post.datetime} className="text-gray-500">
                                             {post.date}
                                         </time>
@@ -93,7 +93,7 @@ export default function Example() {
                                     </div>
 
                                     <div className="group relative max-w-xl">
-                                        <h3 className="mt-3 text-lg/6 font-semibold text-gray-900 group-hover:text-gray-600">
+                                        <h3 className="mt-3 text-2xl/6 font-semibold text-gray-900 group-hover:text-gray-600 tracking-wider">
                                             <a href={post.href}>
                                                 <span className="absolute inset-0" />
                                                 {post.title}
@@ -105,7 +105,7 @@ export default function Example() {
                                         </p>
                                     </div>
 
-                                    <div className="mt-6 flex border-t border-gray-900/5 pt-6">
+                                    <div className="mt-3 flex border-t border-gray-900/5 pt-3">
                                         <div className="relative flex items-center gap-x-4">
                                             <Image
                                                 alt=""
