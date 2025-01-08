@@ -3,17 +3,9 @@
 // import Image from 'next/image'
 
 import { useState } from 'react'
-import { Dialog, DialogPanel, Label, Listbox, ListboxButton, ListboxOption, ListboxOptions, Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
-import { Bars3Icon, CalendarDaysIcon, CreditCardIcon, EllipsisVerticalIcon, FaceFrownIcon, FaceSmileIcon, FireIcon, HandThumbUpIcon, HeartIcon, PaperClipIcon, UserCircleIcon, XMarkIcon as XMarkIconMini } from '@heroicons/react/20/solid'
-import { BellIcon, XMarkIcon as XMarkIconOutline } from '@heroicons/react/24/outline'
+import { Label, Listbox, ListboxButton, ListboxOption, ListboxOptions, Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
+import { CalendarDaysIcon, CreditCardIcon, EllipsisVerticalIcon, FaceFrownIcon, FaceSmileIcon, FireIcon, HandThumbUpIcon, HeartIcon, PaperClipIcon, UserCircleIcon, XMarkIcon as XMarkIconMini } from '@heroicons/react/20/solid'
 import { CheckCircleIcon } from '@heroicons/react/24/solid'
-
-const navigation = [
-    { name: "Home", href: "#" },
-    { name: "Invoices", href: "#" },
-    { name: "Clients", href: "#" },
-    { name: "Expenses", href: "#" },
-]
 
 const invoice = {
     subTotal: "$8,800.00",
@@ -88,8 +80,7 @@ function classNames(...classes: string[]) {
 }
 
 export default function Example() {
-    const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-    const [selected, setSelected] = useState(moods[5]);
+    const [selected, setSelected] = useState(moods[5])
 
     return (
         <div className="bg-slate-50">

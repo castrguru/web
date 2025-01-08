@@ -9,7 +9,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 import { Dialog, DialogBackdrop, DialogPanel, Menu, MenuButton, MenuItem, MenuItems, TransitionChild } from '@headlessui/react'
-import { Bars3Icon, BellIcon, PresentationChartLineIcon, LightBulbIcon, ChartPieIcon, Cog6ToothIcon, ShieldCheckIcon, ReceiptPercentIcon, RectangleGroupIcon, TableCellsIcon, UsersIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import { Bars3Icon, BellIcon, PresentationChartLineIcon, LightBulbIcon, Cog6ToothIcon, ReceiptPercentIcon, RectangleGroupIcon, TableCellsIcon, UsersIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import { ChevronDownIcon, MagnifyingGlassIcon } from '@heroicons/react/20/solid'
 
 import Connect from '../../components/Connect'
@@ -39,9 +39,12 @@ export default function RootLayout({
 }: Readonly<{
     children: React.ReactNode;
 }>) {
+    const [isAuthorized, setIsAuthorized] = useState(false)
     const [sidebarOpen, setSidebarOpen] = useState(false)
 
     const pathname = usePathname()
+
+    setIsAuthorized(false) // FIXME
 
     const navigation = [
         { name: 'Dashboard', href: '/manager', icon: TableCellsIcon, current: (pathname === '/manager/') ? true : false },
@@ -54,7 +57,9 @@ export default function RootLayout({
         // { name: 'Reports', href: '/manager', icon: ChartPieIcon, current: (pathname === '/manager/reports/') ? true : false },
     ]
 
-    // return <Connect />
+    if (isAuthorized) {
+        return <Connect />
+    }
 
     return (
         <html lang="en">
