@@ -8,7 +8,7 @@ import { usePathname } from 'next/navigation'
 import Link from 'next/link'
 
 import { Dialog, DialogBackdrop, DialogPanel, TransitionChild } from '@headlessui/react'
-import { CodeBracketIcon, RocketLaunchIcon, BuildingStorefrontIcon, PaintBrushIcon, RectangleGroupIcon, PhotoIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import { CodeBracketIcon, CubeTransparentIcon, RocketLaunchIcon, BuildingStorefrontIcon, PaintBrushIcon, RectangleGroupIcon, PhotoIcon, XMarkIcon } from '@heroicons/react/24/outline'
 
 // export const metadata: Metadata = {
 //     title: 'Studio — Castr GÜRŲ',
@@ -36,6 +36,7 @@ export default function RootLayout({
         { name: 'Theme Studio', href: '/studio/theme', icon: PaintBrushIcon, current: (pathname === '/studio/theme/') ? true : false },
         // { name: 'Media Center', href: '/studio/media', icon: MusicalNoteIcon, current: (pathname === '/studio/media/') ? true : false },
         { name: 'Code Snippets', href: '/studio/code', icon: CodeBracketIcon, current: (pathname === '/studio/code/') ? true : false },
+        { name: 'Elements', href: '/studio/elements', icon: CubeTransparentIcon, current: (pathname === '/studio/elements/') ? true : false },
     ]
 
     return (
