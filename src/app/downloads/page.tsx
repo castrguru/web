@@ -1,9 +1,9 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
-const people = [
+const packages = [
     {
-        name: "Lindsay Walton",
+        name: "Castr GÜRŲ for Windows",
         title: "Front-end Developer",
         department: "Optimization",
         email: "lindsay.walton@example.com",
@@ -11,7 +11,7 @@ const people = [
         image: "https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
     },
     {
-        name: "Courtney Henry",
+        name: "Castr GÜRŲ for macOS",
         title: "Front-end Developer",
         department: "Optimization",
         email: "lindsay.walton@example.com",
@@ -19,7 +19,7 @@ const people = [
         image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
     },
     {
-        name: "Tom Cook",
+        name: "Castr GÜRŲ for Linux",
         title: "Front-end Developer",
         department: "Optimization",
         email: "lindsay.walton@example.com",
@@ -27,7 +27,7 @@ const people = [
         image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
     },
     {
-        name: "Whitney Francis",
+        name: "Castr Elements",
         title: "Front-end Developer",
         department: "Optimization",
         email: "lindsay.walton@example.com",
@@ -45,8 +45,8 @@ export default function Downloads() {
                         Downloads
                     </h1>
 
-                    <p className="mt-2 text-sm text-gray-700">
-                        A list of all the users in your account including their name, title, email and role.
+                    <p className="mt-2 text-sm text-gray-700 tracking-wider">
+                        A collection of ALL the software GÜRŲS DAO offers for download.
                     </p>
                 </div>
 
@@ -67,17 +67,21 @@ export default function Downloads() {
                             <thead>
                                 <tr>
                                     <th scope="col" className="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 sm:pl-0">
-                                        Name
+                                        Package Name
                                     </th>
+
                                     <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
-                                        Title
+                                        Platform
                                     </th>
+
                                     <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
                                         Status
                                     </th>
+
                                     <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
                                         Role
                                     </th>
+
                                     <th scope="col" className="relative py-3.5 pl-3 pr-4 sm:pr-0">
                                         <span className="sr-only">Edit</span>
                                     </th>
@@ -85,34 +89,53 @@ export default function Downloads() {
                             </thead>
 
                             <tbody className="divide-y divide-fuchsia-200">
-                                {people.map((person) => (
-                                    <tr key={person.email}>
+                                {packages.map((_package) => (
+                                    <tr key={_package.email}>
                                         <td className="whitespace-nowrap py-5 pl-4 pr-3 text-sm sm:pl-0">
                                             <div className="flex items-center">
                                                 <div className="size-11 shrink-0">
-                                                    <img alt="" src={person.image} className="size-11 rounded-full" />
+                                                    <Image
+                                                        alt=""
+                                                        width={0}
+                                                        height={0}
+                                                        src={_package.image}
+                                                        className="size-11 rounded-full"
+                                                    />
                                                 </div>
+
                                                 <div className="ml-4">
-                                                    <div className="font-medium text-gray-900">{person.name}</div>
-                                                    <div className="mt-1 text-gray-500">{person.email}</div>
+                                                    <div className="text-lg font-semibold text-slate-700 tracking-widest">
+                                                        {_package.name}
+                                                    </div>
+
+                                                    <div className="mt-1 text-gray-500">
+                                                        {_package.email}
+                                                    </div>
                                                 </div>
                                             </div>
                                         </td>
 
                                         <td className="whitespace-nowrap px-3 py-5 text-sm text-gray-500">
-                                            <div className="text-gray-900">{person.title}</div>
-                                            <div className="mt-1 text-gray-500">{person.department}</div>
+                                            <div className="text-gray-900">
+                                                {_package.title}
+                                            </div>
+
+                                            <div className="mt-1 text-gray-500">
+                                                {_package.department}
+                                            </div>
                                         </td>
 
                                         <td className="whitespace-nowrap px-3 py-5 text-sm text-gray-500">
                                             <span className="inline-flex items-center rounded-md bg-green-50 px-2 py-1 text-xs font-medium text-green-700 ring-1 ring-inset ring-green-600/20">Active</span>
                                         </td>
 
-                                        <td className="whitespace-nowrap px-3 py-5 text-sm text-gray-500">{person.role}</td>
+                                        <td className="whitespace-nowrap px-3 py-5 text-sm text-gray-500">
+                                            {_package.role}
+                                        </td>
 
                                         <td className="relative whitespace-nowrap py-5 pl-3 pr-4 text-right text-sm font-medium sm:pr-0">
                                             <a href="#" className="text-indigo-600 hover:text-indigo-900">
-                                                Edit<span className="sr-only">, {person.name}</span>
+                                                Edit<span className="sr-only">, {_package.name}</span>
                                             </a>
                                         </td>
                                     </tr>

@@ -44,11 +44,11 @@ function classNames(...classes: string[]) {
     return classes.filter(Boolean).join(' ')
 }
 
-export default function Live() {
+export default function Amma() {
     return (
         <div className="bg-white max-w-5xl mx-auto p-10">
             <h1 className="text-5xl font-bold text-fuchsia-700/20 tracking-widest">
-                GÜRŲs LIVE
+                Ask Amma
             </h1>
 
             <ul role="list" className="mt-10 -mb-8">

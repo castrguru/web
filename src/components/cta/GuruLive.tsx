@@ -51,10 +51,10 @@ export default function GuruLive() {
 
                     <div className="mt-8">
                         <Link
-                            href="/live"
+                            href="/amma"
                             className="inline-flex rounded-md bg-white/10 px-3.5 py-2.5 text-lg font-semibold text-slate-100 shadow-sm hover:bg-fuchsia-200/50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-fuchsia-200 tracking-wider"
                         >
-                            Visit the GÜRŲ LIVE Center
+                            Visit the Ask Amma LIVE Center
                         </Link>
                     </div>
                 </div>

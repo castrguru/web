@@ -134,9 +134,9 @@ export default function Pricing() {
                 ))}
             </div>
 
-            <Link href="/live" className="group mx-auto mt-16 max-w-lg px-10 py-5 flex flex-col sm:mt-20 sm:gap-y-0 lg:max-w-4xl bg-fuchsia-50 border-2 border-fuchsia-200 rounded-xl shadow hover:bg-fuchsia-600 hover:border-fuchsia-300">
+            <Link href="/amma" className="group mx-auto mt-16 max-w-lg px-10 py-5 flex flex-col sm:mt-20 sm:gap-y-0 lg:max-w-4xl bg-fuchsia-50 border-2 border-fuchsia-200 rounded-xl shadow hover:bg-fuchsia-600 hover:border-fuchsia-300">
                 <h2 className="text-fuchsia-700 font-bold text-2xl tracking-wider group-hover:text-fuchsia-50">
-                    GÜRŲ LIVE! Case Support
+                    Ask Amma LIVE! Case Support
                 </h2>
 
                 <h3 className="text-fuchsia-600 font-bold text-xl tracking-wide group-hover:text-fuchsia-50">
