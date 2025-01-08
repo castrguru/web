@@ -1,14 +1,14 @@
 import Image from 'next/image'
-// import Link from 'next/link'
+import Link from 'next/link'
 
 const posts = [
     {
-        id: 1,
-        title: "@castrguru/ui",
-        href: "/lib/ui",
+        id: 'castrguru',
+        title: "Main Package",
+        href: "lib",
         description: "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
-        imageUrl: "https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80",
-        date: "Mar 16, 2020",
+        imageUrl: "https://i.ibb.co/KhC5bmR/castrguru.jpg",
+        date: "castrguru",
         datetime: "2020-03-16",
         author: {
             name: "Michael Foster",
@@ -16,12 +16,12 @@ const posts = [
         },
     },
     {
-        id: 2,
-        title: "@castrguru/ux",
-        href: "/lib/ux",
+        id: 'castrguru-ui',
+        title: "User Interfaces",
+        href: "lib",
         description: "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
-        imageUrl: "https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80",
-        date: "Mar 16, 2020",
+        imageUrl: "https://images.unsplash.com/photo-1588600878108-578307a3cc9d?q=80",
+        date: "@castrguru/ui",
         datetime: "2020-03-16",
         author: {
             name: "Michael Foster",
@@ -29,20 +29,32 @@ const posts = [
         },
     },
     {
-        id: 3,
-        title: "@castrguru/next",
-        href: "/lib/next",
+        id: 'castrguru-ux',
+        title: "User Experiences",
+        href: "lib",
         description: "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
-        imageUrl: "https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80",
-        date: "Mar 16, 2020",
+        imageUrl: "https://i.ibb.co/2FDCH7Y/castrguru-ux.jpg",
+        date: "@castrguru/ux",
         datetime: "2020-03-16",
         author: {
             name: "Michael Foster",
             imageUrl: "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
         },
     },
-    // More posts...
-];
+    {
+        id: 'castrguru-next',
+        title: "Next.js",
+        href: "lib",
+        description: "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
+        imageUrl: "https://i.ibb.co/w7TTYjS/image.png",
+        date: "@castrguru/next",
+        datetime: "2020-03-16",
+        author: {
+            name: "Michael Foster",
+            imageUrl: "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+        },
+    },
+]
 
 export default function Libraries() {
     return (
@@ -71,32 +83,17 @@ export default function Libraries() {
                             <div className="absolute inset-0 -z-10 bg-gradient-to-t from-gray-900 via-gray-900/40" />
                             <div className="absolute inset-0 -z-10 rounded-2xl ring-1 ring-inset ring-gray-900/10" />
 
-                            <div className="flex flex-wrap items-center gap-y-1 overflow-hidden text-sm/6 text-gray-300">
-                                <time dateTime={post.datetime} className="mr-8">
-                                    {post.date}
-                                </time>
-
-                                <div className="-ml-4 flex items-center gap-x-4">
-                                    <svg viewBox="0 0 2 2" className="-ml-0.5 size-0.5 flex-none fill-white/50">
-                                        <circle r={1} cx={1} cy={1} />
-                                    </svg>
-                                    <div className="flex gap-x-2.5">
-                                        <Image
-                                            alt=""
-                                            width={0}
-                                            height={0}
-                                            src={post.author.imageUrl} className="size-6 flex-none rounded-full bg-white/10"
-                                        />
-                                        {post.author.name}
-                                    </div>
-                                </div>
+                            <div className="px-3 py-2 w-fit bg-white/10 rounded-2xl">
+                                <h3 className="text-sm/6 text-amber-200 font-mono tracking-widest">
+                                    npm install {post.date}
+                                </h3>
                             </div>
 
-                            <h3 className="mt-3 text-lg/6 font-semibold text-white">
-                                <a href={post.href}>
+                            <h3 className="pl-3 mt-3 text-3xl/6 font-semibold text-slate-100 tracking-wider">
+                                <Link href={post.href}>
                                     <span className="absolute inset-0" />
                                     {post.title}
-                                </a>
+                                </Link>
                             </h3>
                         </article>
                     ))}
