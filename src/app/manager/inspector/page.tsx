@@ -65,9 +65,7 @@ function classNames(...classes: string[]) {
     return classes.filter(Boolean).join(' ')
 }
 
-export default function Example() {
-    const [sidebarOpen, setSidebarOpen] = useState(false)
-
+export default function Inspector() {
     return (
         <main>
             <header>

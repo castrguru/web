@@ -9,7 +9,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 import { Dialog, DialogBackdrop, DialogPanel, Menu, MenuButton, MenuItem, MenuItems, TransitionChild } from '@headlessui/react'
-import { Bars3Icon, BellIcon, PresentationChartLineIcon, LightBulbIcon, ChartPieIcon, Cog6ToothIcon, ShieldCheckIcon, RectangleGroupIcon, TableCellsIcon, UsersIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import { Bars3Icon, BellIcon, PresentationChartLineIcon, LightBulbIcon, ChartPieIcon, Cog6ToothIcon, ShieldCheckIcon, ReceiptPercentIcon, RectangleGroupIcon, TableCellsIcon, UsersIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import { ChevronDownIcon, MagnifyingGlassIcon } from '@heroicons/react/20/solid'
 
 import Connect from '../../components/Connect'
@@ -47,13 +47,14 @@ export default function RootLayout({
         { name: 'Dashboard', href: '/manager', icon: TableCellsIcon, current: (pathname === '/manager/') ? true : false },
         { name: 'Frames', href: '/manager/frames', icon: RectangleGroupIcon, current: (pathname === '/manager/frames/') ? true : false },
         { name: 'Community', href: '/manager/community', icon: UsersIcon, current: (pathname === '/manager/community/') ? true : false },
+        { name: 'Monetize', href: '/manager/monetize', icon: ReceiptPercentIcon, current: (pathname === '/manager/monetize/') ? true : false },
         { name: 'Analytics', href: '/manager', icon: PresentationChartLineIcon, current: (pathname === '/manager/stats/') ? true : false },
         { name: 'Inspector', href: '/manager/inspector', icon: LightBulbIcon, current: (pathname === '/manager/inspector/') ? true : false },
         // { name: 'Security', href: '/manager', icon: ShieldCheckIcon, current: (pathname === '/manager/security/') ? true : false },
         // { name: 'Reports', href: '/manager', icon: ChartPieIcon, current: (pathname === '/manager/reports/') ? true : false },
     ]
 
-    return <Connect />
+    // return <Connect />
 
     return (
         <html lang="en">
