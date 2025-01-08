@@ -51,9 +51,9 @@ export default function Header() {
                 </div>
 
                 <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-                    <Link href="/profile" className="group flex flex-row gap-1 text-2xl/6 font-semibold text-stone-200 hover:text-stone-100">
+                    <Link href="/profile" className="group flex flex-row items-center gap-1 text-2xl/6 font-semibold text-stone-200 hover:text-stone-100">
                         Connect
-                        <BoltIcon className="size-6 text-amber-500 group-hover:text-amber-300" />
+                        <BoltIcon className="pl-1 size-9 text-amber-500 group-hover:text-amber-300" />
                     </Link>
                 </div>
             </nav>
@@ -91,9 +91,9 @@ export default function Header() {
                             </div>
 
                             <div className="py-6">
-                                <Link href="/profile" className="-mx-3 block group flex flex-row gap-1 rounded-lg px-3 py-2.5 text-3xl/7 font-semibold text-white hover:bg-gray-800">
+                                <Link href="/profile" className="-mx-3 block group flex flex-row items-center gap-1 rounded-lg px-3 py-2.5 text-3xl/7 font-semibold text-white hover:bg-gray-800">
                                     Connect
-                                    <BoltIcon className="size-6 text-amber-500 group-hover:text-amber-300" />
+                                    <BoltIcon className="pl-1 size-10 text-amber-500 group-hover:text-amber-300" />
                                 </Link>
                             </div>
                         </div>
