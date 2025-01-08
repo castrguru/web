@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
 import Footer from '../../components/Footer'
-import Header from '../../components/HeaderAlt'
+import Header from '../../components/HeaderFixed'
 
 export const metadata: Metadata = {
     title: 'Licenses — Castr GÜRŲ',

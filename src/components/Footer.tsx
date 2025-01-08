@@ -3,11 +3,11 @@ import Image from 'next/image'
 
 const footerNavigation = {
     building: [
-        { name: "Downloads", href: "/downloads" },
-        { name: "Libraries", href: "/libs" },
         { name: "Frame Kits", href: "/kits" },
         { name: "Frame Studio", href: "/studio" },
         { name: "Castr Manager", href: "/manager" },
+        { name: "Libraries", href: "/libs" },
+        { name: "Downloads", href: "/downloads" },
     ],
     learning: [
         { name: "ReadTheDocs", href: "https://castrgurudocs.on-fleek.app/" },
@@ -22,6 +22,7 @@ const footerNavigation = {
     ],
     dao: [
         { name: "Our Mission", href: "/mission" },
+        { name: "Roadmap", href: "/roadmap" },
         { name: "Terms of Service", href: "/terms" },
         { name: "Privacy Policy", href: "/privacy" },
         { name: "Licenses", href: "/licenses" },

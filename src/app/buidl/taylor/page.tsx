@@ -2,16 +2,16 @@
 
 import { CheckCircleIcon } from '@heroicons/react/20/solid'
 
-export default function Blank() {
+export default function Buidl() {
     return (
         <div className="bg-white px-6 py-16 lg:px-8">
             <div className="mx-auto max-w-3xl text-base/7 text-gray-700">
                 <p className="text-base/7 font-semibold text-fuchsia-600 tracking-wider">
-                    BLANK
+                    For Builders
                 </p>
 
                 <h1 className="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
-                    CREATE A NEW FRAME
+                    TIME TO #BUIDL .. REACT FTW!!
                 </h1>
 
                 <p className="mt-6 text-xl/8">
@@ -27,20 +27,28 @@ export default function Blank() {
                         <li className="flex gap-x-3">
                             <CheckCircleIcon aria-hidden="true" className="mt-1 size-5 flex-none text-indigo-600" />
                             <span>
-                                <strong className="font-semibold text-gray-900">Data types.</strong> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis
+                                <strong className="font-semibold text-gray-900">Never coded before.</strong>
+                                We recommend you start with Rosé.
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis
                                 ratione.
                             </span>
                         </li>
+
                         <li className="flex gap-x-3">
                             <CheckCircleIcon aria-hidden="true" className="mt-1 size-5 flex-none text-indigo-600" />
                             <span>
-                                <strong className="font-semibold text-gray-900">Loops.</strong> Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.
+                                <strong className="font-semibold text-gray-900">Some coding w/ React.</strong>
+                                We recommend you start with Taylor.
+                                Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.
                             </span>
                         </li>
+
                         <li className="flex gap-x-3">
                             <CheckCircleIcon aria-hidden="true" className="mt-1 size-5 flex-none text-indigo-600" />
                             <span>
-                                <strong className="font-semibold text-gray-900">Events.</strong> Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.
+                                <strong className="font-semibold text-gray-900">Some general coding.</strong>
+                                We recommend you start with Britney.
+                                Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.
                             </span>
                         </li>
                     </ul>

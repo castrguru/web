@@ -38,26 +38,32 @@ const people = [
 
 export default function Downloads() {
     return (
-        <div className="bg-gradient-to-b from-slate-50 to-slate-200 px-4 sm:px-6 lg:px-8">
-            <div className="sm:flex sm:items-center">
+        <div className="py-16 bg-gradient-to-b from-slate-50 to-slate-200 px-4 sm:px-6 lg:px-8">
+            <div className="max-w-5xl mx-auto sm:flex sm:items-center">
                 <div className="sm:flex-auto">
-                    <h1 className="text-base font-semibold text-gray-900">Users</h1>
-                    <p className="mt-2 text-sm text-gray-700">A list of all the users in your account including their name, title, email and role.</p>
+                    <h1 className="text-3xl font-semibold text-slate-600 tracking-wider">
+                        Downloads
+                    </h1>
+
+                    <p className="mt-2 text-sm text-gray-700">
+                        A list of all the users in your account including their name, title, email and role.
+                    </p>
                 </div>
+
                 <div className="mt-4 sm:ml-16 sm:mt-0 sm:flex-none">
-                    <button
+                    {/* <button
                         type="button"
                         className="block rounded-md bg-indigo-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                     >
                         Add user
-                    </button>
+                    </button> */}
                 </div>
             </div>
 
-            <div className="mt-8 flow-root">
+            <div className="max-w-5xl mx-auto mt-8 flow-root">
                 <div className="-mx-4 -my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
-                    <div className="inline-block min-w-full py-2 align-middle sm:px-6 lg:px-8">
-                        <table className="min-w-full divide-y divide-gray-300">
+                    <div className="inline-block min-w-full py-2 align-middle sm:px-6 lg:px-8 bg-gradient-to-r from-slate-200 to-slate-50 border border-slate-300 rounded-2xl shadow">
+                        <table className="min-w-full divide-y divide-fuchsia-300">
                             <thead>
                                 <tr>
                                     <th scope="col" className="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 sm:pl-0">
@@ -77,7 +83,8 @@ export default function Downloads() {
                                     </th>
                                 </tr>
                             </thead>
-                            <tbody className="divide-y divide-gray-200 bg-white">
+
+                            <tbody className="divide-y divide-fuchsia-200">
                                 {people.map((person) => (
                                     <tr key={person.email}>
                                         <td className="whitespace-nowrap py-5 pl-4 pr-3 text-sm sm:pl-0">
@@ -91,14 +98,18 @@ export default function Downloads() {
                                                 </div>
                                             </div>
                                         </td>
+
                                         <td className="whitespace-nowrap px-3 py-5 text-sm text-gray-500">
                                             <div className="text-gray-900">{person.title}</div>
                                             <div className="mt-1 text-gray-500">{person.department}</div>
                                         </td>
+
                                         <td className="whitespace-nowrap px-3 py-5 text-sm text-gray-500">
                                             <span className="inline-flex items-center rounded-md bg-green-50 px-2 py-1 text-xs font-medium text-green-700 ring-1 ring-inset ring-green-600/20">Active</span>
                                         </td>
+
                                         <td className="whitespace-nowrap px-3 py-5 text-sm text-gray-500">{person.role}</td>
+
                                         <td className="relative whitespace-nowrap py-5 pl-3 pr-4 text-right text-sm font-medium sm:pr-0">
                                             <a href="#" className="text-indigo-600 hover:text-indigo-900">
                                                 Edit<span className="sr-only">, {person.name}</span>
