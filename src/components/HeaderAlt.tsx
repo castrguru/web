@@ -65,7 +65,7 @@ export default function Header() {
     return (
         <header className="bg-gradient-to-b from-fuchsia-900 to-fuchsia-700 border-b-4 border-fuchsia-500">
             <nav aria-label="Global" className="mx-auto flex w-full items-center justify-between py-3 lg:px-8">
-                <div className="flex lg:flex-1">
+                <div className="hidden lg:flex lg:flex-1">
                     <Link href="/" className="-m-1.5 p-1.5">
                         <span className="sr-only">Castr Guru</span>
 
@@ -79,10 +79,22 @@ export default function Header() {
                     </Link>
                 </div>
 
-                <div className="flex lg:hidden">
-                    <button type="button" onClick={() => setMobileMenuOpen(true)} className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+                <div className="px-3 flex w-full justify-between lg:hidden">
+                    <Link href="/" className="-m-1.5 p-1.5">
+                        <span className="sr-only">Castr Guru</span>
+
+                        <Image
+                            alt=""
+                            width={0}
+                            height={0}
+                            src="/icon.svg"
+                            className="size-14"
+                        />
+                    </Link>
+
+                    <button type="button" onClick={() => setMobileMenuOpen(true)} className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5">
                         <span className="sr-only">Open main menu</span>
-                        <Bars3Icon aria-hidden="true" className="size-6" />
+                        <Bars3Icon aria-hidden="true" className="pr-2 size-14 text-slate-100" />
                     </button>
                 </div>
 

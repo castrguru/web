@@ -1,5 +1,5 @@
 import Image from 'next/image'
-// import Link from 'next/link'
+import Link from 'next/link'
 
 import { CloudArrowDownIcon } from '@heroicons/react/24/outline'
 
@@ -14,7 +14,8 @@ export default function Example() {
                         </h2>
 
                         <p className="mt-6 text-xl/8 text-gray-600">
-                            Elements is a complete UI asset kit for Adobe Illustrator, Adobe XD, Sketch, Balsamiq and is also available as SVG/PNG for use with other programs.
+                            A complete UI asset kit for Adobe Illustrator, Adobe XD, Sketch, Balsamiq
+                            — also available as SVG/PNG for use with other programs.
                         </p>
 
                         <p className="mt-6 text-base/7 text-gray-600">
@@ -23,22 +24,22 @@ export default function Example() {
                         </p>
 
                         <p className="mt-6 text-base/7 text-gray-600">
-                            They can work with the components as vector files and symbols rather than writing code.
-                            With Elements, designers can streamline the process of creating mockups for great looking web applications.
+                            Designers can work with the components as vector files and symbols rather than writing code.
+                            Elements greatly streamlines the process of creating mockups for amazing looking Farcaster frames.
                         </p>
 
                         <p className="mt-6 text-base/7 text-gray-600">
-                            Elements is available for download at no additional charge.
+                            Elements is available for download at NO additional charge.
                         </p>
 
                         <div className="mt-10 flex">
-                            <a
-                                href="#"
+                            <Link
+                                href="/downloads"
                                 className="flex flex-row gap-2 items-center rounded-md bg-fuchsia-600 px-5 py-3 text-2xl font-semibold text-white shadow-sm hover:bg-fuchsia-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-fuchsia-600"
                             >
                                 Download Elements
                                 <CloudArrowDownIcon className="size-8" />
-                            </a>
+                            </Link>
                         </div>
                     </div>
 
@@ -48,7 +49,7 @@ export default function Example() {
                                 alt=""
                                 width={0}
                                 height={0}
-                                src="https://images.unsplash.com/photo-1670272502246-768d249768ca?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1152&q=80"
+                                src="https://images.unsplash.com/photo-1591040092219-081fb773589c?q=80"
                                 className="aspect-[7/5] w-[37rem] max-w-none rounded-2xl bg-gray-50 object-cover"
                             />
                         </div>
@@ -59,7 +60,7 @@ export default function Example() {
                                     alt=""
                                     width={0}
                                     height={0}
-                                    src="https://images.unsplash.com/photo-1605656816944-971cd5c1407f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=768&h=604&q=80"
+                                    src="https://images.unsplash.com/photo-1568149537268-2790e1d5c4c8?q=80"
                                     className="aspect-[4/3] w-[24rem] max-w-none flex-none rounded-2xl bg-gray-50 object-cover"
                                 />
                             </div>
@@ -69,7 +70,7 @@ export default function Example() {
                                     alt=""
                                     width={0}
                                     height={0}
-                                    src="https://images.unsplash.com/photo-1568992687947-868a62a9f521?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1152&h=842&q=80"
+                                    src="https://images.unsplash.com/photo-1613574714687-c33b9e90200d?q=80"
                                     className="aspect-[7/5] w-[37rem] max-w-none flex-none rounded-2xl bg-gray-50 object-cover"
                                 />
                             </div>
@@ -79,7 +80,7 @@ export default function Example() {
                                     alt=""
                                     width={0}
                                     height={0}
-                                    src="https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=768&h=604&q=80"
+                                    src="https://images.unsplash.com/photo-1560961911-0ac252fecc71?q=80"
                                     className="aspect-[4/3] w-[24rem] max-w-none rounded-2xl bg-gray-50 object-cover"
                                 />
                             </div>
