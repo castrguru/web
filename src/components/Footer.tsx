@@ -21,7 +21,7 @@ const footerNavigation = {
         { name: "GitHub Sources", href: "https://github.com/farcasterxyz/protocol" },
     ],
     dao: [
-        { name: "Our Team", href: "/team" },
+        { name: "Our Mission", href: "/mission" },
         { name: "Terms of Service", href: "/terms" },
         { name: "Privacy Policy", href: "/privacy" },
         { name: "Licenses", href: "/licenses" },

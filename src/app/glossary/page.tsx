@@ -15,7 +15,7 @@ const guides = [
         author: {
             name: "@shomari",
             role: "Farcaster Master Builder",
-            href: "/team/shomari",
+            href: "/about/shomari",
             imageUrl: "/img/portrait.jpg",
         },
     },
@@ -32,7 +32,7 @@ const guides = [
         author: {
             name: "@shomari",
             role: "Farcaster Master Builder",
-            href: "/team/shomari",
+            href: "/about/shomari",
             imageUrl: "/img/portrait.jpg",
         },
     },
@@ -49,7 +49,7 @@ const guides = [
         author: {
             name: "@shomari",
             role: "Farcaster Master Builder",
-            href: "/team/shomari",
+            href: "/about/shomari",
             imageUrl: "/img/portrait.jpg",
         },
     },
