@@ -7,7 +7,7 @@ export default function Blank() {
         <div className="bg-white px-6 py-16 lg:px-8">
             <div className="mx-auto max-w-3xl text-base/7 text-gray-700">
                 <p className="text-base/7 font-semibold text-fuchsia-600 tracking-wider">
-                    Under Construction
+                    Work In Progress
                 </p>
 
                 <h1 className="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
