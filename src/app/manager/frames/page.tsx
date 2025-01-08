@@ -43,6 +43,7 @@ const people = [
 
 export default function Frames() {
     return <Welcome />
+
     return (
         <div className="bg-gray-900 py-24 sm:py-32">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">

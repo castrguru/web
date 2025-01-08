@@ -12,6 +12,7 @@ import { Dialog, DialogBackdrop, DialogPanel, Menu, MenuButton, MenuItem, MenuIt
 import { Bars3Icon, BellIcon, PresentationChartLineIcon, LightBulbIcon, ChartPieIcon, Cog6ToothIcon, ShieldCheckIcon, RectangleGroupIcon, TableCellsIcon, UsersIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import { ChevronDownIcon, MagnifyingGlassIcon } from '@heroicons/react/20/solid'
 
+import Connect from '../../components/Connect'
 import FooterMin from '../../components/FooterMin'
 
 const frames = [
@@ -51,6 +52,8 @@ export default function RootLayout({
         // { name: 'Security', href: '/manager', icon: ShieldCheckIcon, current: (pathname === '/manager/security/') ? true : false },
         // { name: 'Reports', href: '/manager', icon: ChartPieIcon, current: (pathname === '/manager/reports/') ? true : false },
     ]
+
+    return <Connect />
 
     return (
         <html lang="en">
