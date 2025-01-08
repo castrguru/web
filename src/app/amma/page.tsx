@@ -1,4 +1,4 @@
-// import Image from 'next/image'
+import Image from 'next/image'
 
 import { Fragment } from "react";
 import { ChatBubbleLeftEllipsisIcon, TagIcon, UserCircleIcon } from "@heroicons/react/20/solid";
@@ -47,6 +47,14 @@ function classNames(...classes: string[]) {
 export default function Amma() {
     return (
         <div className="bg-white max-w-5xl mx-auto p-10">
+            <Image
+                alt="Amma"
+                width={0}
+                height={0}
+                src="https://i.ibb.co/GsZv9tS/amma.jpg"
+                className="size-32 float-right rounded-xl shadow"
+            />
+
             <h1 className="text-5xl font-bold text-fuchsia-700/20 tracking-widest">
                 Ask Amma
             </h1>
