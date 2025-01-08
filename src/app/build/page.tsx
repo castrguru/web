@@ -28,7 +28,7 @@ export default function Buidl() {
                     <ul role="list" className="mt-8 max-w-xl space-y-8 text-gray-600">
                         <li className="flex gap-x-3">
                             <CheckCircleIcon aria-hidden="true" className="mt-1 size-7 flex-none text-fuchsia-600" />
-                            <Link href="/buidl/newbie">
+                            <Link href="/build/newbie">
                                 <strong className="block text-lg font-semibold text-gray-900 tracking-wide">
                                     I have never built a web app before ↴
                                 </strong>
@@ -40,7 +40,7 @@ export default function Buidl() {
 
                         <li className="flex gap-x-3">
                             <CheckCircleIcon aria-hidden="true" className="mt-1 size-7 flex-none text-fuchsia-600" />
-                            <Link href="/buidl/rose">
+                            <Link href="/build/rose">
                                 <strong className="block text-lg font-semibold text-gray-900 tracking-wide">
                                     I just want a simple frame (eg. blog or media gallery) ↴
                                 </strong>
@@ -52,7 +52,7 @@ export default function Buidl() {
 
                         <li className="flex gap-x-3">
                             <CheckCircleIcon aria-hidden="true" className="mt-1 size-7 flex-none text-fuchsia-600" />
-                            <Link href="/buidl/taylor">
+                            <Link href="/build/taylor">
                                 <strong className="block text-lg font-semibold text-gray-900 tracking-wide">
                                     I have coding experience with React ↴
                                 </strong>
@@ -63,7 +63,7 @@ export default function Buidl() {
 
                         <li className="flex gap-x-3">
                             <CheckCircleIcon aria-hidden="true" className="mt-1 size-7 flex-none text-fuchsia-600" />
-                            <Link href="/buidl/britney">
+                            <Link href="/build/britney">
                                 <strong className="block text-lg font-semibold text-gray-900 tracking-wide">
                                     I have general web coding experience ↴
                                 </strong>

@@ -61,7 +61,7 @@ export default function Hero() {
 
                         <div className="mt-10 flex items-center justify-center gap-x-6">
                             <Link
-                                href="/buidl"
+                                href="/build"
                                 className="rounded-md bg-purple-500 px-5 py-3 text-2xl font-semibold text-white shadow-sm hover:bg-purple-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-400 tracking-wider"
                             >
                                 #BUIDL<span className="hidden sm:inline"> with GÜRŲ</span>

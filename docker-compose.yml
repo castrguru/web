@@ -1,0 +1,7 @@
+services:
+  castrguru:
+    container_name: castrguru
+    image: castrguru
+    build: .
+    ports:
+      - "8000:3000"
