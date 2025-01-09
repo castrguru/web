@@ -284,7 +284,7 @@ export default function Example() {
                 </div>
 
                 <h2 className="pl-3 mt-16 text-2xl font-bold text-slate-600 tracking-widest uppercase">
-                    Royalty FREE Kits
+                    Royalty FREE Kits w/ Low-No Code
                     <small className="pl-2 text-sky-400 font-bold normal-case">
                         (x3)
                     </small>
@@ -337,7 +337,7 @@ export default function Example() {
                 </div>
 
                 <h2 className="pl-3 mt-16 text-2xl font-bold text-slate-600 tracking-widest uppercase">
-                    Premium Kits
+                    Premium Kits for Coders
                     <small className="pl-2 text-sky-400 font-bold normal-case">
                         (x17)
                     </small>

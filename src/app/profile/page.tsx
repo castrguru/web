@@ -13,11 +13,10 @@ const secondaryNavigation = [
     { name: "Integrations", href: "#", current: false },
 ];
 
-export default function Example() {
+export default function Profile() {
     return (
        <main>
-            <h1 className="sr-only">Account Settings</h1>
-
+            <h1 className="sr-only">Profile Manager</h1>
             <header className="border-b border-white/5">
                 {/* Secondary navigation */}
                 <nav className="flex overflow-x-auto py-4">
@@ -37,8 +36,13 @@ export default function Example() {
             <div className="divide-y divide-white/5">
                 <div className="grid max-w-7xl grid-cols-1 gap-x-8 gap-y-10 px-4 py-16 sm:px-6 md:grid-cols-3 lg:px-8">
                     <div>
-                        <h2 className="text-base/7 font-semibold text-white">Personal Information</h2>
-                        <p className="mt-1 text-sm/6 text-gray-400">Use a permanent address where you can receive mail.</p>
+                        <h2 className="text-base/7 font-semibold text-white">
+                            Personal Information
+                        </h2>
+
+                        <p className="mt-1 text-sm/6 text-gray-400">
+                            Use a permanent address where you can receive mail.
+                        </p>
                     </div>
 
                     <form className="md:col-span-2">

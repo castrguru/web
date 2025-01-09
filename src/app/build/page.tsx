@@ -73,10 +73,25 @@ export default function Buidl() {
                         </li>
                     </ul>
 
-                    <p className="mt-8">
-                        Et vitae blandit facilisi magna lacus commodo. Vitae sapien duis odio id et. Id blandit molestie auctor fermentum dignissim. Lacus diam tincidunt ac cursus in vel. Mauris varius vulputate et ultrices hac adipiscing
-                        egestas. Iaculis convallis ac tempor et ut. Ac lorem vel integer orci.
-                    </p>
+                    <section className="mt-8">
+                        <h2 className="text-2xl font-bold text-slate-700 tracking-widest uppercase">
+                            React
+                        </h2>
+
+                        <p className="">
+                            A JavaScript library for building user interfaces, focusing on client-side rendering (CSR). It’s ideal for complex, interactive single-page applications where SEO is not a primary concern. React offers a vast ecosystem of tools and integrations but requires more setup and configuration.
+                        </p>
+                    </section>
+
+                    <section className="mt-8">
+                        <h2 className="text-2xl font-bold text-slate-700 tracking-widest uppercase">
+                            Next.js
+                        </h2>
+
+                        <p className="">
+                            A React-based framework that introduces server-side rendering (SSR) and static site generation (SSG), making it suitable for applications where SEO, performance, and initial page load speed are crucial. Next.js provides built-in features like routing, API calls, and authentication, simplifying the development process. However, it may have a steeper learning curve due to its additional features.
+                        </p>
+                    </section>
                 </div>
             </div>
         </div>

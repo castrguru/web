@@ -40,8 +40,10 @@ export default function Welcome() {
                         <li className="flex gap-x-3">
                             <CheckCircleIcon aria-hidden="true" className="mt-1 size-5 flex-none text-indigo-600" />
                             <span>
-                                <strong className="block font-semibold text-gray-900">Tailwind CSS</strong>
-                                Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.
+                                <strong className="block font-semibold text-gray-900">Synty Store</strong>
+                                Producing the best art to enable you to produce the best games and media content.
+
+                                https://syntystore.com/
                             </span>
                         </li>
 
