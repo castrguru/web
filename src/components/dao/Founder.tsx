@@ -6,8 +6,8 @@ import { HeartIcon } from '@heroicons/react/24/outline'
 
 export default function Founder() {
     return (
-        <main className="relative z-10 mt-32 bg-gray-900 pb-20 sm:mt-56 sm:pb-24 xl:pb-0">
-            <div aria-hidden="true" className="absolute inset-0 overflow-hidden">
+        <main className="relative z-10 my-16 bg-gray-900 rounded-2xl shadow-md">
+            <div aria-hidden="true" className="absolute inset-0 overflow-hidden rounded-2xl">
                 <div className="absolute left-[calc(50%-19rem)] top-[calc(50%-36rem)] transform-gpu blur-3xl">
                     <div
                         style={{

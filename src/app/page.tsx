@@ -2,7 +2,9 @@
 import Benefits from '../components/Benefits'
 import Faq from '../components/support/Faq'
 import Footer from '../components/Footer'
-import Founder from '../components/dao/Founder'
+// import Founder from '../components/dao/Founder'
+// import Goals from '../components/dao/Goals'
+import Buidl from '../components/Buidl'
 import Header from '../components/Header'
 import Hero from '../components/Hero'
 import Highlights from '../components/Highlights'
@@ -17,7 +19,7 @@ export default function Homepage() {
                 <Highlights />
                 <Benefits />
                 <Pricing />
-                <Founder />
+                <Buidl />
                 <Faq />
             </div>
             <Footer />
