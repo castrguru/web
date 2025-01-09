@@ -61,13 +61,13 @@ export default function Hero() {
 
                         <div className="mt-10 flex items-center justify-center gap-x-6">
                             <Link
-                                href="/build"
+                                href="/buidl"
                                 className="rounded-md bg-purple-500 px-5 py-3 text-2xl font-semibold text-white shadow-sm hover:bg-purple-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-400 tracking-wider"
                             >
                                 #BUIDL<span className="hidden sm:inline"> with GÜRŲ</span>
                             </Link>
 
-                            <Link href="https://castrgurudocs.on-fleek.app/" target="_blank" className="flex items-center text-xl/6 font-semibold text-slate-100 tracking-wider">
+                            <Link href="https://docs.castr.guru" target="_blank" className="flex items-center text-xl/6 font-semibold text-slate-100 tracking-wider">
                                 ReadTheDocs
                                 <ArrowTopRightOnSquareIcon className="pl-2 size-8" />
                             </Link>

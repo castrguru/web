@@ -10,7 +10,7 @@ const footerNavigation = {
         { name: "Downloads", href: "/downloads" },
     ],
     learning: [
-        { name: "ReadTheDocs", href: "https://castrgurudocs.on-fleek.app/" },
+        { name: "ReadTheDocs", href: "https://docs.castr.guru" },
         { name: "User Guides", href: "/guides" },
         { name: "Glossary", href: "/glossary" },
     ],
