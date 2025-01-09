@@ -1,7 +1,7 @@
 'use client'
 
 /* Import modules. */
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 // import type { Metadata } from 'next'
 import { usePathname } from 'next/navigation'
 
@@ -44,7 +44,10 @@ export default function RootLayout({
 
     const pathname = usePathname()
 
-    setIsAuthorized(false) // FIXME
+    useEffect(() => {
+        setIsAuthorized(false) // FIXME
+    }, [])
+
 
     const navigation = [
         { name: 'Dashboard', href: '/manager', icon: TableCellsIcon, current: (pathname === '/manager/') ? true : false },
