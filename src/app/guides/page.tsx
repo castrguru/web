@@ -3,23 +3,6 @@ import Image from 'next/image'
 
 const guides = [
     {
-        id: 'my-1st-game',
-        title: "My First Farcaster Game from ZERO w/ Godot",
-        href: "/guide/my-1st-game",
-        description:
-            "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel iusto corrupti dicta laboris incididunt.",
-        imageUrl: "https://i.ibb.co/8YQW75P/gamer-101.png",
-        date: "May 1, 2025",
-        datetime: "2025-05-01",
-        category: { title: "For Gamers", href: "/guides/gamer" },
-        author: {
-            name: "@shomari",
-            role: "Farcaster Master Builder",
-            href: "/about/shomari",
-            imageUrl: "/img/portrait.jpg",
-        },
-    },
-    {
         id: 'my-1st-frame',
         title: "My 1st Frame",
         href: "/guide/my-1st-frame",

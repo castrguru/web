@@ -25,22 +25,27 @@ export default function Blank() {
                     </p>
                     <ul role="list" className="mt-8 max-w-xl space-y-8 text-gray-600">
                         <li className="flex gap-x-3">
-                            <CheckCircleIcon aria-hidden="true" className="mt-1 size-5 flex-none text-indigo-600" />
+                            <CheckCircleIcon aria-hidden="true" className="mt-0.5 size-7 flex-none text-fuchsia-600" />
                             <span>
-                                <strong className="font-semibold text-gray-900">Data types.</strong> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis
+                                <strong className="block font-semibold text-gray-900">Data types.</strong>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis
                                 ratione.
                             </span>
                         </li>
+
                         <li className="flex gap-x-3">
-                            <CheckCircleIcon aria-hidden="true" className="mt-1 size-5 flex-none text-indigo-600" />
+                            <CheckCircleIcon aria-hidden="true" className="mt-0.5 size-7 flex-none text-fuchsia-600" />
                             <span>
-                                <strong className="font-semibold text-gray-900">Loops.</strong> Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.
+                                <strong className="block font-semibold text-gray-900">Loops.</strong>
+                                Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.
                             </span>
                         </li>
+
                         <li className="flex gap-x-3">
-                            <CheckCircleIcon aria-hidden="true" className="mt-1 size-5 flex-none text-indigo-600" />
+                            <CheckCircleIcon aria-hidden="true" className="mt-0.5 size-7 flex-none text-fuchsia-600" />
                             <span>
-                                <strong className="font-semibold text-gray-900">Events.</strong> Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.
+                                <strong className="block font-semibold text-gray-900">Events.</strong>
+                                Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.
                             </span>
                         </li>
                     </ul>

@@ -21,6 +21,14 @@ const faqs = [
         question: `What does royalty free mean?`,
         answer: `Royalty free means you just need to pay for rights to use the item once per end product. You don't need to pay additional or ongoing fees for each person who sees or uses it.`,
     },
+    {
+        question: `If I'm not happy, can I cancel my subscription?`,
+        answer: `Yes, of course! For your convenience, each PRO subscription is billed per frame and on a DAILY basis. You can subscribe OR cancel at anytime.`,
+    },
+    {
+        question: `Is my data safe with Castr GÜRŲ?`,
+        answer: `We do not sell data to ANY third party. You can ask us anytime that ALL your data be erased from our servers.`,
+    },
 ]
 
 export default function Faq() {
