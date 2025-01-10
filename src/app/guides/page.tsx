@@ -3,9 +3,9 @@ import Image from 'next/image'
 
 const guides = [
     {
-        id: 'gamer-101',
-        title: "Gamer 101: My First Farcaster Game from ZERO w/ Godot",
-        href: "/guide/gamer-101",
+        id: 'my-1st-game',
+        title: "My First Farcaster Game from ZERO w/ Godot",
+        href: "/guide/my-1st-game",
         description:
             "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel iusto corrupti dicta laboris incididunt.",
         imageUrl: "https://i.ibb.co/8YQW75P/gamer-101.png",
@@ -20,11 +20,28 @@ const guides = [
         },
     },
     {
+        id: 'my-1st-frame',
+        title: "My 1st Frame",
+        href: "/guide/my-1st-frame",
+        description:
+            `It's time to make it happen and #BUIDL your first Farcaster frame. Don't worry, we will guide you through the entire process each step of the way...`,
+        imageUrl: "https://i.ibb.co/nzLRzVc/my-1st-frame.jpg",
+        date: "Jan 10, 2025",
+        datetime: "2025-01-10",
+        category: { title: "For Newbies", href: "/guides/newbie" },
+        author: {
+            name: "@shomari",
+            role: "Farcaster Master Builder",
+            href: "/about/shomari",
+            imageUrl: "/img/portrait.jpg",
+        },
+    },
+    {
         id: 'builder-101',
-        title: "Builder 101: My First Frame",
+        title: "Builder 101: Setting Up Your Workspace",
         href: "/guide/builder-101",
         description:
-            "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel iusto corrupti dicta laboris incididunt.",
+            `Creating a proper work environment is the first step on the road to "building" your first project. We'll guide you step-by-step through the entire process from start to finish.`,
         imageUrl: "https://i.ibb.co/XxsKGpk/building-101.png",
         date: "Jan 10, 2025",
         datetime: "2025-01-10",
@@ -117,7 +134,7 @@ export default function Example() {
                                             </a>
                                         </h3>
 
-                                        <p className="mt-5 text-sm/6 text-gray-600">
+                                        <p className="mt-2 text-base/7 text-gray-600">
                                             {post.description}
                                         </p>
                                     </div>

@@ -11,7 +11,7 @@ export default function Blank() {
                 </p>
 
                 <h1 className="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
-                    Castr GÜRŲ’s Blank Page
+                    Castr GÜRŲ’s “Blank” Page
                 </h1>
 
                 <p className="mt-6 text-xl/8">
