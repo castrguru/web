@@ -42,6 +42,19 @@ const posts = [
         },
     },
     {
+        id: 'castrguru-astro',
+        title: "Astro",
+        href: "lib",
+        description: "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
+        imageUrl: "https://i.ibb.co/tcpSpK5/astro.jpg",
+        date: "@castrguru/astro",
+        datetime: "2020-03-16",
+        author: {
+            name: "Michael Foster",
+            imageUrl: "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+        },
+    },
+    {
         id: 'castrguru-next',
         title: "Next.js",
         href: "lib",
@@ -73,13 +86,13 @@ export default function Libraries() {
     return (
         <div className="bg-white py-12 sm:py-16">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
-                <div className="mx-auto max-w-2xl text-center">
-                    <h2 className="text-balance text-6xl font-semibold tracking-tight text-gray-900 sm:text-7xl tracking-widest">
-                        FOSS Libraries
+                <div className="mx-auto max-w-4xl text-center">
+                    <h2 className="text-balance text-5xl font-semibold tracking-tight text-slate-700 sm:text-6xl tracking-wide">
+                        Libraries &amp; Frameworks
                     </h2>
 
-                    <p className="mt-2 text-lg/8 text-gray-600">
-                        Free and Open Source Software (FOSS)
+                    <p className="mt-2 text-pretty text-lg/8 text-gray-600">
+                        A collection of FREE and Open Source Software (FOSS) resources for everyone to use in their own projects.
                     </p>
                 </div>
 
