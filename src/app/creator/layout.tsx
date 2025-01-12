@@ -4,7 +4,7 @@ import Footer from '../../components/Footer'
 import Header from '../../components/HeaderAlt'
 
 export const metadata: Metadata = {
-    title: 'Castr GÜRŲ Desktop — Castr GÜRŲ',
+    title: 'Castr GÜRŲ Creator — Castr GÜRŲ',
     description: 'Castr GÜRŲ for Farcaster builders.',
 }
 
