@@ -1,6 +1,6 @@
 {
-  "name": "castr-guru-web",
-  "version": "25.1.2",
+  "name": "castrguru-web",
+  "version": "25.1.12",
   "license": "MIT",
   "scripts": {
     "dev": "next dev --turbopack",
