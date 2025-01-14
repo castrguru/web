@@ -9,8 +9,8 @@ import { Dialog, DialogPanel } from '@headlessui/react'
 import { Bars3Icon, BoltIcon, XMarkIcon } from '@heroicons/react/24/outline'
 
 const navigation = [
-    { name: 'Kits', href: '/kits' },
     { name: 'Studio', href: '/studio' },
+    { name: 'Kits', href: '/kits' },
     { name: 'Cloud', href: '/cloud' },
     { name: 'Guides', href: '/guides' },
 ]

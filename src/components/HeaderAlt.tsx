@@ -9,8 +9,8 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 const navigation = [
-    { name: 'Kits', href: '/kits' },
     { name: 'Studio', href: '/studio' },
+    { name: 'Kits', href: '/kits' },
     { name: 'Cloud', href: '/cloud' },
     { name: 'Guides', href: '/guides' },
 ]
@@ -56,12 +56,12 @@ export default function Header() {
 
                 <PopoverGroup className="hidden lg:flex lg:gap-x-12">
 
-                    <Link href="/kits" className="text-2xl/6 font-semibold text-slate-200 tracking-wide hover:text-amber-200">
-                        Kits
-                    </Link>
-
                     <Link href="/studio" className="text-2xl/6 font-semibold text-slate-200 tracking-wide hover:text-amber-200">
                         Studio
+                    </Link>
+
+                    <Link href="/kits" className="text-2xl/6 font-semibold text-slate-200 tracking-wide hover:text-amber-200">
+                        Kits
                     </Link>
 
                     <Link href="/cloud" className="text-2xl/6 font-semibold text-slate-200 tracking-wide hover:text-amber-200">
