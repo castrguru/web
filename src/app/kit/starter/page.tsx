@@ -6,7 +6,7 @@ import { StarIcon } from '@heroicons/react/20/solid'
 import { Tab, TabGroup, TabList, TabPanel, TabPanels } from '@headlessui/react'
 
 const product = {
-    name: `Starter: My First Frame`,
+    name: `Starter: My 1st Frame`,
     version: {
         name: "1.0",
         date: "June 5, 2021",
@@ -20,7 +20,7 @@ const product = {
         "Drawn on 24 x 24 pixel grid"
     ],
     imageSrc: "https://i.ibb.co/3kJ1pwV/my-first-frame.jpg",
-    imageAlt: "My First Frame banner image.",
+    imageAlt: "My 1st Frame banner image.",
 }
 
 const reviews = {

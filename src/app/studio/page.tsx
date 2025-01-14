@@ -74,8 +74,8 @@ export default function Example() {
                         </h1>
 
                         <p className="mt-8 text-pretty text-lg/7 font-medium text-gray-500 sm:text-xl/9 tracking-wider">
-                            Studio is a lightweight (app) companion that runs directly on your Windows, macOS or Linux desktop
-                            — always there to expertly guide you through ALL the good, the bad, and those unexplainable experiences you’ll face when building your wildest dreams.
+                            <strong>STUDIO</strong> is a lightweight (app) companion that runs directly on your Windows, macOS or Linux desktop
+                            — always there to expertly guide you through ALL the good, the bad, and even those unexplainable experiences you’ll face when building your wildest dreams.
                         </p>
 
                         <div className="mt-10 flex items-center gap-x-6">

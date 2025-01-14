@@ -6,7 +6,7 @@ import GuruLive from '../../components/cta/GuruLive'
 const free = [
     {
         id: 'first',
-        title: "My First Frame",
+        title: "My 1st Frame",
         href: "/kit/starter",
         description: "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
         imageUrl: "https://i.ibb.co/vY8HzYv/my-first-frame.jpg",
