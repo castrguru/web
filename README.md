@@ -1,4 +1,4 @@
-![Layer1Guru logo](https://i.ibb.co/vHCBZSY/guru-256.png)
+![Castr Guru logo](https://i.ibb.co/vHCBZSY/guru-256.png)
 
 # Castr GÜRŲ
 

@@ -45,32 +45,49 @@ export default function Example() {
                     </svg>
                     <rect fill="url(#83fd4e5a-9d52-42fc-97b6-718e5d7ee527)" width="100%" height="100%" strokeWidth={0} />
                 </svg>
+
                 <div className="mx-auto max-w-7xl px-6 py-12 sm:py-16 lg:flex lg:items-center lg:gap-x-10 lg:px-8 lg:py-20">
                     <div className="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
                         <div className="flex">
-                            <div className="relative flex items-center gap-x-4 rounded-full bg-white px-4 py-1 text-sm/6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-                                <span className="font-semibold text-indigo-600">We’re hiring</span>
+                            <div className="relative flex items-center gap-x-4 rounded-full bg-white px-4 py-1 text-base/6 text-gray-600 tracking-wider ring-1 ring-gray-900/10 hover:ring-gray-900/20">
+                                <span className="font-semibold text-fuchsia-600">
+                                    100% Free &amp; Open Source Software
+                                </span>
+
                                 <span aria-hidden="true" className="h-4 w-px bg-gray-900/10" />
-                                <a href="#" className="flex items-center gap-x-1">
+
+                                <a href="https://github.com/castrguru/studio/" target="_blank" className="flex items-center gap-x-1">
                                     <span aria-hidden="true" className="absolute inset-0" />
-                                    See open positions
+                                    View it on GitHub
                                     <ChevronRightIcon aria-hidden="true" className="-mr-2 size-5 text-gray-400" />
                                 </a>
                             </div>
                         </div>
-                        <h1 className="mt-10 text-pretty text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl">A better way to ship your projects</h1>
+
+                        <h1 className="mt-10 text-pretty text-5xl font-semibold tracking-tight text-slate-600 sm:text-7xl">
+                            <span className="text-amber-500">Build. </span>
+                            <span className="text-sky-500">Publish. </span>
+                            <span className="text-green-500">Monetize </span>
+                            <span className="text-4xl sm:text-6xl">
+                                Farcaster <span className="text-5xl sm:text-7xl italic">v2</span> Frames Effortlessly
+                            </span>
+                        </h1>
+
                         <p className="mt-8 text-pretty text-lg font-medium text-gray-500 sm:text-xl/8">
-                            Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua. Anim aute id magna aliqua ad ad non deserunt sunt.
+                            Studio is a lightweight app / companion that runs directly on your Windows, macOS or Linux desktop
+                            — there to expertly guide you through anything and everthing Frames.
                         </p>
+
                         <div className="mt-10 flex items-center gap-x-6">
                             <a
-                                href="#"
-                                className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                                href="/downloads"
+                                className="rounded-md bg-fuchsia-600 px-5 py-3 text-3xl font-semibold text-white shadow-sm tracking-widest hover:bg-fuchsia-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-fuchsia-600"
                             >
-                                Get started
+                                Download
                             </a>
-                            <a href="#" className="text-sm/6 font-semibold text-gray-900">
-                                Learn more <span aria-hidden="true">→</span>
+
+                            <a href="https://docs.castr.guru" target="_blank" className="text-xl/6 font-semibold text-gray-900">
+                                ReadTheDocs <span aria-hidden="true">→</span>
                             </a>
                         </div>
                     </div>
@@ -132,7 +149,7 @@ export default function Example() {
                                 {primaryFeatures.map((feature) => (
                                     <div key={feature.name} className="relative">
                                         <dt className="ml-9 inline-block font-semibold text-white">
-                                            <feature.icon aria-hidden="true" className="absolute left-1 top-1 size-5 text-indigo-500" />
+                                            <feature.icon aria-hidden="true" className="absolute left-1 top-1 size-5 text-fuchsia-500" />
                                             {feature.name}
                                         </dt>{" "}
                                         <dd className="inline">{feature.description}</dd>
