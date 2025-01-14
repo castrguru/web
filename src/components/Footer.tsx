@@ -5,7 +5,7 @@ const footerNavigation = {
     building: [
         { name: "Frame Kits", href: "/kits" },
         { name: "Frame Studio", href: "/studio" },
-        { name: "Castr Manager", href: "/manager" },
+        { name: "Cloud Manager", href: "/cloud" },
         { name: "Libraries", href: "/libs" },
         { name: "Downloads", href: "/downloads" },
     ],

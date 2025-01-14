@@ -9,10 +9,10 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 const navigation = [
-    { name: 'Kits', href: 'kits' },
-    { name: 'Studio', href: 'studio' },
-    { name: 'Manager', href: 'manager' },
-    { name: 'Guides', href: 'guides' },
+    { name: 'Kits', href: '/kits' },
+    { name: 'Studio', href: '/studio' },
+    { name: 'Cloud', href: '/cloud' },
+    { name: 'Guides', href: '/guides' },
 ]
 
 export default function Header() {
@@ -64,8 +64,8 @@ export default function Header() {
                         Studio
                     </Link>
 
-                    <Link href="/manager" className="text-2xl/6 font-semibold text-slate-200 tracking-wide hover:text-amber-200">
-                        Manager
+                    <Link href="/cloud" className="text-2xl/6 font-semibold text-slate-200 tracking-wide hover:text-amber-200">
+                        Cloud Manager
                     </Link>
 
                     <Link href="/guides" className="text-2xl/6 font-semibold text-slate-200 tracking-wide hover:text-amber-200">
