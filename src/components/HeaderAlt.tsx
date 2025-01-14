@@ -65,7 +65,7 @@ export default function Header() {
                     </Link>
 
                     <Link href="/cloud" className="text-2xl/6 font-semibold text-slate-200 tracking-wide hover:text-amber-200">
-                        Cloud Manager
+                        Cloud
                     </Link>
 
                     <Link href="/guides" className="text-2xl/6 font-semibold text-slate-200 tracking-wide hover:text-amber-200">
