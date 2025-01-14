@@ -73,17 +73,17 @@ export default function Example() {
                             </span>
                         </h1>
 
-                        <p className="mt-8 text-pretty text-lg font-medium text-gray-500 sm:text-xl/8">
-                            Studio is a lightweight app / companion that runs directly on your Windows, macOS or Linux desktop
-                            — there to expertly guide you through anything and everthing Frames.
+                        <p className="mt-8 text-pretty text-lg/7 font-medium text-gray-500 sm:text-xl/9 tracking-wider">
+                            Studio is a lightweight (app) companion that runs directly on your Windows, macOS or Linux desktop
+                            — always there to expertly guide you through ALL the good, the bad, and those unexplainable experiences you’ll face when building your wildest dreams.
                         </p>
 
                         <div className="mt-10 flex items-center gap-x-6">
                             <a
                                 href="/downloads"
-                                className="rounded-md bg-fuchsia-600 px-5 py-3 text-3xl font-semibold text-white shadow-sm tracking-widest hover:bg-fuchsia-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-fuchsia-600"
+                                className="rounded-md bg-fuchsia-600 px-5 py-3 text-2xl font-semibold text-white shadow-sm tracking-widest hover:bg-fuchsia-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-fuchsia-600"
                             >
-                                Download
+                                Go to Downloads
                             </a>
 
                             <a href="https://docs.castr.guru" target="_blank" className="text-xl/6 font-semibold text-gray-900">
