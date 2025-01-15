@@ -1,6 +1,6 @@
 // import Image from 'next/image'
 
-import { ArrowPathIcon, ChevronRightIcon, CloudArrowUpIcon, LockClosedIcon, ServerIcon } from '@heroicons/react/20/solid';
+import { ChevronRightIcon, CloudArrowUpIcon, LockClosedIcon, ServerIcon } from '@heroicons/react/20/solid'
 
 import Benefits from '../../components/studio/Benefits'
 import Ideas from '../../components/studio/Ideas'
@@ -24,8 +24,6 @@ const primaryFeatures = [
         icon: ServerIcon,
     },
 ]
-
-
 
 export default function Example() {
     // const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
