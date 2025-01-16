@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 const packages = [
     {
-        name: 'Studio for Windows',
+        name: 'STUDIO for Windows',
         title: 'Windows',
         department: '10 or 11',
         email: 'First release.',
@@ -12,7 +12,7 @@ const packages = [
         url: 'https://github.com/castrguru/studio/releases/download/v25.1.13-alpha/castrguru-studio_25.1.13_x64_en-US.msi',
     },
     {
-        name: 'Studio for macOS',
+        name: 'STUDIO for macOS',
         title: 'OSX',
         department: 'Monterey or higher',
         email: 'First release.',
@@ -21,7 +21,7 @@ const packages = [
         url: 'https://github.com/castrguru/studio/releases/download/v25.1.13-alpha/castrguru-studio_25.1.13_aarch64.dmg',
     },
     {
-        name: 'Studio for macOS (Intel)',
+        name: 'STUDIO for macOS (Intel)',
         title: 'OSX',
         department: 'Monterey or higher',
         email: 'First release.',
@@ -30,7 +30,7 @@ const packages = [
         url: 'https://github.com/castrguru/studio/releases/download/v25.1.13-alpha/castrguru-studio_25.1.13_x64.dmg',
     },
     {
-        name: 'Studio for Linux (AppImage)',
+        name: 'STUDIO for Linux (AppImage)',
         title: 'Linux',
         department: 'Debian 10+',
         email: 'First release.',
@@ -39,7 +39,7 @@ const packages = [
         url: 'https://github.com/castrguru/studio/releases/download/v25.1.13-alpha/castrguru-studio_25.1.13_amd64.AppImage',
     },
     {
-        name: 'Studio for Linux (deb)',
+        name: 'STUDIO for Linux (deb)',
         title: 'Linux',
         department: 'Debian 10+',
         email: 'First release.',
@@ -48,7 +48,7 @@ const packages = [
         url: 'https://github.com/castrguru/studio/releases/download/v25.1.13-alpha/castrguru-studio_25.1.13_amd64.deb',
     },
     {
-        name: 'Studio for Linux (rpm)',
+        name: 'STUDIO for Linux (rpm)',
         title: 'Linux',
         department: 'Debian 10+',
         email: 'First release.',
@@ -156,7 +156,7 @@ export default function Downloads() {
                                         </td>
 
                                         <td className="relative whitespace-nowrap py-5 pl-3 pr-4 text-right text-lg font-medium sm:pr-0">
-                                            <a href={_package.url} className="text-fuchsia-600 hover:text-fuchsia-900">
+                                            <a href={_package.url} className="px-3 py-2 text-fuchsia-600 font-bold hover:text-fuchsia-900 bg-fuchsia-200 rounded-2xl hover:bg-fuchsia-300">
                                                 Download<span className="sr-only">, {_package.name}</span>
                                             </a>
                                         </td>
