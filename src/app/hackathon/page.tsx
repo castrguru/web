@@ -1,4 +1,5 @@
 // import Image from 'next/image'
+import Notice from '@/components/Notice'
 
 import { CheckCircleIcon } from '@heroicons/react/20/solid'
 
@@ -55,6 +56,8 @@ export default function Hackathon() {
                     </p>
                 </div>
             </div>
+
+            <Notice />
         </div>
     )
 }
