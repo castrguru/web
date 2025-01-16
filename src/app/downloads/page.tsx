@@ -3,46 +3,68 @@ import Image from 'next/image'
 
 const packages = [
     {
-        name: "Castr GÜRŲ for Windows",
-        title: "Front-end Developer",
-        department: "Optimization",
-        email: "lindsay.walton@example.com",
-        role: "Member",
-        image: "https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+        name: 'Studio for Windows',
+        title: 'Front-end Developer',
+        department: 'Optimization',
+        email: 'lindsay.walton@example.com',
+        filesize: '4.38 MB',
+        image: 'https://i.ibb.co/4gTLYJk/image.png',
+        url: 'https://github.com/castrguru/studio/releases/download/v25.1.13-alpha/castrguru-studio_25.1.13_x64_en-US.msi',
     },
     {
-        name: "Castr GÜRŲ for macOS",
-        title: "Front-end Developer",
-        department: "Optimization",
-        email: "lindsay.walton@example.com",
-        role: "Member",
-        image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+        name: 'Studio for macOS',
+        title: 'Front-end Developer',
+        department: 'Optimization',
+        email: 'lindsay.walton@example.com',
+        filesize: '5.11 MB',
+        image: 'https://i.ibb.co/bKgKP5w/image.png',
+        url: 'https://github.com/castrguru/studio/releases/download/v25.1.13-alpha/castrguru-studio_25.1.13_aarch64.dmg',
     },
     {
-        name: "Castr GÜRŲ for Linux",
-        title: "Front-end Developer",
-        department: "Optimization",
-        email: "lindsay.walton@example.com",
-        role: "Member",
-        image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+        name: 'Studio for macOS (Intel)',
+        title: 'Front-end Developer',
+        department: 'Optimization',
+        email: 'lindsay.walton@example.com',
+        filesize: '4.94 MB',
+        image: 'https://i.ibb.co/wh7CkDB/image.png',
+        url: 'https://github.com/castrguru/studio/releases/download/v25.1.13-alpha/castrguru-studio_25.1.13_x64.dmg',
     },
     {
-        name: "Castr Elements",
-        title: "Front-end Developer",
-        department: "Optimization",
-        email: "lindsay.walton@example.com",
-        role: "Member",
-        image: "https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+        name: 'Studio for Linux (AppImage)',
+        title: 'Front-end Developer',
+        department: 'Optimization',
+        email: 'lindsay.walton@example.com',
+        filesize: '85.2 MB',
+        image: 'https://i.ibb.co/WPRjhFm/image.png',
+        url: 'https://github.com/castrguru/studio/releases/download/v25.1.13-alpha/castrguru-studio_25.1.13_amd64.AppImage',
     },
-];
+    {
+        name: 'Studio for Linux (deb)',
+        title: 'Front-end Developer',
+        department: 'Optimization',
+        email: 'lindsay.walton@example.com',
+        filesize: '5.66 MB',
+        image: 'https://i.ibb.co/k0CbppJ/image.png',
+        url: 'https://github.com/castrguru/studio/releases/download/v25.1.13-alpha/castrguru-studio_25.1.13_amd64.deb',
+    },
+    {
+        name: 'Studio for Linux (rpm)',
+        title: 'Front-end Developer',
+        department: 'Optimization',
+        email: 'lindsay.walton@example.com',
+        filesize: '5.66 MB',
+        image: 'https://i.ibb.co/WPRjhFm/image.png',
+        url: 'https://github.com/castrguru/studio/releases/download/v25.1.13-alpha/castrguru-studio-25.1.13-1.x86_64.rpm',
+    },
+]
 
-export default function Downloads() {
+export default function Download() {
     return (
         <div className="py-16 bg-gradient-to-b from-slate-50 to-slate-200 px-4 sm:px-6 lg:px-8">
             <div className="max-w-5xl mx-auto sm:flex sm:items-center">
                 <div className="sm:flex-auto">
                     <h1 className="text-3xl font-semibold text-slate-600 tracking-wider">
-                        Downloads
+                        Download
                     </h1>
 
                     <p className="mt-2 text-sm text-gray-700 tracking-wider">
@@ -53,7 +75,7 @@ export default function Downloads() {
                 <div className="mt-4 sm:ml-16 sm:mt-0 sm:flex-none">
                     {/* <button
                         type="button"
-                        className="block rounded-md bg-indigo-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                        className="block rounded-md bg-fuchsia-600 px-3 py-2 text-center text-lg font-semibold text-white shadow-sm hover:bg-fuchsia-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-fuchsia-600"
                     >
                         Add user
                     </button> */}
@@ -66,20 +88,20 @@ export default function Downloads() {
                         <table className="min-w-full divide-y divide-fuchsia-300">
                             <thead>
                                 <tr>
-                                    <th scope="col" className="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 sm:pl-0">
+                                    <th scope="col" className="py-3.5 pl-4 pr-3 text-left text-lg font-semibold text-gray-900 sm:pl-0">
                                         Package Name
                                     </th>
 
-                                    <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
+                                    <th scope="col" className="px-3 py-3.5 text-left text-lg font-semibold text-gray-900">
                                         Platform
                                     </th>
 
-                                    <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
+                                    <th scope="col" className="px-3 py-3.5 text-left text-lg font-semibold text-gray-900">
                                         Status
                                     </th>
 
-                                    <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
-                                        Role
+                                    <th scope="col" className="px-3 py-3.5 text-left text-lg font-semibold text-gray-900">
+                                        File Size
                                     </th>
 
                                     <th scope="col" className="relative py-3.5 pl-3 pr-4 sm:pr-0">
@@ -99,7 +121,7 @@ export default function Downloads() {
                                                         width={0}
                                                         height={0}
                                                         src={_package.image}
-                                                        className="size-11 rounded-full"
+                                                        className="size-11 rounded-full object-cover"
                                                     />
                                                 </div>
 
@@ -130,12 +152,12 @@ export default function Downloads() {
                                         </td>
 
                                         <td className="whitespace-nowrap px-3 py-5 text-sm text-gray-500">
-                                            {_package.role}
+                                            {_package.filesize}
                                         </td>
 
-                                        <td className="relative whitespace-nowrap py-5 pl-3 pr-4 text-right text-sm font-medium sm:pr-0">
-                                            <a href="#" className="text-indigo-600 hover:text-indigo-900">
-                                                Edit<span className="sr-only">, {_package.name}</span>
+                                        <td className="relative whitespace-nowrap py-5 pl-3 pr-4 text-right text-lg font-medium sm:pr-0">
+                                            <a href={_package.url} className="text-fuchsia-600 hover:text-fuchsia-900">
+                                                Download<span className="sr-only">, {_package.name}</span>
                                             </a>
                                         </td>
                                     </tr>
