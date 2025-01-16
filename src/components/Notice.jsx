@@ -8,7 +8,8 @@ import Link from 'next/link'
 
 import { ArrowTopRightOnSquareIcon } from '@heroicons/react/24/outline'
 import { XCircleIcon } from '@heroicons/react/24/outline'
-import avaxLogo from '@/images/logos/avax.svg'
+// import avaxLogo from '@/images/logos/avax.svg'
+import farcasterLogo from '@/images/logos/farcaster.svg'
 
 import videojs from 'video.js'
 import VideoJS from '@/components/VideoPlayer'
@@ -25,7 +26,7 @@ export default function Notice() {
         sources: [{
             // src: 'https://ik.imagekit.io/ikmedia/sample-video.mp4/ik-master.m3u8?tr=sr-240_360_480_720',
             // type: 'application/x-mpegURL',
-            src: 'https://media.layer1.guru/retro9000-intro.mp4',
+            src: 'https://assets.castr.guru/vid/hackathon.mp4',
             type: 'video/mp4',
         }],
         plugins: {
@@ -38,7 +39,7 @@ export default function Notice() {
         autoplay: false,
         width: 370,
         sources: [{
-            src: 'https://media.layer1.guru/retro9000-intro.mp4',
+            src: 'https://assets.castr.guru/vid/hackathon.mp4',
             type: 'video/mp4',
         }],
         plugins: {
@@ -81,24 +82,24 @@ export default function Notice() {
 
                             <div className="mx-auto flex size-14 items-center justify-center rounded-full bg-rose-700/20">
                                 <Image
-                                    src={avaxLogo}
+                                    src={farcasterLogo}
                                     width={0}
                                     height={0}
-                                    alt="Avalanche logo"
-                                    className="size-8"
+                                    alt="#HACKATHON logo"
+                                    className="size-10"
                                 />
                             </div>
 
                             <div className="mt-3 text-center sm:mt-5">
                                 <DialogTitle as="h3" className="text-3xl font-semibold text-slate-600">
-                                    Avalanche <span className="text-4xl font-bold">Retro<i>9000</i></span>
+                                    #HACKATHON <span className="text-4xl font-bold">WEEK<i>ONE</i></span>
                                     <br />Submission
                                 </DialogTitle>
 
                                 <div className="my-2">
                                     <p className="py-2 px-5 text-base text-slate-600 tracking-tight text-justify">
                                         <span className="font-bold">Did you know — </span>
-                                        the Avalanche team is actively supporting the hard-work of their ecosystem #BUIDLers with retro funding?
+                                        the Farcaster community is actively supporting the hard-work of their ecosystem #BUIDLers with retro funding?
                                     </p>
                                 </div>
 
@@ -116,14 +117,14 @@ export default function Notice() {
                                 </div>
 
                                 <small className="flex justify-center items-center mt-0 text-slate-600 font-bold italic text-center tracking-widest">
-                                    Watch a demo of NodΞRunr in action <span className="pl-1 text-lg">👀</span>
+                                    Watch a demo of Frameify in action <span className="pl-1 text-lg">👀</span>
                                 </small>
                             </div>
                         </div>
 
-                        <div className="mt-3 sm:mt-2 flex flex-row gap-3">
+                        {/* <div className="mt-3 sm:mt-2 flex flex-row gap-3">
                             <Link
-                                href="https://canvas.layer1.run"
+                                href="https://canvas.castr.guru"
                                 target="_blank"
                                 className="inline-flex w-full items-center justify-center rounded-md bg-sky-600 px-3 py-2 text-lg font-semibold text-white shadow-sm hover:bg-sky-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-600"
                             >
@@ -132,25 +133,25 @@ export default function Notice() {
                             </Link>
 
                             <Link
-                                href="https://docs.layer1.run"
+                                href="https://docs.castr.guru"
                                 target="_blank"
                                 className="inline-flex w-full items-center justify-center rounded-md bg-sky-600 px-3 py-2 text-lg font-semibold text-white shadow-sm hover:bg-sky-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-600"
                             >
                                 ReadTheDocs
                                 <ArrowTopRightOnSquareIcon className="pl-1 size-5 text-sky-200" />
                             </Link>
-                        </div>
+                        </div> */}
 
-                        <div className="mt-3">
+                        {/* <div className="mt-3">
                             <Link
-                                href="https://retro9000.avax.network"
+                                href="https://weeklyhackathon.com"
                                 target="_blank"
                                 className="inline-flex w-full items-center justify-center rounded-md bg-sky-600 px-3 py-2 text-2xl font-semibold text-white shadow-sm hover:bg-sky-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-600"
                             >
                                 Show Ur <span className="px-2 text-rose-500 text-4xl">❤︎</span> By Voting
                                 <ArrowTopRightOnSquareIcon className="pl-2 size-7 text-sky-200" />
                             </Link>
-                        </div>
+                        </div> */}
                     </DialogPanel>
                 </div>
             </div>
