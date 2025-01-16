@@ -15,6 +15,10 @@ const secondaryNavigation = [
 
 export default function Profile() {
     return (
+        <h1>Coming soon...</h1>
+    )
+
+    return (
        <main>
             <h1 className="sr-only">Profile Manager</h1>
             <header className="border-b border-white/5">
