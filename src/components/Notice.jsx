@@ -6,6 +6,8 @@ import { Dialog, DialogBackdrop, DialogPanel, DialogTitle } from '@headlessui/re
 import Image from 'next/image'
 import Link from 'next/link'
 
+import moment from 'moment'
+
 import { ArrowTopRightOnSquareIcon } from '@heroicons/react/24/outline'
 import { XCircleIcon } from '@heroicons/react/24/outline'
 // import avaxLogo from '@/images/logos/avax.svg'
@@ -39,7 +41,7 @@ export default function Notice() {
         autoplay: false,
         width: 370,
         sources: [{
-            src: 'https://assets.castr.guru/vid/hackathon.mp4',
+            src: 'https://assets.castr.guru/vid/hackathon.mp4?' + moment().unix(),
             type: 'video/mp4',
         }],
         plugins: {

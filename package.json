@@ -1,6 +1,6 @@
 {
   "name": "castrguru-web",
-  "version": "25.1.12",
+  "version": "25.1.16",
   "license": "MIT",
   "scripts": {
     "dev": "next dev --turbopack",
@@ -11,11 +11,14 @@
   "dependencies": {
     "@headlessui/react": "2.2.0",
     "@heroicons/react": "2.2.0",
+    "moment": "2.30.1",
     "next": "15.1.3",
     "next-plausible": "3.12.4",
+    "numeral": "2.0.6",
     "react": "19.0.0",
     "react-dom": "19.0.0",
     "tailwindcss": "3.4.1",
+    "uuid": "11.0.5",
     "video.js": "8.21.0",
     "videojs-contrib-quality-levels": "4.1.0",
     "videojs-http-source-selector": "1.1.6"
