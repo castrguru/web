@@ -58,13 +58,13 @@ const packages = [
     },
 ]
 
-export default function Download() {
+export default function Downloads() {
     return (
         <div className="py-16 bg-gradient-to-b from-slate-50 to-slate-200 px-4 sm:px-6 lg:px-8">
             <div className="max-w-5xl mx-auto sm:flex sm:items-center">
                 <div className="sm:flex-auto">
                     <h1 className="text-3xl font-semibold text-slate-600 tracking-wider">
-                        Download
+                        Downloads
                     </h1>
 
                     <p className="mt-2 text-sm text-gray-700 tracking-wider">
@@ -88,19 +88,19 @@ export default function Download() {
                         <table className="min-w-full divide-y divide-fuchsia-300">
                             <thead>
                                 <tr>
-                                    <th scope="col" className="py-3.5 pl-4 pr-3 text-left text-lg font-semibold text-gray-900 sm:pl-0">
+                                    <th scope="col" className="py-3.5 pl-4 pr-3 text-left text-lg font-semibold text-slate-700 tracking-wider sm:pl-0">
                                         Package Name
                                     </th>
 
-                                    <th scope="col" className="px-3 py-3.5 text-left text-lg font-semibold text-gray-900">
+                                    <th scope="col" className="px-3 py-3.5 text-left text-lg font-semibold text-slate-700 tracking-wider">
                                         Platform
                                     </th>
 
-                                    <th scope="col" className="px-3 py-3.5 text-left text-lg font-semibold text-gray-900">
+                                    <th scope="col" className="px-3 py-3.5 text-left text-lg font-semibold text-slate-700 tracking-wider">
                                         Status
                                     </th>
 
-                                    <th scope="col" className="px-3 py-3.5 text-left text-lg font-semibold text-gray-900">
+                                    <th scope="col" className="px-3 py-3.5 text-left text-lg font-semibold text-slate-700 tracking-wider">
                                         File Size
                                     </th>
 
@@ -138,7 +138,7 @@ export default function Download() {
                                         </td>
 
                                         <td className="whitespace-nowrap px-3 py-5 text-sm text-gray-500">
-                                            <div className="text-gray-900">
+                                            <div className="text-slate-700">
                                                 {_package.title}
                                             </div>
 
