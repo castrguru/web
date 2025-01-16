@@ -2,10 +2,10 @@
 
 import { ChevronRightIcon, CloudArrowUpIcon, LockClosedIcon, ServerIcon } from '@heroicons/react/20/solid'
 
-import Benefits from '../../components/studio/Benefits'
-import Ideas from '../../components/studio/Ideas'
-import Notify from '../../components/studio/Notify'
-// import Testimonials from '../../components/studio/Testimonials'
+import Benefits from '@/components/studio/Benefits'
+import Ideas from '@/components/studio/Ideas'
+import Notify from '@/components/studio/Notify'
+// import Testimonials from '@/components/studio/Testimonials'
 
 const primaryFeatures = [
     {

@@ -2,7 +2,7 @@
 
 import { CheckCircleIcon } from '@heroicons/react/20/solid'
 
-import Timeline from '../../components/Timeline'
+import Timeline from '@/components/Timeline'
 
 export default function Mission() {
     return (

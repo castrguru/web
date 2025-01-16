@@ -2,7 +2,7 @@
 
 import { CheckCircleIcon } from '@heroicons/react/20/solid'
 
-import Founder from '../../../components/dao/Founder'
+import Founder from '@/components/dao/Founder'
 
 export default function Shomari() {
     return (

@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
-import GuruLive from '../../components/cta/GuruLive'
+import GuruLive from '@/components/cta/GuruLive'
 
 const nocoders = [
     {

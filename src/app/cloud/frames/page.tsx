@@ -2,7 +2,7 @@
 
 // import { useState } from 'react'
 
-import Welcome from '../../../components/welcome/Frames'
+import Welcome from '@/components/welcome/Frames'
 
 // import Image from 'next/image'
 // import Link from 'next/link'

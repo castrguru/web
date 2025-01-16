@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
 // import Image from 'next/image'
 
-import Header from '../../components/HeaderAlt'
-import Footer from '../../components/Footer'
+import Header from '@/components/HeaderAlt'
+import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
     title: 'Downloads — Castr GÜRŲ',

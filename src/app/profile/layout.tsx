@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 // import Image from 'next/image'
 
-import Header from '../../components/HeaderAlt'
+import Header from '@/components/HeaderAlt'
 
 export const metadata: Metadata = {
     title: 'Profile Manager — Castr GÜRŲ',

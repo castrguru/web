@@ -12,8 +12,8 @@ import { Dialog, DialogBackdrop, DialogPanel, Menu, MenuButton, MenuItem, MenuIt
 import { Bars3Icon, BellIcon, PresentationChartLineIcon, LightBulbIcon, Cog6ToothIcon, ReceiptPercentIcon, RectangleGroupIcon, TableCellsIcon, UsersIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import { ChevronDownIcon, MagnifyingGlassIcon } from '@heroicons/react/20/solid'
 
-import Connect from '../../components/Connect'
-import FooterMin from '../../components/FooterMin'
+import Connect from '@/components/Connect'
+import FooterMin from '@/components/FooterMin'
 
 const frames = [
     { id: 1, name: 'GitHub', href: 'https://github.com/castrguru', initial: 'GH', current: false },

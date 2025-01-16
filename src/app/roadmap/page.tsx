@@ -2,7 +2,7 @@
 
 import { CheckCircleIcon } from '@heroicons/react/20/solid'
 
-import Requests from '../../components/support/Requests'
+import Requests from '@/components/support/Requests'
 
 export default function Roadmap() {
     return (
