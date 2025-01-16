@@ -16,43 +16,40 @@ export default function Hackathon() {
                 </h1>
 
                 <p className="mt-6 text-xl/8">
-                    Aliquet nec orci mattis amet quisque ullamcorper neque, nibh sem. At arcu, sit dui mi, nibh dui, diam eget aliquam. Quisque id at vitae feugiat egestas ac. Diam nulla orci at in viverra scelerisque eget. Eleifend egestas
-                    fringilla sapien.
+                    Take a look at what we have for #HACKATHON:WEEK ONE
                 </p>
                 <div className="mt-10 max-w-2xl">
                     <p>
-                        Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis mauris semper sed amet vitae sed turpis id. Id dolor praesent donec est. Odio penatibus risus viverra tellus varius sit neque erat
-                        velit. Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis mauris semper sed amet vitae sed turpis id.
+                        Introducing Frameify by Castr GÜRŲ.
                     </p>
                     <ul role="list" className="mt-8 max-w-xl space-y-8 text-gray-600">
-                        <li className="flex gap-x-3">
+                        <a href="/downloads" className="flex gap-x-3">
                             <CheckCircleIcon aria-hidden="true" className="mt-0.5 size-7 flex-none text-fuchsia-600" />
                             <span>
-                                <strong className="block font-semibold text-gray-900">Data types.</strong>
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis
-                                ratione.
+                                <strong className="block font-semibold text-gray-900">Download for Desktop</strong>
+                                Available on Window, macOS and Linux.
                             </span>
-                        </li>
+                        </a>
 
-                        <li className="flex gap-x-3">
+                        <a href="https://frameify.xyz" target="_blank" className="flex gap-x-3">
                             <CheckCircleIcon aria-hidden="true" className="mt-0.5 size-7 flex-none text-fuchsia-600" />
                             <span>
-                                <strong className="block font-semibold text-gray-900">Loops.</strong>
-                                Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.
+                                <strong className="block font-semibold text-gray-900">Frameify.xyz</strong>
+                                Check out the Frameify web app.
                             </span>
-                        </li>
+                        </a>
 
-                        <li className="flex gap-x-3">
+                        <a href="https://github.com/castrguru/frameify" target="_blank" className="flex gap-x-3">
                             <CheckCircleIcon aria-hidden="true" className="mt-0.5 size-7 flex-none text-fuchsia-600" />
                             <span>
-                                <strong className="block font-semibold text-gray-900">Events.</strong>
-                                Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.
+                                <strong className="block font-semibold text-gray-900">GitHub Repository</strong>
+                                Take a look at the source code.
                             </span>
-                        </li>
+                        </a>
                     </ul>
+
                     <p className="mt-8">
-                        Et vitae blandit facilisi magna lacus commodo. Vitae sapien duis odio id et. Id blandit molestie auctor fermentum dignissim. Lacus diam tincidunt ac cursus in vel. Mauris varius vulputate et ultrices hac adipiscing
-                        egestas. Iaculis convallis ac tempor et ut. Ac lorem vel integer orci.
+                        Vote for Frameify and support the future for v2 Frame on Farcaster!
                     </p>
                 </div>
             </div>
