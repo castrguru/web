@@ -103,7 +103,7 @@ export default function Notice() {
                                 />
 
                                 <DialogTitle as="h3" className="px-5 py-2 w-fit mx-auto my-2 text-3xl font-semibold text-slate-600 bg-white rounded-xl border-2 border-lime-400">
-                                    <span className="text-4xl font-bold bg-gradient-to-r text-transparent bg-clip-text from-lime-400 to-lime-700 tracking-widest">
+                                    <span className="text-4xl font-bold bg-gradient-to-r text-transparent bg-clip-text from-lime-600 to-green-500 tracking-widest">
                                         WEEK ONE
                                     </span>
                                 </DialogTitle>
