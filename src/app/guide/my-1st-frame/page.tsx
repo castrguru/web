@@ -1,7 +1,15 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
-import { ArrowTopRightOnSquareIcon, BookmarkIcon, InformationCircleIcon } from '@heroicons/react/20/solid'
+import {
+    AcademicCapIcon,
+    BookmarkSquareIcon,
+    CheckCircleIcon,
+    InformationCircleIcon,
+} from '@heroicons/react/20/solid'
+
+import QuickSummary from '@/components/guides/my-1st-frame/QuickSummary'
+import Setup from '@/components/guides/my-1st-frame/Setup'
 
 export default function Welcome() {
     return (
@@ -17,99 +25,11 @@ export default function Welcome() {
 
                 <p className="mt-6 text-xl/8">
                     It’s time to get you off the sidelines and into the BIG game!
-                    Aliquet nec orci mattis amet quisque ullamcorper neque, nibh sem. At arcu, sit dui mi, nibh dui, diam eget aliquam. Quisque id at vitae feugiat egestas ac. Diam nulla orci at in viverra scelerisque eget. Eleifend egestas
-                    fringilla sapien.
                 </p>
 
                 <div className="mt-10 max-w-2xl">
-                    <h3 className="text-2xl font-semibold text-slate-600 tracking-wider">
-                        Quick Summary
-                    </h3>
-
-                    <p className="mt-4">
-                        By combining some React APIs, we can accurately manage “simple” states.
-                        With Next.js though, we can quickly find situations where we need to accommodate many other requirements.
-                        This guide is intended to be used as a primer for managing complex states in a Next.js app.
-                        These strategies should fit the vast majority of apps around with little to no adjustments.
-                    </p>
-
-                    <h3 className="mt-8 text-xl font-semibold tracking-wider">
-                        Let’s look at what we’ll cover in this guide:
-                    </h3>
-
-                    <ul role="list" className="mt-4 max-w-xl space-y-8 text-gray-600">
-                        <li className="flex gap-x-3">
-                            <BookmarkIcon
-                                aria-hidden="true"
-                                className="mt-0.5 size-7 flex-none text-fuchsia-400"
-                            />
-
-                            <div>
-                                <h3 className="text-2xl font-semibold text-slate-700 tracking-wider">
-                                    Astro Framework
-                                </h3>
-
-                                <Link href="https://astro.build/" target="_blank" className="group w-fit flex flex-row gap-1 items-center">
-                                    <span className="text-sky-500 tracking-widest font-medium group-hover:text-sky-400">
-                                        astro.build
-                                    </span>
-                                    <ArrowTopRightOnSquareIcon className="size-4 text-slate-400 group-hover:text-amber-400" />
-                                </Link>
-
-                                <p className="text-slate-700 tracking-wide">
-                                    A beautifully simply web framework, perfectly suited for beginners and experienced builders.
-                                </p>
-                            </div>
-                        </li>
-
-                        <li className="flex gap-x-3">
-                            <BookmarkIcon
-                                aria-hidden="true"
-                                className="mt-0.5 size-7 flex-none text-fuchsia-400"
-                            />
-
-                            <div>
-                                <h3 className="text-2xl font-semibold text-slate-700 tracking-wider">
-                                    Tailwind CSS
-                                </h3>
-
-                                <Link href="https://tailwindcss.com/" target="_blank" className="group w-fit flex flex-row gap-1 items-center">
-                                    <span className="text-sky-500 tracking-widest font-medium group-hover:text-sky-400">
-                                        tailwindcss.com
-                                    </span>
-                                    <ArrowTopRightOnSquareIcon className="size-4 text-slate-400 group-hover:text-amber-400" />
-                                </Link>
-
-                                <p className="text-slate-700 tracking-wide">
-                                    One of the leading styling frameworks for creating the most beautiful user interfaces (UIs).
-                                </p>
-                            </div>
-                        </li>
-
-                        <li className="flex gap-x-3">
-                            <BookmarkIcon
-                                aria-hidden="true"
-                                className="mt-0.5 size-7 flex-none text-fuchsia-400"
-                            />
-
-                            <div>
-                                <h3 className="text-2xl font-semibold text-slate-700 tracking-wider">
-                                    Vercel
-                                </h3>
-
-                                <Link href="https://tailwindcss.com/" target="_blank" className="group w-fit flex flex-row gap-1 items-center">
-                                    <span className="text-sky-500 tracking-widest font-medium group-hover:text-sky-400">
-                                        tailwindcss.com
-                                    </span>
-                                    <ArrowTopRightOnSquareIcon className="size-4 text-slate-400 group-hover:text-amber-400" />
-                                </Link>
-
-                                <p className="text-slate-700 tracking-wide">
-                                    Provides many advanced tools and a rock-solid cloud infrastructure to: build, scale, and secure your Farcaster frames.
-                                </p>
-                            </div>
-                        </li>
-                    </ul>
+                    <QuickSummary />
+                    <Setup />
 
                     <p className="mt-8">
                         This guide is intended to be used as a primer for managing complex states in a Next.js app.
@@ -170,19 +90,215 @@ export default function Welcome() {
 
                 <div className="mt-16 max-w-2xl">
                     <h2 className="text-pretty text-3xl font-semibold tracking-tight text-gray-900">
-                        Everything you need to get up and running
+                        The Composable Web
                     </h2>
 
                     <p className="mt-6">
-                        Purus morbi dignissim senectus mattis adipiscing. Amet, massa quam varius orci dapibus volutpat cras. In amet eu ridiculus leo sodales cursus tristique. Tincidunt sed tempus ut viverra ridiculus non molestie. Gravida
-                        quis fringilla amet eget dui tempor dignissim. Facilisis auctor venenatis varius nunc, congue erat ac. Cras fermentum convallis quam.
+                        Concepts such as Composable Web and Jamstack continue to be popular in 2025
+                        — or at least the principle of combining JavaScript, API, and (HTML) Markup for web development.
+                        Nowadays, the concept is oftentimes just known as Modern web development.
                     </p>
 
+                    <ul role="list" className="mt-8 max-w-xl space-y-8 text-gray-600">
+                        <li className="flex gap-x-3">
+                            <CheckCircleIcon aria-hidden="true" className="mt-0.5 size-7 flex-none text-fuchsia-600" />
+                            <span>
+                                <strong className="block font-semibold text-gray-900">Heavy Use of APIs</strong>
+                                into a set of individual files, named to match the subject of the screen.
+                            </span>
+                        </li>
+
+                        <li className="flex gap-x-3">
+                            <CheckCircleIcon aria-hidden="true" className="mt-0.5 size-7 flex-none text-fuchsia-600" />
+                            <span>
+                                <strong className="block font-semibold text-gray-900">Loops.</strong>
+                                Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.
+                            </span>
+                        </li>
+
+                        <li className="flex gap-x-3">
+                            <CheckCircleIcon aria-hidden="true" className="mt-0.5 size-7 flex-none text-fuchsia-600" />
+                            <span>
+                                <strong className="block font-semibold text-gray-900">Events.</strong>
+                                Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.
+                            </span>
+                        </li>
+                    </ul>
+
                     <p className="mt-8">
-                        Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis mauris semper sed amet vitae sed turpis id. Id dolor praesent donec est. Odio penatibus risus viverra tellus varius sit neque erat
-                        velit.
+                        There are two (2) important tradeoffs that we need to be aware of when opting for these techniques:
+                    </p>
+
+                    <ul role="list" className="mt-8 max-w-xl space-y-8 text-gray-600">
+                        <li className="flex gap-x-3">
+                            <CheckCircleIcon aria-hidden="true" className="mt-0.5 size-7 flex-none text-fuchsia-600" />
+                            <span>
+                                <strong className="block font-semibold text-gray-900">#1</strong>
+                                into a set of individual files, named to match the subject of the screen.
+                            </span>
+                        </li>
+
+                        <li className="flex gap-x-3">
+                            <CheckCircleIcon aria-hidden="true" className="mt-0.5 size-7 flex-none text-fuchsia-600" />
+                            <span>
+                                <strong className="block font-semibold text-gray-900">#2</strong>
+                                Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.
+                            </span>
+                        </li>
+                    </ul>
+
+                    <p className="mt-8">
+                        Making good consideration of those points will be important, in addition all good practices when dealing with state in a client-side React app remain useful on a Next.js app.
+                        The server layer may be able to offer a performance boost and this by itself may mitigate some computation issues.
+                        But it will also benefit from sticking to the common best practices when it comes to rendering performance on apps.
                     </p>
                 </div>
+
+                <div className="mt-16 max-w-2xl">
+                    <h2 className="text-pretty text-3xl font-semibold tracking-tight text-gray-900">
+                        Final Considerations
+                    </h2>
+
+                    <p className="mt-6">
+                        While we wrap up with these patterns, it is important to stress out a few caveats which may creep out on you if you are not mindful as you implement them.
+                        First, let us recapitulate what we have covered in this article:
+                    </p>
+
+                    <ul role="list" className="mt-8 max-w-xl space-y-8 text-gray-600">
+                        <li className="flex gap-x-3">
+                            <CheckCircleIcon aria-hidden="true" className="mt-0.5 size-7 flex-none text-fuchsia-600" />
+                            <span>
+                                <strong className="font-semibold text-gray-900">Organize your frame screens </strong>
+                                into a set of individual files, named to match the subject of the respective content being displayed.
+                            </span>
+                        </li>
+
+                        <li className="flex gap-x-3">
+                            <CheckCircleIcon aria-hidden="true" className="mt-0.5 size-7 flex-none text-fuchsia-600" />
+                            <span>
+                                <strong className="block font-semibold text-gray-900">Loops.</strong>
+                                Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.
+                            </span>
+                        </li>
+
+                        <li className="flex gap-x-3">
+                            <CheckCircleIcon aria-hidden="true" className="mt-0.5 size-7 flex-none text-fuchsia-600" />
+                            <span>
+                                <strong className="block font-semibold text-gray-900">Events.</strong>
+                                Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.
+                            </span>
+                        </li>
+                    </ul>
+
+                    <p className="mt-8">
+                        There are two (2) important tradeoffs that we need to be aware of when opting for these techniques:
+                    </p>
+
+                    <ul role="list" className="mt-8 max-w-xl space-y-8 text-gray-600">
+                        <li className="flex gap-x-3">
+                            <CheckCircleIcon aria-hidden="true" className="mt-0.5 size-7 flex-none text-fuchsia-600" />
+                            <span>
+                                <strong className="block font-semibold text-gray-900">#1</strong>
+                                into a set of individual files, named to match the subject of the screen.
+                            </span>
+                        </li>
+
+                        <li className="flex gap-x-3">
+                            <CheckCircleIcon aria-hidden="true" className="mt-0.5 size-7 flex-none text-fuchsia-600" />
+                            <span>
+                                <strong className="block font-semibold text-gray-900">#2</strong>
+                                Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.
+                            </span>
+                        </li>
+                    </ul>
+
+                    <p className="mt-8">
+                        Making good consideration of those points will be important, in addition all good practices when dealing with state in a client-side React app remain useful on a Next.js app.
+                        The server layer may be able to offer a performance boost and this by itself may mitigate some computation issues.
+                        But it will also benefit from sticking to the common best practices when it comes to rendering performance on apps.
+                    </p>
+                </div>
+
+                <div className="mt-16 max-w-2xl">
+                    <h2 className="text-pretty text-3xl font-semibold tracking-tight text-gray-900">
+                        Try It For Yourself
+                    </h2>
+
+                    <p className="mt-6">
+                        You can check the patterns described in this article live on nextjs-layout-state.netlify.app or check out the code on github.com/atilafassina/nextjs-layout-state.
+                        You can even just click this button to instantly clone it to your chosen Git provider and deploy it to Netlify:
+                    </p>
+                </div>
+
+                <div className="mt-16 max-w-2xl">
+                    <h2 className="text-pretty text-3xl font-semibold tracking-tight text-gray-900">
+                        References
+                    </h2>
+
+                    <ul role="list" className="mt-8 max-w-xl space-y-8 text-gray-600">
+                        <li className="flex gap-x-3">
+                            <BookmarkSquareIcon aria-hidden="true" className="mt-0.5 size-7 flex-none text-fuchsia-600" />
+                            <span>
+                                <strong className="font-semibold text-gray-900">Next.js Layouts </strong>
+                            </span>
+                        </li>
+
+                        <li className="flex gap-x-3">
+                            <BookmarkSquareIcon aria-hidden="true" className="mt-0.5 size-7 flex-none text-fuchsia-600" />
+                            <span>
+                                <strong className="block font-semibold text-gray-900">Jōtai</strong>
+                            </span>
+                        </li>
+
+                        <li className="flex gap-x-3">
+                            <BookmarkSquareIcon aria-hidden="true" className="mt-0.5 size-7 flex-none text-fuchsia-600" />
+                            <span>
+                                <strong className="block font-semibold text-gray-900">Events.</strong>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div className="mt-16 max-w-2xl">
+                    <h2 className="text-pretty text-3xl font-semibold tracking-tight text-gray-900">
+                        Further Reading
+                    </h2>
+
+                    <ul role="list" className="mt-8 max-w-xl space-y-8 text-gray-600">
+                        <li className="flex gap-x-3">
+                            <AcademicCapIcon aria-hidden="true" className="mt-0.5 size-7 flex-none text-fuchsia-600" />
+                            <span className="text-sm">
+                                <strong className="block text-lg font-semibold text-gray-900">A Guide To Image Optimization On Jamstack Sites </strong>
+                                into a set of individual files, named to match the subject of the respective content being displayed.
+                            </span>
+                        </li>
+
+                        <li className="flex gap-x-3">
+                            <AcademicCapIcon aria-hidden="true" className="mt-0.5 size-7 flex-none text-fuchsia-600" />
+                            <span className="text-sm">
+                                <strong className="block text-lg font-semibold text-gray-900">A New Pattern For The Jamstack: Segmented Rendering</strong>
+                                Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.
+                            </span>
+                        </li>
+
+                        <li className="flex gap-x-3">
+                            <AcademicCapIcon aria-hidden="true" className="mt-0.5 size-7 flex-none text-fuchsia-600" />
+                            <span className="text-sm">
+                                <strong className="block text-lg font-semibold text-gray-900">Full Stack GraphQL With Next.js, Neo4j AuraDB And Vercel</strong>
+                                Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.
+                            </span>
+                        </li>
+
+                        <li className="flex gap-x-3">
+                            <AcademicCapIcon aria-hidden="true" className="mt-0.5 size-7 flex-none text-fuchsia-600" />
+                            <span className="text-sm">
+                                <strong className="block text-lg font-semibold text-gray-900">How To Build A Multilingual Website With Nuxt.js</strong>
+                                Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+
             </div>
         </div>
     )

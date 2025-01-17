@@ -101,7 +101,7 @@ export default function Notice() {
                                 <div className="my-2">
                                     <p className="py-2 px-5 text-base text-slate-600 tracking-tight text-justify">
                                         <span className="font-bold">Did you know — </span>
-                                        the Farcaster community is actively supporting the hard-work of their ecosystem #BUIDLers with retro funding?
+                                        the Farcaster community is actively supporting the hard-work of their ecosystem #BUIDLers with "clanker" funding?
                                     </p>
                                 </div>
 
