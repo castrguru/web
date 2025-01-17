@@ -73,7 +73,7 @@ export default function Notice() {
                 <div className="flex min-h-full pb-20 items-end justify-center p-4 text-center sm:mb-0 sm:items-center sm:p-0">
                     <DialogPanel
                         transition
-                        className="relative transform overflow-hidden rounded-lg bg-gradient-to-b from-red-100 to-red-50 px-4 pb-4 pt-5 text-left shadow-xl transition-all data-[closed]:translate-y-4 data-[closed]:opacity-0 data-[enter]:duration-300 data-[leave]:duration-200 data-[enter]:ease-out data-[leave]:ease-in sm:my-8 sm:w-full sm:max-w-md sm:p-6 data-[closed]:sm:translate-y-0 data-[closed]:sm:scale-95"
+                        className="relative transform overflow-hidden rounded-lg bg-gradient-to-b from-fuchsia-100 to-fuchsia-50 px-4 pb-4 pt-5 text-left shadow-xl transition-all data-[closed]:translate-y-4 data-[closed]:opacity-0 data-[enter]:duration-300 data-[leave]:duration-200 data-[enter]:ease-out data-[leave]:ease-in sm:my-8 sm:w-full sm:max-w-md sm:p-6 data-[closed]:sm:translate-y-0 data-[closed]:sm:scale-95"
                     >
                         <div className="pt-2">
                             <div className="flex justify-end">
@@ -115,13 +115,13 @@ export default function Notice() {
                                     </p>
                                 </div>
 
-                                <div className="flex justify-center sm:hidden border border-sky-500 rounded overflow-hidden">
+                                <div className="flex justify-center sm:hidden border border-fuchsia-500 rounded overflow-hidden">
                                     <VideoJS
                                         options={videoForMobile}
                                         onReady={handlePlayerReady}
                                     />
                                 </div>
-                                <div className="hidden sm:flex justify-center border-2 border-sky-500 rounded overflow-hidden">
+                                <div className="hidden sm:flex justify-center border-2 border-fuchsia-500 rounded overflow-hidden">
                                     <VideoJS
                                         options={videoForDesktop}
                                         onReady={handlePlayerReady}
@@ -138,19 +138,19 @@ export default function Notice() {
                             <Link
                                 href="https://canvas.castr.guru"
                                 target="_blank"
-                                className="inline-flex w-full items-center justify-center rounded-md bg-sky-600 px-3 py-2 text-lg font-semibold text-white shadow-sm hover:bg-sky-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-600"
+                                className="inline-flex w-full items-center justify-center rounded-md bg-fuchsia-600 px-3 py-2 text-lg font-semibold text-white shadow-sm hover:bg-fuchsia-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-fuchsia-600"
                             >
                                 Lean Canvas
-                                <ArrowTopRightOnSquareIcon className="pl-1 size-5 text-sky-200" />
+                                <ArrowTopRightOnSquareIcon className="pl-1 size-5 text-fuchsia-200" />
                             </Link>
 
                             <Link
                                 href="https://docs.castr.guru"
                                 target="_blank"
-                                className="inline-flex w-full items-center justify-center rounded-md bg-sky-600 px-3 py-2 text-lg font-semibold text-white shadow-sm hover:bg-sky-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-600"
+                                className="inline-flex w-full items-center justify-center rounded-md bg-fuchsia-600 px-3 py-2 text-lg font-semibold text-white shadow-sm hover:bg-fuchsia-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-fuchsia-600"
                             >
                                 ReadTheDocs
-                                <ArrowTopRightOnSquareIcon className="pl-1 size-5 text-sky-200" />
+                                <ArrowTopRightOnSquareIcon className="pl-1 size-5 text-fuchsia-200" />
                             </Link>
                         </div> */}
 
@@ -158,10 +158,10 @@ export default function Notice() {
                             <Link
                                 href="https://weeklyhackathon.com"
                                 target="_blank"
-                                className="inline-flex w-full items-center justify-center rounded-md bg-sky-600 px-3 py-2 text-2xl font-semibold text-white shadow-sm hover:bg-sky-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-600"
+                                className="inline-flex w-full items-center justify-center rounded-md bg-fuchsia-600 px-3 py-2 text-2xl font-semibold text-white shadow-sm hover:bg-fuchsia-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-fuchsia-600"
                             >
                                 Show Ur <span className="px-2 text-rose-500 text-4xl">❤︎</span> By Voting
-                                <ArrowTopRightOnSquareIcon className="pl-2 size-7 text-sky-200" />
+                                <ArrowTopRightOnSquareIcon className="pl-2 size-7 text-fuchsia-200" />
                             </Link>
                         </div> */}
                     </DialogPanel>
