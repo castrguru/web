@@ -12,6 +12,7 @@ import { ArrowTopRightOnSquareIcon } from '@heroicons/react/24/outline'
 import { XCircleIcon } from '@heroicons/react/24/outline'
 // import avaxLogo from '@/images/logos/avax.svg'
 import farcasterLogo from '@/images/logos/farcaster.svg'
+import hackathonLogo from '@/images/logos/hackathon.png'
 
 import videojs from 'video.js'
 import VideoJS from '@/components/VideoPlayer'
@@ -93,9 +94,18 @@ export default function Notice() {
                             </div>
 
                             <div className="mt-3 text-center sm:mt-5">
-                                <DialogTitle as="h3" className="text-3xl font-semibold text-slate-600">
-                                    #HACKATHON <span className="text-4xl font-bold">WEEK<i>ONE</i></span>
-                                    <br />Submission
+                                <Image
+                                    alt=""
+                                    width={0}
+                                    height={0}
+                                    src={hackathonLogo}
+                                    className="w-full border-4 border-lime-300 rounded-xl shadow"
+                                />
+
+                                <DialogTitle as="h3" className="px-5 py-2 w-fit mx-auto my-2 text-3xl font-semibold text-slate-600 bg-white rounded-xl border-2 border-lime-400">
+                                    <span className="text-4xl font-bold bg-gradient-to-r text-transparent bg-clip-text from-lime-400 to-lime-700 tracking-widest">
+                                        WEEK ONE
+                                    </span>
                                 </DialogTitle>
 
                                 <div className="my-2">
