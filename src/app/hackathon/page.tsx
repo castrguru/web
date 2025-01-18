@@ -54,7 +54,7 @@ export default function Hackathon() {
                 </div>
             </div>
 
-            <Notice />
+            {/* <Notice /> */}
         </div>
     )
 }

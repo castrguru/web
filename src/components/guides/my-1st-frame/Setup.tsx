@@ -10,13 +10,13 @@ import {
     BookmarkIcon,
 } from '@heroicons/react/20/solid'
 
-export default function QuickSummary() {
+export default function Setup() {
     // const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
     return (
-        <main>
-            <h3 className="text-2xl font-semibold text-slate-600 tracking-wider">
-                Setup
+        <main className="my-20">
+            <h3 className="text-2xl sm:text-3xl font-semibold text-slate-600 tracking-wider">
+                Setting Up Your Workspace
             </h3>
 
             <p className="mt-4">

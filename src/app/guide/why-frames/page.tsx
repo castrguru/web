@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-export default function Example() {
+export default function WhyFrames() {
     return (
         <div className="overflow-hidden bg-white py-24 sm:py-32">
             <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">

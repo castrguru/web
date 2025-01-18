@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 import { CheckCircleIcon, InformationCircleIcon } from '@heroicons/react/20/solid'
 
-export default function Welcome() {
+export default function Builder101() {
     return (
         <div className="bg-white px-6 py-32 lg:px-8">
             <div className="mx-auto max-w-3xl text-base/7 text-gray-700">
