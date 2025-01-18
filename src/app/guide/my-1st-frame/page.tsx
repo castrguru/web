@@ -13,7 +13,7 @@ import Setup from '@/components/guides/my-1st-frame/Setup'
 import Tldr from '@/components/guides/my-1st-frame/Tldr'
 // import TryIt from '@/components/guides/my-1st-frame/TryIt'
 
-export default function Welcome() {
+export default function My1stFrame() {
     return (
         <div className="bg-white px-6 py-16 lg:px-8">
             <div className="mx-auto max-w-3xl text-base/7 text-gray-700">

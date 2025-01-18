@@ -2,21 +2,20 @@
 
 import { CheckCircleIcon } from '@heroicons/react/20/solid'
 
-export default function Blank() {
+export default function TheKitchenSink() {
     return (
         <div className="bg-white px-6 py-16 lg:px-8">
             <div className="mx-auto max-w-3xl text-base/7 text-gray-700">
                 <h4 className="text-sm/7 font-semibold text-fuchsia-600 uppercase tracking-widest">
-                    SECTION_TITLE_GOES_HERE
+                    User Guides
                 </h4>
 
                 <h1 className="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
-                    Castr GÜRŲ’s “Blank” Page
+                    The Kitchen Sink
                 </h1>
 
                 <p className="mt-6 text-xl/8">
-                    Aliquet nec orci mattis amet quisque ullamcorper neque, nibh sem. At arcu, sit dui mi, nibh dui, diam eget aliquam. Quisque id at vitae feugiat egestas ac. Diam nulla orci at in viverra scelerisque eget. Eleifend egestas
-                    fringilla sapien.
+                    This guide is designed for experienced Frame builders, who want to explore the limits of the specification.
                 </p>
 
                 <div className="mt-10 max-w-2xl">
