@@ -1,5 +1,5 @@
 import Link from 'next/link'
-// import Notice from '@/components/Notice'
+import Notice from '@/components/Notice'
 
 import { CheckCircleIcon } from '@heroicons/react/20/solid'
 
@@ -66,7 +66,7 @@ export default function Hackathon() {
                 </div>
             </div>
 
-            {/* <Notice /> */}
+            <Notice />
         </div>
     )
 }
