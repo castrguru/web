@@ -9,18 +9,13 @@ const nextConfig: NextConfig = {
     },
     async rewrites() {
         return [
-            {
-                source: '/buidl/',
-                destination: '/build/',
-            },
-            {
-                source: '/create/',
-                destination: '/build/',
-            },
-            {
-                source: '/new/',
-                destination: '/build/',
-            },
+            // build
+            { source: '/buidl/', destination: '/build/' },
+            { source: '/create/', destination: '/build/' },
+            { source: '/new/', destination: '/build/' },
+
+            // libs
+            { source: '/lib/', destination: '/libs/' },
         ]
     },
 }
