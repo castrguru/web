@@ -4,8 +4,8 @@ import Footer from '@/components/Footer'
 import Header from '@/components/HeaderAlt'
 
 export const metadata: Metadata = {
-    title: 'Blank — Castr GÜRŲ',
-    description: 'Castr GÜRŲ for Farcaster builders.',
+    title: 'Monetization — Castr GÜRŲ',
+    description: 'Castr GÜRŲ offers a collection of guides to the leading monetization strategies for Farcaster builders.',
 }
 
 export default function RootLayout({
