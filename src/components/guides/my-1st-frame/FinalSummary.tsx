@@ -7,13 +7,13 @@
 
 import { CheckCircleIcon } from '@heroicons/react/20/solid'
 
-export default function FinalThoughts() {
+export default function FinalSummary() {
     // const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
     return (
         <main className="mt-16 max-w-2xl">
             <h2 className="text-pretty text-3xl font-semibold tracking-tight text-gray-900">
-                Final Thoughts
+                Final Summary
             </h2>
 
             <p className="mt-6">
@@ -26,7 +26,7 @@ export default function FinalThoughts() {
                     <CheckCircleIcon aria-hidden="true" className="mt-0.5 size-7 flex-none text-fuchsia-600" />
                     <span>
                         <strong className="pr-1 font-semibold text-gray-900">Organize your screens</strong>
-                        Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.
+                        into individual groupings of related content.
                     </span>
                 </li>
 
@@ -43,30 +43,6 @@ export default function FinalThoughts() {
                     <span>
                         <strong className="pr-1 font-semibold text-gray-900">Deploy your frame</strong>
                         to a professional hosting provider, like Orbiter or Netlify.
-                    </span>
-                </li>
-            </ul>
-
-            <p className="mt-8">
-                There are two (x2) important tradeoffs that we need to be aware of when opting for these techniques:
-            </p>
-
-            <ul role="list" className="mt-8 max-w-xl space-y-8 text-gray-600">
-                <li className="flex gap-x-3">
-                    <CheckCircleIcon aria-hidden="true" className="mt-0.5 size-7 flex-none text-fuchsia-600" />
-                    <span>
-                        <strong className="pr-1 font-semibold text-gray-900">3rd-Party dependency</strong>
-                        is a great convenience, in the beginning of a project, but can become troublesome as platform limits restrict your development.
-                        Also, API changes may REQUIRE you to change your application code, incurring additional maintenance time/costs.
-                    </span>
-                </li>
-
-                <li className="flex gap-x-3">
-                    <CheckCircleIcon aria-hidden="true" className="mt-0.5 size-7 flex-none text-fuchsia-600" />
-                    <span>
-                        <strong className="block font-semibold text-gray-900">Server dependency</strong>
-                        Next.js is a powerful framework, but with great power, comes some consequences.
-                        Computing cycles cost $$, and eventually we all outgrow that FREE tier.
                     </span>
                 </li>
             </ul>

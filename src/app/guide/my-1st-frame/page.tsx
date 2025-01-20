@@ -6,7 +6,8 @@ import {
     InformationCircleIcon,
 } from '@heroicons/react/20/solid'
 
-import FinalThoughts from '@/components/guides/my-1st-frame/FinalThoughts'
+import FinalSummary from '@/components/guides/my-1st-frame/FinalSummary'
+import WhatNext from '@/components/guides/my-1st-frame/WhatNext'
 import FurtherReading from '@/components/guides/my-1st-frame/Reading'
 import References from '@/components/guides/my-1st-frame/References'
 import Setup from '@/components/guides/my-1st-frame/Setup'
@@ -15,21 +16,31 @@ import Tldr from '@/components/guides/my-1st-frame/Tldr'
 
 export default function My1stFrame() {
     return (
-        <div className="bg-white px-6 py-16 lg:px-8">
+        <div className="bg-white px-6 lg:px-8 py-16">
             <div className="mx-auto max-w-3xl text-base/7 text-gray-700">
                 <h4 className="text-sm/7 font-semibold text-fuchsia-600 uppercase tracking-widest">
                     User Guides
                 </h4>
 
-                <h1 className="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
+                <h1 className="mt-2 text-6xl font-light tracking-tight text-slate-600">
                     My 1st Farcaster Frame
                 </h1>
 
+                <Image
+                    alt="A girl standing in an artist studio"
+                    width={0}
+                    height={0}
+                    src="https://i.ibb.co/z64Hvbv/my-1st-frame.jpg"
+                    className="my-5 w-full border border-fuchsia-500 rounded-xl shadow-md"
+                />
+
                 <p className="mt-6 text-xl/8">
-                    It’s time to get you off the sidelines and into the BIG game!
+                    It’s time to get your butt off the sidelines and into the BIG game!
+                    Let’s #BUIDL something amazing together.
+                    And let’s start right NOW!
                 </p>
 
-                <div className="mt-10 max-w-2xl">
+                <div className="text-xl/9">
                     <Tldr />
 
                     <Setup />
@@ -157,7 +168,9 @@ export default function My1stFrame() {
                     </p>
                 </div>
 
-                <FinalThoughts />
+                <FinalSummary />
+
+                <WhatNext />
 
                 {/* <TryIt /> */}
 

@@ -14,7 +14,7 @@ export default function Tldr() {
     // const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
     return (
-        <main className="my-20">
+        <main className="my-16">
             <h3 className="text-2xl sm:text-3xl font-semibold text-slate-600 tracking-wider">
                 TL;DR
             </h3>
