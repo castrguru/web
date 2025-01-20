@@ -124,7 +124,7 @@ function classNames(...classes: string[]) {
     return classes.filter(Boolean).join(' ')
 }
 
-export default function Example() {
+export default function Cloud() {
     return (
         <>
             <main className="bg-gradient-to-b from-slate-50 to-slate-100">
