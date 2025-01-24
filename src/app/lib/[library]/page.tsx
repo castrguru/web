@@ -7,14 +7,11 @@ import { Tab, TabGroup, TabList, TabPanel, TabPanels } from '@headlessui/react'
 
 export async function generateStaticParams() {
     return [
-        { library: 'builder' },
-        { library: 'whoami' },
-        { library: 'random' },
+        { library: 'godot' },
     ]
 }
 
 const product = {
-    name: `Dynamic`,
     version: {
         name: "@castrguru/next",
         date: "June 5, 2021",
@@ -117,17 +114,35 @@ export default async function LibNext({
     const { library } = await params
 console.log('LIBRARY', library)
 
+    let description
+    let imgUrl
+    let updatedAt
+    let pkg
+    let timestamp
     let title
 
+    /* Lazy import. */
+    const godot = (await import('./godot')).default
+
     switch(library) {
-    case 'builder':
-        title = 'Appreciate Your Efforts'
+    case 'godot':
+        title = godot.title
+        description = godot.description
+        imgUrl = godot.imgUrl
+        pkg = godot.pkg
+        updatedAt = godot.updatedAt
+        timestamp = godot.timestamp
         break
-    case 'whoami':
-        title = 'The Greatest Of All Time'
+    case 'ui':
+        title = 'User Interface'
+        description = `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis, quaerat! Officia nihil ipsam modi eveniet, laudantium quae ratione consequatur? Non deserunt laudantium dolorem officiis ipsam laboriosam eaque laborum a perferendis?`
+        imgUrl = 'https://images.unsplash.com/photo-1588600878108-578307a3cc9d?q=80'
+        pkg = '@castrguru/ui'
+        updatedAt = 'January 1, 2025'
+        timestamp = '2021-06-05'
         break
     default:
-        title = 'I Dunno U'
+        // nothing
     }
 
     return (
@@ -143,7 +158,7 @@ console.log('LIBRARY', library)
                             alt={product.imageAlt}
                             width={0}
                             height={0}
-                            src={product.imageSrc}
+                            src={imgUrl || product.imageSrc}
                             className="aspect-[3/1] w-full rounded-lg bg-gray-100 object-cover"
                         />
                     </div>
@@ -152,7 +167,7 @@ console.log('LIBRARY', library)
                     <div className="mx-auto mt-14 max-w-2xl sm:mt-16 lg:col-span-3 lg:row-span-2 lg:row-end-2 lg:mt-0 lg:max-w-none">
                         <div className="flex flex-col-reverse">
                             <div className="mt-4">
-                                <h1 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">
+                                <h1 className="text-4xl font-bold tracking-tight text-slate-700 sm:text-5xl">
                                     {title}
                                 </h1>
 
@@ -161,11 +176,11 @@ console.log('LIBRARY', library)
                                 </h2>
 
                                 <p className="mt-2 text-sm font-medium text-gray-500 tracking-widest">
-                                    NPM {product.version.name}
+                                    NPM {pkg || product.version.name}
                                 </p>
 
                                 <span className="mt-1 text-xs text-gray-500 tracking-widest italic">
-                                    last updated <time dateTime={product.version.datetime}>{product.version.date}</time>
+                                    last updated <time dateTime={timestamp || product.version.datetime}>{updatedAt || product.version.date}</time>
                                 </span>
                             </div>
 
@@ -180,7 +195,9 @@ console.log('LIBRARY', library)
                             </div>
                         </div>
 
-                        <p className="mt-6 text-gray-500">{product.description}</p>
+                        <p className="mt-6 text-gray-500 text-lg/8">
+                            {description || product.description}
+                        </p>
 
                         <div className="mt-10 grid grid-cols-1 gap-x-6 gap-y-4 sm:grid-cols-2">
                             <button
