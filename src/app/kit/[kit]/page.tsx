@@ -5,6 +5,13 @@ import { Fragment } from 'react'
 import { StarIcon } from '@heroicons/react/20/solid'
 import { Tab, TabGroup, TabList, TabPanel, TabPanels } from '@headlessui/react'
 
+export async function generateStaticParams() {
+    return [
+        { kit: 'starter' },
+        { kit: 'random' },
+    ]
+}
+
 const product = {
     name: `Starter: My 1st Frame`,
     version: {
