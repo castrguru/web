@@ -56,16 +56,16 @@ export default function Header() {
 
                 <PopoverGroup className="hidden lg:flex lg:gap-x-12">
 
-                    <Link href="/studio" className="text-2xl/6 font-semibold text-slate-200 tracking-wide hover:text-amber-200">
-                        Studio
+                    <Link href="/cloud" className="text-2xl/6 font-semibold text-slate-200 tracking-wide hover:text-amber-200">
+                        Cloud
                     </Link>
 
                     <Link href="/kits" className="text-2xl/6 font-semibold text-slate-200 tracking-wide hover:text-amber-200">
                         Kits
                     </Link>
 
-                    <Link href="/cloud" className="text-2xl/6 font-semibold text-slate-200 tracking-wide hover:text-amber-200">
-                        Cloud
+                    <Link href="/studio" className="text-2xl/6 font-semibold text-slate-200 tracking-wide hover:text-amber-200">
+                        Studio
                     </Link>
 
                     <Link href="/guides" className="text-2xl/6 font-semibold text-slate-200 tracking-wide hover:text-amber-200">
