@@ -106,7 +106,7 @@ interface Params {
     library: string;
 }
 
-export default async function LibNext({
+export default async function Library({
     params,
 }: {
     params: Promise<Params>

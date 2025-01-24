@@ -14,7 +14,58 @@ import Setup from '@/components/guides/my-1st-frame/Setup'
 import Tldr from '@/components/guides/my-1st-frame/Tldr'
 // import TryIt from '@/components/guides/my-1st-frame/TryIt'
 
-export default function My1stFrame() {
+export async function generateStaticParams() {
+    return [
+        { library: 'my-1st-game' },
+        { library: 'my-1st-guide' },
+    ]
+}
+
+interface Params {
+    guide: string;
+}
+
+export default async function Guide({
+    params,
+}: {
+    params: Promise<Params>
+}) {
+    const { guide } = await params
+console.log('GUIDE', guide)
+
+    let description
+    // let imgUrl
+    // let updatedAt
+    // let pkg
+    // let timestamp
+    let title
+
+    /* Lazy import. */
+    const my1stFrame = (await import('./my-1st-frame')).default
+
+    switch(guide) {
+    case 'my-1st-frame':
+        title = my1stFrame.title
+        description = my1stFrame.description
+        // imgUrl = my1stFrame.imgUrl
+        // pkg = my1stFrame.pkg
+        // updatedAt = my1stFrame.updatedAt
+        // timestamp = my1stFrame.timestamp
+        break
+    case 'ui':
+        title = 'User Interface'
+        description = `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis, quaerat! Officia nihil ipsam modi eveniet, laudantium quae ratione consequatur? Non deserunt laudantium dolorem officiis ipsam laboriosam eaque laborum a perferendis?`
+        // imgUrl = 'https://images.unsplash.com/photo-1588600878108-578307a3cc9d?q=80'
+        // pkg = '@castrguru/ui'
+        // updatedAt = 'January 1, 2025'
+        // timestamp = '2021-06-05'
+        break
+    default:
+        // nothing
+        title = 'Unknown Guide'
+        description = `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis, quaerat! Officia nihil ipsam modi eveniet, laudantium quae ratione consequatur? Non deserunt laudantium dolorem officiis ipsam laboriosam eaque laborum a perferendis?`
+    }
+
     return (
         <div className="bg-white px-6 lg:px-8 py-16">
             <div className="mx-auto max-w-3xl text-base/7 text-gray-700">
@@ -23,7 +74,7 @@ export default function My1stFrame() {
                 </h4>
 
                 <h1 className="mt-2 text-6xl font-light tracking-tight text-slate-600">
-                    My 1st Farcaster Frame
+                    { title }
                 </h1>
 
                 <Image
@@ -35,9 +86,7 @@ export default function My1stFrame() {
                 />
 
                 <p className="mt-6 text-xl/8">
-                    It’s time to get your butt off the sidelines and into the BIG game!
-                    Let’s #BUIDL something amazing together.
-                    And let’s start right NOW!
+                    { description }
                 </p>
 
                 <div className="text-xl/9">
