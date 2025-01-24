@@ -3,9 +3,9 @@ import Image from 'next/image'
 
 const footerNavigation = {
     building: [
-        { name: "Frame Studio", href: "/studio" },
-        { name: "Frame Kits", href: "/kits" },
         { name: "Cloud Manager", href: "/cloud" },
+        { name: "Frame Kits", href: "/kits" },
+        { name: "Frame Studio", href: "/studio" },
         { name: "Libraries", href: "/libs" },
         { name: "Downloads", href: "/downloads" },
     ],

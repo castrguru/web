@@ -9,9 +9,9 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 const navigation = [
-    { name: 'Studio', href: '/studio' },
-    { name: 'Kits', href: '/kits' },
     { name: 'Cloud', href: '/cloud' },
+    { name: 'Kits', href: '/kits' },
+    { name: 'Studio', href: '/studio' },
     { name: 'Guides', href: '/guides' },
 ]
 
