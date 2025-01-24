@@ -6,7 +6,7 @@ import { StarIcon } from '@heroicons/react/20/solid'
 import { Tab, TabGroup, TabList, TabPanel, TabPanels } from '@headlessui/react'
 
 const product = {
-    name: `Next.js`,
+    name: `Dynamic`,
     version: {
         name: "@castrguru/next",
         date: "June 5, 2021",
@@ -20,7 +20,7 @@ const product = {
         "Drawn on 24 x 24 pixel grid"
     ],
     imageSrc: "https://i.ibb.co/T0L708b/image.png",
-    imageAlt: "Next.js frame library banner image",
+    imageAlt: "Dynamic frame library banner image",
 }
 
 const reviews = {
