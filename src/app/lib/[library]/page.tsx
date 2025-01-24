@@ -5,15 +5,17 @@ import { Fragment } from 'react'
 import { StarIcon } from '@heroicons/react/20/solid'
 import { Tab, TabGroup, TabList, TabPanel, TabPanels } from '@headlessui/react'
 
-export async function getStaticPaths() {
-    return {
-        paths: [
-            { params: { library: 'builder' } },
-            { params: { library: 'whoami' } },
-            { params: { library: 'random' } },
-        ],
-        fallback: false,
-    }
+export async function generateStaticParams() {
+    return [
+        { library: 'builder' },
+        { library: 'whoami' },
+        { library: 'random' },
+    ]
+    // return [
+    //     { params: { library: 'builder' } },
+    //     { params: { library: 'whoami' } },
+    //     { params: { library: 'random' } },
+    // ]
 }
 
 const product = {
@@ -108,17 +110,22 @@ function classNames(...classes: string[]) {
     return classes.filter(Boolean).join(" ");
 }
 
-interface Params {
-    library: string;
-}
+// interface Params {
+//     library: string;
+// }
 
-export default async function LibNext({ params }: { params: Params }) {
-    const library = (await params).library
-console.log('LIBRARY PARAMS', library)
+export default function LibNext() {
+//     const library = (await params).library
+// console.log('LIBRARY PARAMS', library)
 
+//     const router = useRouter()
+//     const library = router.query.library
+// console.log('LIBRARY PARAMS', library)
+
+    let library
     let title
 
-    switch(library) {
+    switch(library!) {
     case 'builder':
         title = 'Appreciate Your Efforts'
         break
