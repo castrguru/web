@@ -5,6 +5,17 @@ import { Fragment } from 'react'
 import { StarIcon } from '@heroicons/react/20/solid'
 import { Tab, TabGroup, TabList, TabPanel, TabPanels } from '@headlessui/react'
 
+export const getStaticPaths = async () => {
+    return {
+        paths: [
+            { params: { id: 'lib/builder' } },
+            { params: { id: 'lib/whoami' } },
+            { params: { id: 'lib/random' } },
+        ],
+        fallback: false,
+    }
+}
+
 const product = {
     name: `Dynamic`,
     version: {
@@ -97,7 +108,27 @@ function classNames(...classes: string[]) {
     return classes.filter(Boolean).join(" ");
 }
 
-export default function LibNext() {
+interface Params {
+    library: string;
+}
+
+export default async function LibNext({ params }: { params: Params }) {
+    const library = (await params).library
+console.log('LIBRARY PARAMS', library)
+
+    let title
+
+    switch(library) {
+    case 'builder':
+        title = 'Appreciate Your Efforts'
+        break
+    case 'whoami':
+        title = 'The Greatest Of All Time'
+        break
+    default:
+        title = 'I Dunno U'
+    }
+
     return (
         <div className="bg-white">
             <div className="mx-auto px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
@@ -121,7 +152,7 @@ export default function LibNext() {
                         <div className="flex flex-col-reverse">
                             <div className="mt-4">
                                 <h1 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">
-                                    {product.name}
+                                    {title}
                                 </h1>
 
                                 <h2 id="information-heading" className="sr-only">
