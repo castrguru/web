@@ -16,8 +16,8 @@ import Tldr from '@/components/guides/my-1st-frame/Tldr'
 
 export async function generateStaticParams() {
     return [
-        { library: 'my-1st-game' },
-        { library: 'my-1st-guide' },
+        { guide: 'my-1st-frame' },
+        { guide: 'my-1st-game' },
     ]
 }
 
