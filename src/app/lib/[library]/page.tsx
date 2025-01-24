@@ -5,12 +5,12 @@ import { Fragment } from 'react'
 import { StarIcon } from '@heroicons/react/20/solid'
 import { Tab, TabGroup, TabList, TabPanel, TabPanels } from '@headlessui/react'
 
-export const getStaticPaths = async () => {
+export async function getStaticPaths() {
     return {
         paths: [
-            { params: { id: 'lib/builder' } },
-            { params: { id: 'lib/whoami' } },
-            { params: { id: 'lib/random' } },
+            { params: { library: 'builder' } },
+            { params: { library: 'whoami' } },
+            { params: { library: 'random' } },
         ],
         fallback: false,
     }
