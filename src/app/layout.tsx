@@ -10,7 +10,7 @@ const FRAME_METADATA = {
     // imageUrl: 'https://castr.guru/og.png',
     imageUrl: 'https://castr.guru/banner.jpg?' + moment().unix(),
     button: {
-        title: `🤖 Build Your Imagination 💡 🚀`,
+        title: `👨‍💻 🤖 Build Your Imagination 💡 🚀`,
         action: {
             type: 'launch_frame',
             name: 'Launcher',
