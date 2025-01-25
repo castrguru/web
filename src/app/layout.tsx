@@ -7,9 +7,9 @@ import PlausibleProvider from 'next-plausible'
 
 const FRAME_METADATA = {
     version: 'next',
-    imageUrl: 'https://castr.guru/banner.jpg?' + moment().unix(),
+    imageUrl: 'https://castr.guru/poster.jpg?' + moment().unix(),
     button: {
-        title: `👨‍💻 🚧 Build Your Fantasy 💡 🚀`,
+        title: `👨‍💻 🚧 Build Ur BIG Idea 💡 🚀`,
         action: {
             type: 'launch_frame',
             name: 'Castr GÜRŲ',
