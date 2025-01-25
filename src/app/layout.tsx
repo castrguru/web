@@ -4,10 +4,33 @@ import type { Metadata } from 'next'
 import './globals.css'
 import PlausibleProvider from 'next-plausible'
 
+const FRAME_METADATA = {
+    version: 'next',
+    // imageUrl: 'https://castr.guru/og.png',
+    imageUrl: 'https://castr.guru/icon.png',
+    button: {
+        title: `Launch Frame`,
+        action: {
+            type: 'launch_frame',
+            name: 'Launcher',
+            url: 'https://castr.guru',
+            splashImageUrl: 'https://castr.guru/splash.gif',
+            splashBackgroundColor: "#9218d2",
+        },
+    },
+}
 
 export const metadata: Metadata = {
     title: 'Castr GÜRŲ',
     description: 'Castr GÜRŲ for Farcaster builders.',
+    openGraph: {
+        images: [
+            { url: 'https://castr.guru/icon.png' },
+        ],
+    },
+    other: {
+        'fc:frame': JSON.stringify(FRAME_METADATA),
+    },
 }
 
 export default function RootLayout({
