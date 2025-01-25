@@ -9,7 +9,8 @@ const FRAME_METADATA = {
     version: 'next',
     imageUrl: 'https://castr.guru/poster.jpg?' + moment().unix(),
     button: {
-        title: `💡 🚧 Build Ur BIG Idea 👨‍💻 🚀`, // 32-char max
+        // title: `💡 🚧 Build Ur BIG Idea 👨‍💻 🚀`, // 32-char max
+        title: `💡 👨‍💻 Build Ur BIG Idea 🤖 🚀`, // 32-char max
         // title: `💡 🚧 Start Ur BIG Idea 👨‍💻 🚀`, // 32-char max
         action: {
             type: 'launch_frame',
