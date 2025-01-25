@@ -1,3 +1,4 @@
+import moment from 'moment'
 import type { Metadata } from 'next'
 // import Image from 'next/image'
 
@@ -7,7 +8,7 @@ import PlausibleProvider from 'next-plausible'
 const FRAME_METADATA = {
     version: 'next',
     // imageUrl: 'https://castr.guru/og.png',
-    imageUrl: 'https://castr.guru/banner.jpg',
+    imageUrl: 'https://castr.guru/banner.jpg?' + moment().unix(),
     button: {
         title: `👨‍💻 🤖 Start Building ✨ 🚀`,
         action: {
