@@ -7,16 +7,15 @@ import PlausibleProvider from 'next-plausible'
 
 const FRAME_METADATA = {
     version: 'next',
-    // imageUrl: 'https://castr.guru/og.png',
     imageUrl: 'https://castr.guru/banner.jpg?' + moment().unix(),
     button: {
         title: `👨‍💻 🤖 Come Build Ur Dreams 💡 🚀`,
         action: {
             type: 'launch_frame',
-            name: 'Launcher',
+            name: 'Castr GÜRŲ',
             url: 'https://castr.guru',
             splashImageUrl: 'https://castr.guru/splash.gif',
-            splashBackgroundColor: "#9218d2",
+            splashBackgroundColor: "#bb67e8",
         },
     },
 }
