@@ -35,7 +35,7 @@ export default function Tldr() {
 
                 <p className="mt-3">
                     If you would like an express guide to get a Frame up and running quickly, then check out
-                    <a href="/guide/frameify-to-orbiter" className="text-lg font-bold text-rose-700 hover:underline"> Frameify-to-Orbiter </a>
+                    <Link href="/guide/frameify-to-orbiter" className="text-lg font-bold text-rose-700 hover:underline"> Frameify-to-Orbiter </Link>
                     for a quick &amp; easy solution, that takes only a few minutes to deploy.
                 </p>
             </section>
