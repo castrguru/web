@@ -9,7 +9,7 @@ const FRAME_METADATA = {
     version: 'next',
     imageUrl: 'https://castr.guru/banner.jpg?' + moment().unix(),
     button: {
-        title: `💡 🚧 Build Ur Imagination 🤖 🚀`,
+        title: `👨‍💻 🚧 Build Your Dreams 💡 🚀`,
         action: {
             type: 'launch_frame',
             name: 'Castr GÜRŲ',
