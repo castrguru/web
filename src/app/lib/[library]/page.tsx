@@ -117,33 +117,34 @@ console.log('LIBRARY', library)
 
     let description
     let imgUrl
-    let updatedAt
+    let libName
     let pkg
     let timestamp
     let title
-
-    /* Lazy import. */
-    const godot = (await import('./godot')).default
+    let updatedAt
 
     switch(library) {
     case 'godot':
-        title = godot.title
-        description = godot.description
-        imgUrl = godot.imgUrl
-        pkg = godot.pkg
-        updatedAt = godot.updatedAt
-        timestamp = godot.timestamp
+        libName = 'godot'
         break
-    case 'ui':
-        title = 'User Interface'
-        description = `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis, quaerat! Officia nihil ipsam modi eveniet, laudantium quae ratione consequatur? Non deserunt laudantium dolorem officiis ipsam laboriosam eaque laborum a perferendis?`
-        imgUrl = 'https://images.unsplash.com/photo-1588600878108-578307a3cc9d?q=80'
-        pkg = '@castrguru/ui'
-        updatedAt = 'January 1, 2025'
-        timestamp = '2021-06-05'
+    case 'nextjs':
+        libName = 'nextjs'
         break
     default:
         // nothing
+    }
+
+    /* Validate library name. */
+    if (libName) {
+        /* Lazy import. */
+        const lib = (await import('./' + libName)).default
+
+        title = lib.title
+        description = lib.description
+        imgUrl = lib.imgUrl
+        pkg = lib.pkg
+        updatedAt = lib.updatedAt
+        timestamp = lib.timestamp
     }
 
     return (
