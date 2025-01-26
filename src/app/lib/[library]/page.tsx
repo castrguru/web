@@ -8,6 +8,7 @@ import { Tab, TabGroup, TabList, TabPanel, TabPanels } from '@headlessui/react'
 export async function generateStaticParams() {
     return [
         { library: 'godot' },
+        { library: 'nextjs' },
     ]
 }
 
