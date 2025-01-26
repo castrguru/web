@@ -3,13 +3,12 @@
 import { useState } from 'react'
 import { Dialog, DialogPanel, PopoverGroup } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-import { BoltIcon } from '@heroicons/react/24/outline'
+import { CloudIcon } from '@heroicons/react/24/outline'
 
 import Image from 'next/image'
 import Link from 'next/link'
 
 const navigation = [
-    { name: 'Cloud', href: '/cloud' },
     { name: 'Kits', href: '/kits' },
     { name: 'Studio', href: '/studio' },
     { name: 'Guides', href: '/guides' },
@@ -56,10 +55,6 @@ export default function Header() {
 
                 <PopoverGroup className="hidden lg:flex lg:gap-x-12">
 
-                    <Link href="/cloud" className="text-2xl/6 font-semibold text-slate-200 tracking-wide hover:text-amber-200">
-                        Cloud
-                    </Link>
-
                     <Link href="/kits" className="text-2xl/6 font-semibold text-slate-200 tracking-wide hover:text-amber-200">
                         Kits
                     </Link>
@@ -76,11 +71,11 @@ export default function Header() {
 
                 <div className="hidden lg:flex lg:flex-1 lg:justify-end">
                     <Link
-                        href="/profile"
+                        href="https://cloud.castr.guru" target="_blank"
                         className="group flex flex-row items-center gap-1 text-2xl/6 font-semibold text-slate-200 hover:text-amber-200"
                     >
-                        Connect
-                        <BoltIcon className="pl-1 size-9 text-amber-500 group-hover:text-amber-300" />
+                        Cloud Center
+                        <CloudIcon className="pl-1 size-9 text-amber-500 group-hover:text-amber-300" />
                     </Link>
                 </div>
             </nav>
@@ -120,7 +115,7 @@ export default function Header() {
                             <div className="py-6">
                                 <Link href="/profile" className="-mx-3 block group flex flex-row items-center gap-1 rounded-lg px-3 py-2.5 text-3xl/7 font-semibold text-white hover:bg-gray-800">
                                     Connect
-                                    <BoltIcon className="pl-1 size-10 text-amber-500 group-hover:text-amber-300" />
+                                    <CloudIcon className="pl-1 size-10 text-amber-500 group-hover:text-amber-300" />
                                 </Link>
                             </div>
                         </div>

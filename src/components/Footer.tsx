@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 const footerNavigation = {
     building: [
-        { name: "Cloud Manager", href: "/cloud" },
+        { name: "Cloud Center", href: "https://cloud.castr.guru" },
         { name: "Frame Kits", href: "/kits" },
         { name: "Frame Studio", href: "/studio" },
         { name: "Libraries", href: "/libs" },
