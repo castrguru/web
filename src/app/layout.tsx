@@ -1,9 +1,8 @@
 import moment from 'moment'
 import type { Metadata } from 'next'
-// import Image from 'next/image'
+import Script from 'next/script'
 
 import './globals.css'
-import PlausibleProvider from 'next-plausible'
 
 const FRAME_METADATA = {
     version: 'next',
@@ -43,14 +42,8 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <body>
-                <PlausibleProvider
-                    domain="castr.guru"
-                    customDomain="https://plausible.castr.guru"
-                >
-                    {children}
-                </PlausibleProvider>
-            </body>
+            <body>{children}</body>
+            <Script src="https://scripts.simpleanalyticscdn.com/latest.js" />
         </html>
     )
 }
